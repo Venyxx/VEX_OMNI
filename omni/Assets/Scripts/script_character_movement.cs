@@ -27,6 +27,11 @@ public class script_character_movement : MonoBehaviour
     public bool doubleJump = false;
 
     // Update is called once per frame
+
+    void Start ()
+    {
+        Cursor.lockState = CursorLockMode.Locked;
+    }
     void Update()
     {
         //jump--------------------------------------------
@@ -61,8 +66,23 @@ public class script_character_movement : MonoBehaviour
         float vertical = Input.GetAxisRaw("Vertical");
         Vector3 direction = new Vector3(horizontal, 0f, vertical).normalized;
 
+        
+        
+        if (Input.GetKey(KeyCode.Mouse0))
+        {
+            Debug.Log("noticed keycode");
+            float targetAngle = Mathf.Atan2(direction.x, direction.z) * Mathf.Rad2Deg + cam.eulerAngles.y;
+            float angle = Mathf.SmoothDampAngle(transform.eulerAngles.y, targetAngle, ref turnSmoothVelocity, turnSmoothTime);
+            transform.rotation = Quaternion.Euler(0f, angle, 0f);
+
+            Vector3 moveDir = Quaternion.Euler(0f, targetAngle, 0f) * Vector3.forward;
+            controller.Move(moveDir.normalized * Time.deltaTime);
+        }
+        
+        
         if (direction.magnitude >= 0.1f)
         {
+            Debug.Log("noticed movement");
             float targetAngle = Mathf.Atan2(direction.x, direction.z) * Mathf.Rad2Deg + cam.eulerAngles.y;
             float angle = Mathf.SmoothDampAngle(transform.eulerAngles.y, targetAngle, ref turnSmoothVelocity, turnSmoothTime);
             transform.rotation = Quaternion.Euler(0f, angle, 0f);
