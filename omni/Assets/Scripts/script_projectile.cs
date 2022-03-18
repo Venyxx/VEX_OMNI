@@ -148,8 +148,14 @@ public class script_projectile : MonoBehaviour
     private void Reload ()
     {
         reloading = true;
-        bulletsLeft = magazineSize;
-        Invoke("Reload", reloadTime);
+        
+        Invoke("ReloadFinished", reloadTime);
+        
 
+    }
+    private void ReloadFinished()
+    {
+        bulletsLeft = magazineSize;
+        reloading = false;
     }
 }
