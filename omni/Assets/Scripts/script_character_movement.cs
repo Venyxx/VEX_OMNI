@@ -25,6 +25,12 @@ public class script_character_movement : MonoBehaviour
     float turnSmoothVelocity;
     public float turnSmoothTime = 0.1f;
     public bool doubleJump = false;
+    public bool holdingLight = false;
+    public bool hasLightRounds = false;
+    
+
+    public float weightOfDarkness = 0;
+    
 
     // Update is called once per frame
 
@@ -57,6 +63,9 @@ public class script_character_movement : MonoBehaviour
             //somehow add the second jump idk
         }
 
+        //darkness adder------
+    
+
 
         //gravity------------------------------------------
         velocity.y += gravity * Time.deltaTime;
@@ -70,7 +79,7 @@ public class script_character_movement : MonoBehaviour
         
         if (Input.GetKey(KeyCode.Mouse0))
         {
-            Debug.Log("noticed keycode");
+            //Debug.Log("noticed keycode");
             float targetAngle = Mathf.Atan2(direction.x, direction.z) * Mathf.Rad2Deg + cam.eulerAngles.y;
             float angle = Mathf.SmoothDampAngle(transform.eulerAngles.y, targetAngle, ref turnSmoothVelocity, turnSmoothTime);
             transform.rotation = Quaternion.Euler(0f, angle, 0f);
@@ -82,7 +91,7 @@ public class script_character_movement : MonoBehaviour
         
         if (direction.magnitude >= 0.1f)
         {
-            Debug.Log("noticed movement");
+            //Debug.Log("noticed movement");
             float targetAngle = Mathf.Atan2(direction.x, direction.z) * Mathf.Rad2Deg + cam.eulerAngles.y;
             float angle = Mathf.SmoothDampAngle(transform.eulerAngles.y, targetAngle, ref turnSmoothVelocity, turnSmoothTime);
             transform.rotation = Quaternion.Euler(0f, angle, 0f);

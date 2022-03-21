@@ -7,6 +7,7 @@ public class script_projectile : MonoBehaviour
 {
     //projectile------------
     public GameObject bullet;
+    public GameObject lightRoundBullet;
     //projectile force----------------
     public float shootForce;
     public float upwardForce;
@@ -16,6 +17,8 @@ public class script_projectile : MonoBehaviour
     public bool allowButtonHold;
 
     int bulletsLeft, bulletsShot;
+     public script_character_movement boolHoldingLightRoundsChar;
+    bool lightRounds;
 
     //checking-------------------------
     bool shooting, readyToShoot, reloading;
@@ -35,10 +38,18 @@ public class script_projectile : MonoBehaviour
         //mag full?------------------------
         bulletsLeft = magazineSize;
         readyToShoot = true;
+        
     }
 
+    void Start ()
+    {
+        GameObject player = GameObject.FindGameObjectWithTag("Player");
+        boolHoldingLightRoundsChar = player.GetComponent<script_character_movement>();
+    }
     private void Update ()
     {
+        GameObject player = GameObject.FindGameObjectWithTag("Player");
+        boolHoldingLightRoundsChar = player.GetComponent<script_character_movement>();
         MyInput();
 
         if (ammoDisplay != null)
@@ -107,7 +118,12 @@ public class script_projectile : MonoBehaviour
         Vector3 directionWithSpread = directionWithoutSpread + new Vector3 (x, y, 0);
 
         //instantiate---------------------------------
-        GameObject currentBullet = Instantiate(bullet, attackPoint.position, Quaternion.identity);
+        GameObject currentBullet;
+        if (boolHoldingLightRoundsChar.hasLightRounds == true)
+        {
+         currentBullet = Instantiate(lightRoundBullet, attackPoint.position, Quaternion.identity);
+        }
+         currentBullet = Instantiate(bullet, attackPoint.position, Quaternion.identity);
 
 
         //bullet rotation------
