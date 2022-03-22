@@ -175,11 +175,5 @@ public class script_projectile : MonoBehaviour
         bulletsLeft = magazineSize;
         reloading = false;
     }
-     void OnCollisionEnter (Collision collision)
-     {
-        GameObject other = collision.gameObject;
-
-        if (other != null)
-         Destroy (gameObject);
-     }
+    
 }

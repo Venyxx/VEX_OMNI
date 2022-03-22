@@ -21,7 +21,7 @@ public class script_light_holder : MonoBehaviour
 
     void OnCollisionEnter (Collision collision)
     {
-        Debug.Log("the holder noticed");
+        //Debug.Log("the holder noticed");
         //GameObject other = collision.gameObject;
         //this is if the lantern was previously off--------------
         if (collision.collider.CompareTag("Arrow") && hasLightInHolder == true)
@@ -29,6 +29,7 @@ public class script_light_holder : MonoBehaviour
             
             playerScriptAccess.holdingLight = true;
             Debug.Log("boolHoldingLight in Hands" + playerScriptAccess.holdingLight);
+            hasLightInHolder = false;
             
             
         }

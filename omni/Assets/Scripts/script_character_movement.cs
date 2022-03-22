@@ -6,7 +6,7 @@ using System.Collections.Specialized;
 using System.Security.Cryptography;
 using System.Threading;
 using UnityEngine;
-
+using TMPro;
 public class script_character_movement : MonoBehaviour
 {
     public CharacterController controller;
@@ -27,9 +27,10 @@ public class script_character_movement : MonoBehaviour
     public bool doubleJump = false;
     public bool holdingLight = false;
     public bool hasLightRounds = false;
+    public TextMeshProUGUI lightRoundDisplay;
     
 
-    public float weightOfDarkness = 0;
+    public float weightOfDarkness = 2;
     
 
     // Update is called once per frame
@@ -63,7 +64,13 @@ public class script_character_movement : MonoBehaviour
             //somehow add the second jump idk
         }
 
-        //darkness adder------
+        //light rounds gui---------------------
+        if(hasLightRounds)
+        {
+            lightRoundDisplay.text = "Light Rounds";
+        }
+        else   
+        lightRoundDisplay.text = "";
     
 
 
@@ -73,7 +80,7 @@ public class script_character_movement : MonoBehaviour
         //walk--------------------------------------------
         float horizontal = Input.GetAxisRaw("Horizontal");
         float vertical = Input.GetAxisRaw("Vertical");
-        Vector3 direction = new Vector3(0f, 0f, vertical).normalized;
+        Vector3 direction = new Vector3(horizontal, 0f, vertical).normalized;
 
         
         
