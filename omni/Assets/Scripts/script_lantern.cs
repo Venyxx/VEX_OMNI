@@ -10,17 +10,17 @@ public class script_lantern : MonoBehaviour
     public int darknessDisplay;
     public TextMeshProUGUI darknessGUI;
     public TextMeshProUGUI overHeadLantern;
-    public float waitTime = 1.5f;
+    public float waitTime = 1.0f;
     public float lanternWaitTime = 10f;
-    public float darknessWaitTime = 1.0f;
+    public float darknessWaitTime = 3f;
 
     public script_character_movement playerScriptAccess;
-    bool lanternIsLit = false;
+    public  bool lanternIsLit = false;
     public bool hasDarkness = false;
     public bool isSafe = true;
     bool lanternTimeRunner = false;
 
-    
+
     // Start is called before the first frame update
     void Start()
     {
@@ -42,33 +42,49 @@ public class script_lantern : MonoBehaviour
 
         if (isSafe == false)
         {
-            playerScriptAccess.weightOfDarkness += Time.deltaTime;
+            darknessChecking();
             //Debug.Log(isSafe);
+        }else if (isSafe == true)
+        {
+            hasDarkness = false;
         }
 
-        if(lanternTimeRunner)
+        if (lanternTimeRunner)
         {
             lanternWaitTime -= Time.deltaTime;
-        //Debug.Log("the lantern is depleting" + lanternWaitTime);
-        if (lanternWaitTime < 0)
-        {
-            lanternIsLit = false;
-            lanternTimeRunner = false;
-            Debug.Log("the lantern turned off");
-            lanternWaitTime = 10;
-        }
+            //Debug.Log("the lantern is depleting" + lanternWaitTime);
+            if (lanternWaitTime < 0)
+            {
+                lanternIsLit = false;
+                lanternTimeRunner = false;
+                Debug.Log("the lantern turned off");
+                lanternWaitTime = 18;
+            }
         }
 
 
 
         //DISPLAY FOR ITS ON OR NO DEV BUILD----------------------------
-        if(lanternIsLit)
+        if (lanternIsLit)
         {
             overHeadLantern.text = "Active";
         }
         else
-        overHeadLantern.text = "Inactive";
+            overHeadLantern.text = "Inactive";
 
+    }
+
+    void OntriggerEnter(Collider other)
+    {
+        Debug.Log("lantern light detecting");
+        Debug.Log("light rounds" + playerScriptAccess.hasLightRounds);
+        Debug.Log("safety " + isSafe);
+        Debug.Log("darkness  " + hasDarkness);
+        if (other.tag == "Player" && lanternIsLit == true)
+        {
+            hasDarkness = false;
+            isSafe = true;
+        }
     }
     void OnTriggerStay(Collider other)
     {
@@ -76,6 +92,8 @@ public class script_lantern : MonoBehaviour
         if (other.tag == "Player" && lanternIsLit == true)
         {
             playerScriptAccess.hasLightRounds = true;
+            hasDarkness = false;
+            //Debug.Log("has darkness " + hasDarkness);
             isSafe = true;
             //Debug.Log("can shoot light damage" + playerScriptAccess.hasLightRounds);
 
@@ -91,13 +109,14 @@ public class script_lantern : MonoBehaviour
                 if (waitTime <= 0)
                 {
                     playerScriptAccess.weightOfDarkness -= 1;
-                    waitTime = 1.5f;
+                    waitTime = 1.0f;
                 }
 
 
             }
-        }else
-        playerScriptAccess.hasLightRounds = false;
+        }
+        else
+            playerScriptAccess.hasLightRounds = false;
     }
     void darknessDisplayMethod()
     {
@@ -114,12 +133,9 @@ public class script_lantern : MonoBehaviour
     void OnCollisionEnter(Collision collision)
     {
         //GameObject other = collision.gameObject;
-        Debug.Log("lantern hit");
-        Debug.Log("light rounds"  + playerScriptAccess.hasLightRounds);
-        Debug.Log("lantern is lit " + lanternIsLit);
-        Debug.Log("Collision object tag "+collision.collider.tag);
+        
         //this is if the lantern was previously off--------------
-        if (playerScriptAccess.hasLightRounds && lanternIsLit == false && collision.collider.CompareTag("Arrow")) 
+        if (playerScriptAccess.hasLightRounds && lanternIsLit == false && collision.collider.CompareTag("Arrow"))
         {
             Debug.Log("this lanter was off and now it is turning on");
             playerScriptAccess.holdingLight = false;
@@ -128,50 +144,50 @@ public class script_lantern : MonoBehaviour
             lanternChecking();
         }
 
-        if(playerScriptAccess.holdingLight && collision.collider.CompareTag("Arrow"))
+        if (playerScriptAccess.holdingLight && collision.collider.CompareTag("Arrow"))
         {
             playerScriptAccess.holdingLight = false;
             lanternIsLit = true;
             lanternChecking();
         }
 
-    
+
     }
 
     void OnTriggerExit(Collider collision)
     {
         if (collision.CompareTag("Player"))
         {
-            hasDarkness = true;
+
             playerScriptAccess.hasLightRounds = false;
             Debug.Log("has light rounds" + playerScriptAccess.hasLightRounds);
             isSafe = false;
+            hasDarkness = true;
         }
 
     }
 
     void lanternChecking()
     {
-        
+
         lanternTimeRunner = true;
     }
 
     void darknessChecking()
     {
-
-        if (darknessWaitTime > 0)
+        //Debug.Log("darkness checking called");
+        if (darknessWaitTime > 0 && hasDarkness == true && isSafe == false)
         {
+            //Debug.Log("passed test, wait time : has dark : is safe " + darknessWaitTime + hasDarkness + isSafe);
             darknessWaitTime -= Time.deltaTime;
 
-            playerScriptAccess.weightOfDarkness++;
-            Debug.Log("added one to weight of darkness");
-
         }
-
-        if (waitTime <= 0)
+        else if (darknessWaitTime < 0)
         {
-            playerScriptAccess.weightOfDarkness -= 1;
-            darknessWaitTime = 1.0f;
+            playerScriptAccess.weightOfDarkness++;
+            darknessWaitTime = 3f;
+            Debug.Log("added one to weight of darkness");
         }
+
     }
 }

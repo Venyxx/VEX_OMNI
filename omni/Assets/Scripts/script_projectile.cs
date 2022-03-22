@@ -125,6 +125,7 @@ public class script_projectile : MonoBehaviour
         GameObject currentBullet;
         
          currentBullet = Instantiate(bullet, attackPoint.position, Quaternion.identity);
+         Debug.Log("bullet");
 
 
         //bullet rotation------
@@ -152,6 +153,7 @@ public class script_projectile : MonoBehaviour
         if (projectileFlash !=null)
         {
             Instantiate (projectileFlash, attackPoint.position, Quaternion.identity);
+            
         }
         bulletsLeft--;
         bulletsShot++;

@@ -49,10 +49,11 @@ MonoBehaviour:
   darknessDisplay: 0
   darknessGUI: {fileID: 0}
   overHeadLantern: {fileID: 0}
-  waitTime: 1.5
+  waitTime: 1
   lanternWaitTime: 18
-  darknessWaitTime: 1
+  darknessWaitTime: 3
   playerScriptAccess: {fileID: 0}
+  lanternIsLit: 0
   hasDarkness: 0
   isSafe: 1
 --- !u!65 &5572128403013945703
@@ -140,7 +141,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: 013a4abda451ed6429f8a86e3a4aa82d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
