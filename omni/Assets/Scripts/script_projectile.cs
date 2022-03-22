@@ -7,7 +7,7 @@ public class script_projectile : MonoBehaviour
 {
     //projectile------------
     public GameObject bullet;
-    public GameObject lightRoundBullet;
+
     //projectile force----------------
     public float shootForce;
     public float upwardForce;
@@ -17,7 +17,7 @@ public class script_projectile : MonoBehaviour
     public bool allowButtonHold;
 
     int bulletsLeft, bulletsShot;
-    public script_character_movement boolHoldingLightRoundsChar;
+    public script_character_movement playerScriptAccess;
     bool lightRounds;
 
     //checking-------------------------
@@ -45,14 +45,14 @@ public class script_projectile : MonoBehaviour
     void Start()
     {
         GameObject player = GameObject.FindGameObjectWithTag("Player");
-        boolHoldingLightRoundsChar = player.GetComponent<script_character_movement>();
+        playerScriptAccess = player.GetComponent<script_character_movement>();
     }
     private void Update()
     {
         if (weaponSwapAccess.bow == true)
         {
             GameObject player = GameObject.FindGameObjectWithTag("Player");
-            boolHoldingLightRoundsChar = player.GetComponent<script_character_movement>();
+            playerScriptAccess = player.GetComponent<script_character_movement>();
             MyInput();
 
             if (ammoDisplay != null)

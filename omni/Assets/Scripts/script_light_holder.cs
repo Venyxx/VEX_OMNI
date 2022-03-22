@@ -13,6 +13,7 @@ public class script_light_holder : MonoBehaviour
     bool isThereLight;
     public float waitToCheckLightMax = 5;
     public float waitToCheckLight = 0;
+    int numberChecking;
 
     void Start()
     {
@@ -27,6 +28,10 @@ public class script_light_holder : MonoBehaviour
     void Update()
     {
         waitSpace();
+        if (playerScriptAccess.holdingLight == true)
+        {
+            hasLightInHolder = false;
+        }
     }
     void waitSpace()
     {
@@ -38,6 +43,7 @@ public class script_light_holder : MonoBehaviour
         else if (waitToCheckLight > 0)
         {
             waitToCheckLight -= Time.deltaTime;
+            
             //Debug.Log ("waiting " + waitToCheckLight);
         }
 
@@ -52,25 +58,43 @@ public class script_light_holder : MonoBehaviour
         foreach (GameObject lan in lanterns)
         {
             lanternAccess = lan.GetComponent<script_lantern>();
-            if (lanternAccess.lanternIsLit == false)
+            /*if (lanternAccess.lanternIsLit == false )
             {
                 //Debug.Log("lantern is lit "+ lanternAccess.lanternIsLit +  "-----lantern object " + lanternAccess.gameObject );
                 isThereLight = false;
             }
-            else if (lanternAccess.lanternIsLit == true)
+            else if (lanternAccess.lanternIsLit == true )
             {
                 isThereLight = true;
 
             }
-        }
+            */
 
+
+
+            if (lanternAccess.lanternIsLit == true)
+            {
+                numberChecking ++;
+            }
+             if (numberChecking > 0 || playerScriptAccess.holdingLight == true)
+             {
+                 //somethings is on somewhere
+                 isThereLight = true;
+             } else if (numberChecking <= 0 && playerScriptAccess.holdingLight == false)
+             { 
+                 //no light anywhere
+                 isThereLight = false;
+             }
+            
+        }
+        numberChecking = 0;
         if (isThereLight == false)
         {
             hasLightInHolder = true;
             Debug.Log("there is no light remaining, adding back " + hasLightInHolder);
 
         }
-        else if (isThereLight == false)
+        else if (isThereLight == true)
         {
             Debug.Log("there is light");
             hasLightInHolder = false;
