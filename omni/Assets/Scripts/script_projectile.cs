@@ -56,6 +56,10 @@ public class script_projectile : MonoBehaviour
         {
             ammoDisplay.SetText(bulletsLeft / bulletsPerTap + "/" + magazineSize / bulletsPerTap);
         }
+        if (transform.position.magnitude > 1000.0f)
+        {
+            Destroy(gameObject);
+        }
     }
 
     private void MyInput ()
@@ -119,10 +123,7 @@ public class script_projectile : MonoBehaviour
 
         //instantiate---------------------------------
         GameObject currentBullet;
-        if (boolHoldingLightRoundsChar.hasLightRounds == true)
-        {
-         currentBullet = Instantiate(lightRoundBullet, attackPoint.position, Quaternion.identity);
-        }
+        
          currentBullet = Instantiate(bullet, attackPoint.position, Quaternion.identity);
 
 
@@ -174,4 +175,11 @@ public class script_projectile : MonoBehaviour
         bulletsLeft = magazineSize;
         reloading = false;
     }
+     void OnCollisionEnter (Collision collision)
+     {
+        GameObject other = collision.gameObject;
+
+        if (other != null)
+         Destroy (gameObject);
+     }
 }

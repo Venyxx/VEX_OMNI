@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6750776918279782134}
   - component: {fileID: 6750776918279782132}
   - component: {fileID: 6750776918279782133}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Sphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -91,7 +91,9 @@ GameObject:
   m_Component:
   - component: {fileID: 6750776920106694129}
   - component: {fileID: 9097846777011135219}
-  m_Layer: 0
+  - component: {fileID: 3751967877592962007}
+  - component: {fileID: 2365166383619539813}
+  m_Layer: 7
   m_Name: projectile_one_object
   m_TagString: Arrow
   m_Icon: {fileID: 0}
@@ -129,3 +131,40 @@ Rigidbody:
   m_Interpolate: 1
   m_Constraints: 0
   m_CollisionDetection: 1
+--- !u!114 &3751967877592962007
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6750776920106694130}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e4283d0e30ee2b42b54e18763f2edc7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rb: {fileID: 9097846777011135219}
+  explosions: {fileID: 0}
+  whatIsEnemies:
+    serializedVersion: 2
+    m_Bits: 512
+  bounciness: 0
+  useGravity: 0
+  explosionDamage: 0
+  explosionRange: 0
+  maxCollisions: 0
+  maxLife: 0
+  explodeOnTouch: 1
+--- !u!135 &2365166383619539813
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6750776920106694130}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
