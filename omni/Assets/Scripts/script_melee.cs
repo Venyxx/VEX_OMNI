@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
+
 public class script_melee : MonoBehaviour
 {
     // Start is called before the first frame update
@@ -10,7 +11,7 @@ public class script_melee : MonoBehaviour
     public TextMeshProUGUI swingGUI;
     void Start()
     {
-        
+        swingGUI.text = "";
     }
 
     // Update is called once per frame
@@ -18,22 +19,22 @@ public class script_melee : MonoBehaviour
     {
         if (weaponSwapAccess.sword == true)
         {
-            if(Input.GetKeyDown(KeyCode.Mouse0))
-        {
-            Swing ();
-            Invoke ("UnSwing", 2f);
-        }
+            if (Input.GetKeyDown(KeyCode.Mouse0))
+            {
+                Swing();
+                Invoke("UnSwing", 2f);
+            }
         }
     }
 
-    void Swing ()
+    void Swing()
     {
         //animation
         //collider
         swingGUI.text = "SWING";
     }
 
-    void UnSwing ()
+    void UnSwing()
     {
         swingGUI.text = "";
     }

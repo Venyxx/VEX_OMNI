@@ -7,6 +7,7 @@ using System.Security.Cryptography;
 using System.Threading;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 public class script_character_movement : MonoBehaviour
 {
     public CharacterController controller;
@@ -30,7 +31,7 @@ public class script_character_movement : MonoBehaviour
     public TextMeshProUGUI lightRoundDisplay;
     
 
-    public float weightOfDarkness = 2;
+    public float weightOfDarkness = 0;
     
 
     // Update is called once per frame
@@ -71,6 +72,11 @@ public class script_character_movement : MonoBehaviour
         }
         else   
         lightRoundDisplay.text = "";
+
+        if(weightOfDarkness >= 10)
+        {
+            SceneManager.LoadScene("scene_maze");
+        }
     
 
 
