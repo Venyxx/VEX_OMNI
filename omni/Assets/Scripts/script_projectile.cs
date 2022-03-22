@@ -17,7 +17,7 @@ public class script_projectile : MonoBehaviour
     public bool allowButtonHold;
 
     int bulletsLeft, bulletsShot;
-     public script_character_movement boolHoldingLightRoundsChar;
+    public script_character_movement boolHoldingLightRoundsChar;
     bool lightRounds;
 
     //checking-------------------------
@@ -30,39 +30,44 @@ public class script_projectile : MonoBehaviour
     //visuals---------------------------------
     public GameObject projectileFlash;
     public TextMeshProUGUI ammoDisplay;
+    public script_weapon_swap weaponSwapAccess;
 
     public bool allowInvoke = true;
     // Start is called before the first frame update
-    private void Awake ()
+    private void Awake()
     {
         //mag full?------------------------
         bulletsLeft = magazineSize;
         readyToShoot = true;
-        
+
     }
 
-    void Start ()
+    void Start()
     {
         GameObject player = GameObject.FindGameObjectWithTag("Player");
         boolHoldingLightRoundsChar = player.GetComponent<script_character_movement>();
     }
-    private void Update ()
+    private void Update()
     {
-        GameObject player = GameObject.FindGameObjectWithTag("Player");
-        boolHoldingLightRoundsChar = player.GetComponent<script_character_movement>();
-        MyInput();
+        if (weaponSwapAccess.bow == true)
+        {
+            GameObject player = GameObject.FindGameObjectWithTag("Player");
+            boolHoldingLightRoundsChar = player.GetComponent<script_character_movement>();
+            MyInput();
 
-        if (ammoDisplay != null)
-        {
-            ammoDisplay.SetText(bulletsLeft / bulletsPerTap + "/" + magazineSize / bulletsPerTap);
+            if (ammoDisplay != null)
+            {
+                ammoDisplay.SetText(bulletsLeft / bulletsPerTap + "/" + magazineSize / bulletsPerTap);
+            }
+            if (transform.position.magnitude > 1000.0f)
+            {
+                Destroy(gameObject);
+            }
         }
-        if (transform.position.magnitude > 1000.0f)
-        {
-            Destroy(gameObject);
-        }
+
     }
 
-    private void MyInput ()
+    private void MyInput()
     {
         //Can I hold down the button? Auto----------
         if (allowButtonHold == true)
@@ -70,7 +75,7 @@ public class script_projectile : MonoBehaviour
             //needs to be updated to allow for controller access***********
             shooting = Input.GetKey(KeyCode.Mouse0);
         }
-        else 
+        else
         {
             shooting = Input.GetKeyDown(KeyCode.Mouse0);
         }
@@ -87,15 +92,15 @@ public class script_projectile : MonoBehaviour
         //reloading---------------------
         if (Input.GetKeyDown(KeyCode.R) && bulletsLeft < magazineSize && !reloading)
         {
-            Reload ();
+            Reload();
         }
-        if (readyToShoot && shooting && !reloading && bulletsLeft <=0 )
+        if (readyToShoot && shooting && !reloading && bulletsLeft <= 0)
 
         {
             Reload();
         }
     }
-    private void Shoot ()
+    private void Shoot()
     {
         readyToShoot = false;
         //aiming------------------------
@@ -106,9 +111,10 @@ public class script_projectile : MonoBehaviour
         if (Physics.Raycast(ray, out hit))
         {
             targetPoint = hit.point;
-        } else 
+        }
+        else
         {
-            targetPoint = ray.GetPoint(75); 
+            targetPoint = ray.GetPoint(75);
         }
 
         //Direction-------------------------
@@ -116,16 +122,16 @@ public class script_projectile : MonoBehaviour
 
         //spread
         float x = Random.Range(-spread, spread);
-        float y= Random.Range(-spread, spread);
+        float y = Random.Range(-spread, spread);
 
         //Direction with Spread----------------------
-        Vector3 directionWithSpread = directionWithoutSpread + new Vector3 (x, y, 0);
+        Vector3 directionWithSpread = directionWithoutSpread + new Vector3(x, y, 0);
 
         //instantiate---------------------------------
         GameObject currentBullet;
-        
-         currentBullet = Instantiate(bullet, attackPoint.position, Quaternion.identity);
-         Debug.Log("bullet");
+
+        currentBullet = Instantiate(bullet, attackPoint.position, Quaternion.identity);
+        Debug.Log("bullet");
 
 
         //bullet rotation------
@@ -150,26 +156,26 @@ public class script_projectile : MonoBehaviour
         }
 
         //projectile flare---------------
-        if (projectileFlash !=null)
+        if (projectileFlash != null)
         {
-            Instantiate (projectileFlash, attackPoint.position, Quaternion.identity);
-            
+            Instantiate(projectileFlash, attackPoint.position, Quaternion.identity);
+
         }
         bulletsLeft--;
         bulletsShot++;
     }
 
-    private void ResetShot ()
+    private void ResetShot()
     {
         allowInvoke = true;
         readyToShoot = true;
     }
-    private void Reload ()
+    private void Reload()
     {
         reloading = true;
-        
+
         Invoke("ReloadFinished", reloadTime);
-        
+
 
     }
     private void ReloadFinished()
@@ -177,5 +183,5 @@ public class script_projectile : MonoBehaviour
         bulletsLeft = magazineSize;
         reloading = false;
     }
-    
+
 }

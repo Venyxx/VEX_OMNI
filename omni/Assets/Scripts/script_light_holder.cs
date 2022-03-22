@@ -9,57 +9,97 @@ public class script_light_holder : MonoBehaviour
     public script_character_movement playerScriptAccess;
     public script_lantern lanternAccess;
     public GameObject[] lanterns;
-    //public TextMeshProUGUI lanternGUI;
+    public TextMeshProUGUI lightHolderGUI;
     bool isThereLight;
+    public float waitToCheckLightMax = 5;
+    public float waitToCheckLight = 0;
+
     void Start()
     {
         GameObject player = GameObject.FindGameObjectWithTag("Player");
         playerScriptAccess = player.GetComponent<script_character_movement>();
+        hasLightInHolder = true;
+        Debug.Log(hasLightInHolder);
+        lightHolderGUI.text = "Active";
     }
 
     // Update is called once per frame
-    /*void FixedUpdate()
+    void Update()
+    {
+        waitSpace();
+    }
+    void waitSpace()
+    {
+        if (waitToCheckLight <= 0)
+        {
+            holderChecking();
+            waitToCheckLight = waitToCheckLightMax;
+        }
+        else if (waitToCheckLight > 0)
+        {
+            waitToCheckLight -= Time.deltaTime;
+            //Debug.Log ("waiting " + waitToCheckLight);
+        }
+
+
+    }
+
+    void holderChecking()
     {
         //is the light depleted everywhere
-         lanterns = GameObject.FindGameObjectsWithTag("Lantern");
-         foreach (GameObject lan in lanterns)
-         {
-             lanternAccess = lan.GetComponent<script_lantern>();
-             if (lanternAccess.lanternIsLit == false)
-             {
+        //Debug.Log("checking for light");
+        lanterns = GameObject.FindGameObjectsWithTag("Lantern");
+        foreach (GameObject lan in lanterns)
+        {
+            lanternAccess = lan.GetComponent<script_lantern>();
+            if (lanternAccess.lanternIsLit == false)
+            {
+                //Debug.Log("lantern is lit "+ lanternAccess.lanternIsLit +  "-----lantern object " + lanternAccess.gameObject );
                 isThereLight = false;
-             }
-         }
+            }
+            else if (lanternAccess.lanternIsLit == true)
+            {
+                isThereLight = true;
 
-         if (isThereLight == false)
-         {
-             Debug.Log("there is no light remaining, adding back");
-             hasLightInHolder = true;
-         }
+            }
+        }
+
+        if (isThereLight == false)
+        {
+            hasLightInHolder = true;
+            Debug.Log("there is no light remaining, adding back " + hasLightInHolder);
+
+        }
+        else if (isThereLight == false)
+        {
+            Debug.Log("there is light");
+            hasLightInHolder = false;
+        }
 
 
-         if(hasLightInHolder)
-         {
-             lanternGUI.text = "Active";
-         }
-         else 
-         lanternGUI.text = "Inactive";
-    } */
 
-    void OnCollisionEnter (Collision collision)
+        if (hasLightInHolder == true)
+        {
+            lightHolderGUI.text = "Active";
+        }
+        else if (hasLightInHolder == false)
+            lightHolderGUI.text = "Inactive";
+    }
+
+    void OnCollisionEnter(Collision collision)
     {
         //Debug.Log("the holder noticed");
         //GameObject other = collision.gameObject;
         //this is if the lantern was previously off--------------
         if (collision.collider.CompareTag("Arrow") && hasLightInHolder == true)
         {
-            
+
             playerScriptAccess.holdingLight = true;
-            Debug.Log("boolHoldingLight in Hands" + playerScriptAccess.holdingLight);
+            Debug.Log("boolHoldingLight in Hands " + playerScriptAccess.holdingLight);
             hasLightInHolder = false;
-            
-            
+
+
         }
-        
+
     }
 }
