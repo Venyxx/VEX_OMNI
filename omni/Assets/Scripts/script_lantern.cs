@@ -15,7 +15,7 @@ public class script_lantern : MonoBehaviour
     public float darknessWaitTime = 3f;
 
     public script_character_movement playerScriptAccess;
-    public  bool lanternIsLit = false;
+    public bool lanternIsLit = false;
     public bool hasDarkness = false;
     public bool isSafe = true;
     bool lanternTimeRunner = false;
@@ -44,7 +44,8 @@ public class script_lantern : MonoBehaviour
         {
             darknessChecking();
             //Debug.Log(isSafe);
-        }else if (isSafe == true)
+        }
+        else if (isSafe == true)
         {
             hasDarkness = false;
         }
@@ -65,12 +66,17 @@ public class script_lantern : MonoBehaviour
 
 
         //DISPLAY FOR ITS ON OR NO DEV BUILD----------------------------
-        if (lanternIsLit)
+
+        if (overHeadLantern != null)
         {
-            overHeadLantern.text = "Active";
+            if (lanternIsLit)
+            {
+                overHeadLantern.text = "Active";
+            }
+            else
+                overHeadLantern.text = "Inactive";
+
         }
-        else
-            overHeadLantern.text = "Inactive";
 
     }
 
@@ -133,7 +139,7 @@ public class script_lantern : MonoBehaviour
     void OnCollisionEnter(Collision collision)
     {
         //GameObject other = collision.gameObject;
-        
+
         //this is if the lantern was previously off--------------
         if (playerScriptAccess.hasLightRounds && lanternIsLit == false && collision.collider.CompareTag("Arrow"))
         {
