@@ -1,0 +1,56 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: MeteorTestMAT
+  m_Shader: {fileID: -6465566751694194690, guid: a92ae3300867680449245132be92c71a, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 2
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - Texture2D_7e1dbf612fdd4921ae06925933f7f5fd:
+        m_Texture: {fileID: 2800000, guid: b6336ddaf7dcf434c9e32d0d84c432d9, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_Lightmaps:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_LightmapsInd:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_ShadowMasks:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - Vector1_4507bcdaa86d4bd5bfe63d5c0b4f0209: 0
+    - Vector1_612961254d5e4b809b351824871643ea: 4
+    - Vector1_a0bf6fae541c4f4cb2b0f493a387ed53: 3
+    - Vector1_b4c4747f34c545c4869abc1fc30a963a: 0
+    - Vector1_bde1bf339cdd4150867026ee62cf7a74: 5
+    - Vector1_d2ad6a6b508741bd8a1e44e14cab8cb2: 5.5
+    - Vector1_e56b4aa11b584c48a587556248d4102d: 25
+    - Vector1_ecae146ffaab40c890aa231638824234: 0.9
+    m_Colors:
+    - Color_694ea4a2ff6040fd80d950aeab451340: {r: 383.49805, g: 158.61961, b: 62.243137, a: 0}
+    - Color_6e83dd2d62e5414690e591f794e7cae4: {r: 47.937256, g: 9.286275, b: 5.772549, a: 0}
+    - Color_c13adb56145a499fb304225c45473e2e: {r: 1, g: 1, b: 1, a: 0}
+    - Vector2_249fef5c55904d8495a2b013c0553d4b: {r: -0.1, g: 0.1, b: 0, a: 0}
+    - Vector2_3b6b5716959f4cbda08259be53b9e485: {r: 0, g: 0, b: 0, a: 0}
+    - Vector2_6657a598be3e4421a703dfb4c9468c4a: {r: 0, g: 0, b: 0, a: 0}
+    - Vector2_6d9c345074544828874a5720473ea560: {r: 0, g: 0, b: 0, a: 0}
+    - Vector2_8f22bef3da7648f8a74149f03c4b8982: {r: 0.1, g: 0, b: 0, a: 0}
+  m_BuildTextureStacks: []
