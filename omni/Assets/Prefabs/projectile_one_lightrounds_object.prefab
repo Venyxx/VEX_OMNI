@@ -10,6 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4983641342447879440}
   - component: {fileID: 7405302905978065426}
+  - component: {fileID: 1776654303890724306}
+  - component: {fileID: 3926326548452751140}
   m_Layer: 7
   m_Name: projectile_one_lightrounds_object
   m_TagString: Untagged
@@ -48,6 +50,31 @@ Rigidbody:
   m_Interpolate: 1
   m_Constraints: 0
   m_CollisionDetection: 1
+--- !u!135 &1776654303890724306
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4983641342447879443}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &3926326548452751140
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4983641342447879443}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c9acf5e5d3e1624da96521c4f92d1d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4983641344379129366
 GameObject:
   m_ObjectHideFlags: 0

@@ -11,9 +11,12 @@ public class script_third_person_controller : MonoBehaviour
     [SerializeField] private CinemachineVirtualCamera aimVirtualCamera;
     [SerializeField] private float normalSensitivity;
     [SerializeField] private float aimSensitivity;
+    [SerializeField] private Transform pfArrowProjectile;
+    [SerializeField] private Transform arrowSpawn;
     private StarterAssetsInputs starterAssetsInputs;
     private ThirdPersonController thirdPersonController;
     [SerializeField] private LayerMask aimColliderLayerMask = new LayerMask();
+
 
     private void Awake()
 
@@ -52,6 +55,13 @@ public class script_third_person_controller : MonoBehaviour
             aimVirtualCamera.gameObject.SetActive(false);
             thirdPersonController.SetSensitivity(normalSensitivity);
             thirdPersonController.SetRotateOnMove(true);
+        }
+
+        if (starterAssetsInputs.shoot)
+        {
+            Vector3 aimDir = (mouseWorldPosition - arrowSpawn.position).normalized;
+            Instantiate(pfArrowProjectile, arrowSpawn.position, Quaternion.LookRotation(aimDir,Vector3.up));
+            starterAssetsInputs.shoot = false;
         }
 
 
