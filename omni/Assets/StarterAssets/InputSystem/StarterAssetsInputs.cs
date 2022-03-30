@@ -14,6 +14,9 @@ namespace StarterAssets
 		public bool sprint;
 		public bool Aim;
 		public bool shoot;
+		public bool bow;
+		public bool sword;
+		public bool escape;
 
 		[Header("Movement Settings")]
 		public bool analogMovement;
@@ -57,6 +60,19 @@ namespace StarterAssets
 		{
 			ShootInput(value.isPressed);
 		}
+
+		public void OnWeaponBowSwap(InputValue value)
+		{
+			WeaponBowInput(value.isPressed);
+		}
+		public void OnWeaponSwordSwap(InputValue value)
+		{
+			WeaponSwordInput(value.isPressed);
+		}
+		public void OnEscape(InputValue value)
+		{
+			EscapeInput(value.isPressed);
+		}
 #else
 	// old input sys if we do decide to have it (most likely wont)...
 #endif
@@ -90,6 +106,20 @@ namespace StarterAssets
 		public void ShootInput(bool newShootState)
 		{
 			shoot = newShootState;
+		}
+
+		public void EscapeInput(bool newEscapeState)
+		{
+			escape = newEscapeState;
+		}
+
+		
+		public void WeaponBowInput(bool newWeaponBowState)
+		{
+			bow = newWeaponBowState;
+		}public void WeaponSwordInput(bool newWeaponSwordState)
+		{
+			sword = newWeaponSwordState;
 		}
 #if !UNITY_IOS || !UNITY_ANDROID
 

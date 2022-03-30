@@ -15,6 +15,7 @@ public class script_third_person_controller : MonoBehaviour
     [SerializeField] private Transform arrowSpawn;
     private StarterAssetsInputs starterAssetsInputs;
     private ThirdPersonController thirdPersonController;
+    private UI_Control ui_control_access;
     [SerializeField] private LayerMask aimColliderLayerMask = new LayerMask();
 
 
@@ -63,6 +64,8 @@ public class script_third_person_controller : MonoBehaviour
             Instantiate(pfArrowProjectile, arrowSpawn.position, Quaternion.LookRotation(aimDir,Vector3.up));
             starterAssetsInputs.shoot = false;
         }
+
+        
 
 
     }

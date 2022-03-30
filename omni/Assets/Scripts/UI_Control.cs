@@ -2,26 +2,27 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-
+using StarterAssets;
 public class UI_Control : MonoBehaviour
 {
     public GameObject pauseUI;
+    private StarterAssetsInputs starterAssetsInputs;
     public static bool PauseGame = false;
 
     
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (starterAssetsInputs.escape)
         {
             if (PauseGame)
             {
                 Resume();
             }
-            else
+            
+        }else
             {
                 Pause();
             }
-        }
     }
     public void Resume()
     {

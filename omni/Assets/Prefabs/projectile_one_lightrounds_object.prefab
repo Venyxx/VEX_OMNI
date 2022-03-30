@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 3926326548452751140}
   m_Layer: 7
   m_Name: projectile_one_lightrounds_object
-  m_TagString: Untagged
+  m_TagString: Arrow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -75,6 +75,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c9acf5e5d3e1624da96521c4f92d1d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  whatIsEnemies:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!1 &4983641344379129366
 GameObject:
   m_ObjectHideFlags: 0

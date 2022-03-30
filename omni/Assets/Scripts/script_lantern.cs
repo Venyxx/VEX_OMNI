@@ -14,7 +14,7 @@ public class script_lantern : MonoBehaviour
     public float lanternWaitTime = 10f;
     public float darknessWaitTime = 3f;
 
-    public script_character_movement playerScriptAccess;
+    private script_character_movement playerScriptAccess;
     public bool lanternIsLit = false;
     public bool hasDarkness = false;
     public bool isSafe = true;

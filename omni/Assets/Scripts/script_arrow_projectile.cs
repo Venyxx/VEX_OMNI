@@ -6,6 +6,7 @@ public class script_arrow_projectile : MonoBehaviour
 {
     // Start is called before the first frame update
     private Rigidbody arrowRigidBody;
+    public LayerMask whatIsEnemies;
 
     private void Awake ()
     {
@@ -20,8 +21,12 @@ public class script_arrow_projectile : MonoBehaviour
 
     }
 
-    private void OnTriggerEnter (Collider other)
+    private void OnCollisonEnter (Collision collision)
     {
-        Destroy(gameObject);
+        if (collision.collider.CompareTag("Lantern"))
+        {
+            Destroy(gameObject);
+        }
+        
     }
 }
