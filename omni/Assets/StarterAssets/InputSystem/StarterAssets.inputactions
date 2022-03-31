@@ -54,7 +54,7 @@
                     "interactions": ""
                 },
                 {
-                    "name": "SwapBow",
+                    "name": "Bow",
                     "type": "Button",
                     "id": "a426abe0-1dd6-4d57-97cb-66be2b8e5d7f",
                     "expectedControlType": "Button",
@@ -62,7 +62,7 @@
                     "interactions": ""
                 },
                 {
-                    "name": "SwapSword",
+                    "name": "Sword",
                     "type": "Button",
                     "id": "36fbeb50-aeef-448c-8d21-971a26905183",
                     "expectedControlType": "Button",
@@ -306,7 +306,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "KeyboardMouse",
-                    "action": "SwapBow",
+                    "action": "Bow",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -317,7 +317,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "Gamepad;Xbox Controller",
-                    "action": "SwapBow",
+                    "action": "Bow",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -328,7 +328,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "KeyboardMouse",
-                    "action": "SwapSword",
+                    "action": "Sword",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -339,7 +339,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "Gamepad;Xbox Controller",
-                    "action": "SwapSword",
+                    "action": "Sword",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },

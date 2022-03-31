@@ -7,6 +7,7 @@ namespace StarterAssets
 {
 	public class StarterAssetsInputs : MonoBehaviour
 	{
+		private script_third_person_controller script_Third_Person_Controller;
 		[Header("Character Input Values")]
 		public Vector2 move;
 		public Vector2 look;
@@ -53,21 +54,25 @@ namespace StarterAssets
 
 		public void OnAim(InputValue value)
 		{
+			Debug.Log("noticed aim");
 			AimInput(value.isPressed);
 		}
 
 		public void OnShoot(InputValue value)
 		{
+			Debug.Log("noticed shooot");
 			ShootInput(value.isPressed);
 		}
 
-		public void OnWeaponBowSwap(InputValue value)
+		public void OnBow(InputValue value)
 		{
-			WeaponBowInput(value.isPressed);
+			Debug.Log("noticed bow press 1");
+			BowInput(value.isPressed);
 		}
-		public void OnWeaponSwordSwap(InputValue value)
+		public void OnSword(InputValue value)
 		{
-			WeaponSwordInput(value.isPressed);
+			Debug.Log("noticed sword press 2");
+			OnSwordInput(value.isPressed);
 		}
 		public void OnEscape(InputValue value)
 		{
@@ -114,12 +119,16 @@ namespace StarterAssets
 		}
 
 		
-		public void WeaponBowInput(bool newWeaponBowState)
+		public void BowInput(bool newBowState)
 		{
-			bow = newWeaponBowState;
-		}public void WeaponSwordInput(bool newWeaponSwordState)
+			bow = newBowState;
+
+		}
+		public void OnSwordInput(bool newSwordState)
 		{
-			sword = newWeaponSwordState;
+			sword = newSwordState;
+			bow = false;
+			
 		}
 #if !UNITY_IOS || !UNITY_ANDROID
 
