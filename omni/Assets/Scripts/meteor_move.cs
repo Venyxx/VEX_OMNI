@@ -36,7 +36,6 @@ public class meteor_move : MonoBehaviour
             var impactVFX = Instantiate(impactPrefab, pos, rot) as GameObject;
             Destroy(impactVFX, 5);
         }
-
         if(trails.Count > 0)
         {
             for(int i = 0; i< trails.Count; i++)
@@ -45,13 +44,11 @@ public class meteor_move : MonoBehaviour
                 var ps = trails[i].GetComponent<ParticleSystem>();
                 if(ps != null)
                 {
-                    ps.Stop();
+                   
                     Destroy(ps.gameObject, ps.main.duration + ps.main.startLifetime.constantMax);
                 }
             }
         }
-
-
 
         Destroy(gameObject);
     }
