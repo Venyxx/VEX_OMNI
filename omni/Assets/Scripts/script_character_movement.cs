@@ -10,7 +10,8 @@ using TMPro;
 using UnityEngine.SceneManagement;
 public class script_character_movement : MonoBehaviour
 {
-
+        //this script houses:
+        //the remains of the original character controller. scripts reference this for darkness and light rounds
     public bool holdingLight = false;
     public bool hasLightRounds = false;
     public TextMeshProUGUI lightRoundDisplay;

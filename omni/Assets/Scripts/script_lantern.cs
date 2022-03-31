@@ -9,7 +9,7 @@ public class script_lantern : MonoBehaviour
 
     public int darknessDisplay;
     public TextMeshProUGUI darknessGUI;
-    public TextMeshProUGUI overHeadLantern;
+    
     public float waitTime = 1.0f;
     public float lanternWaitTime = 10f;
     public float darknessWaitTime = 3f;
@@ -19,6 +19,8 @@ public class script_lantern : MonoBehaviour
     public bool hasDarkness = false;
     public bool isSafe = true;
     bool lanternTimeRunner = false;
+    public GameObject particleEffect;
+    public Transform particleSpawn;
 
 
     // Start is called before the first frame update
@@ -58,6 +60,7 @@ public class script_lantern : MonoBehaviour
             {
                 lanternIsLit = false;
                 lanternTimeRunner = false;
+                Destroy(particleEffect);
                 Debug.Log("the lantern turned off");
                 lanternWaitTime = 18;
             }
@@ -67,16 +70,7 @@ public class script_lantern : MonoBehaviour
 
         //DISPLAY FOR ITS ON OR NO DEV BUILD----------------------------
 
-        if (overHeadLantern != null)
-        {
-            if (lanternIsLit)
-            {
-                overHeadLantern.text = "Active";
-            }
-            else
-                overHeadLantern.text = "Inactive";
-
-        }
+        
 
     }
 
@@ -99,9 +93,9 @@ public class script_lantern : MonoBehaviour
         {
             script_character_Movement.hasLightRounds = true;
             hasDarkness = false;
-            Debug.Log("has darkness " + hasDarkness);
+            //Debug.Log("has darkness " + hasDarkness);
             isSafe = true;
-            Debug.Log("can shoot light damage" + script_character_Movement.hasLightRounds);
+            //Debug.Log("can shoot light damage" + script_character_Movement.hasLightRounds);
 
             //neeeds to start counting down----
             if (script_character_Movement.weightOfDarkness > 0)
@@ -144,6 +138,8 @@ public class script_lantern : MonoBehaviour
         if (script_character_Movement.hasLightRounds && lanternIsLit == false && collision.collider.CompareTag("Arrow"))
         {
             Debug.Log("this lanter was off and now it is turning on");
+            Instantiate(particleEffect, particleSpawn.position, Quaternion.identity);
+            //Debug.Log("ran particle");
             script_character_Movement.holdingLight = false;
             Debug.Log("boolHoldingLightChar in Hands" + script_character_Movement.holdingLight);
             lanternIsLit = true;
@@ -152,6 +148,8 @@ public class script_lantern : MonoBehaviour
 
         if (script_character_Movement.holdingLight && collision.collider.CompareTag("Arrow"))
         {
+            Instantiate(particleEffect, particleSpawn.position, Quaternion.identity);
+            //Debug.Log("ran particle");
             script_character_Movement.holdingLight = false;
             lanternIsLit = true;
             lanternChecking();

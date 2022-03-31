@@ -8,7 +8,8 @@ using UnityEngine.SceneManagement;
 
 public class script_third_person_controller : MonoBehaviour
 {
-    // Start is called before the first frame update
+    // This script houses:
+    //player movement, shoot, aim, and eventually pause control
     [SerializeField] private CinemachineVirtualCamera aimVirtualCamera;
     [SerializeField] private float normalSensitivity;
     [SerializeField] private float aimSensitivity;
@@ -68,9 +69,21 @@ public class script_third_person_controller : MonoBehaviour
 
         if (starterAssetsInputs.shoot)
         {
+            Vector3 worldAimTarget = mouseWorldPosition;
+            worldAimTarget.y = transform.position.y;
+
+            Vector3 aimDirection = (worldAimTarget - transform.position).normalized;
+
+
+            transform.forward = Vector3.Lerp(transform.forward, aimDirection, 200f);
+            
+            
+            
             Vector3 aimDir = (mouseWorldPosition - arrowSpawn.position).normalized;
             Instantiate(pfArrowProjectile, arrowSpawn.position, Quaternion.LookRotation(aimDir, Vector3.up));
             starterAssetsInputs.shoot = false;
+
+            
         }
 
         }
