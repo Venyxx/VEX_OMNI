@@ -10,6 +10,11 @@ public class UI_Control : MonoBehaviour
     public static bool PauseGame = false;
 
     
+
+    void Start ()
+    {
+        starterAssetsInputs = GetComponent<StarterAssetsInputs>();
+    }
     void Update()
     {
         if (starterAssetsInputs.escape)

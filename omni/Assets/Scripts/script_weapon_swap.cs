@@ -16,6 +16,7 @@ public class script_weapon_swap : MonoBehaviour
         weaponNameGUI.text = "Bow";
         bow = true;
         sword = false;
+         starterAssetsInputs = GetComponent<StarterAssetsInputs>();
     }
 
     // Update is called once per frame

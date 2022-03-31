@@ -16,14 +16,14 @@ public class script_character_movement : MonoBehaviour
     public TextMeshProUGUI lightRoundDisplay;
 
 
-    public float weightOfDarkness = 0;
+    public float weightOfDarkness = 1;
 
 
     // Update is called once per frame
 
     void Start()
     {
-        
+        weightOfDarkness = 1;
     }
     void Update()
     {

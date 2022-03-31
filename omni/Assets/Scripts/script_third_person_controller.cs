@@ -4,6 +4,7 @@ using UnityEngine;
 using Cinemachine;
 using StarterAssets;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 public class script_third_person_controller : MonoBehaviour
 {
@@ -15,8 +16,14 @@ public class script_third_person_controller : MonoBehaviour
     [SerializeField] private Transform arrowSpawn;
     private StarterAssetsInputs starterAssetsInputs;
     private ThirdPersonController thirdPersonController;
-    private UI_Control ui_control_access;
+    
     [SerializeField] private LayerMask aimColliderLayerMask = new LayerMask();
+
+
+
+    public static bool PauseGame = false;
+    public GameObject pauseUI;
+
 
 
     private void Awake()
@@ -49,7 +56,7 @@ public class script_third_person_controller : MonoBehaviour
             Vector3 aimDirection = (worldAimTarget - transform.position).normalized;
 
 
-            transform.forward = Vector3.Lerp (transform.forward, aimDirection, Time.deltaTime * 20f);
+            transform.forward = Vector3.Lerp(transform.forward, aimDirection, Time.deltaTime * 20f);
         }
         else
         {
@@ -61,12 +68,9 @@ public class script_third_person_controller : MonoBehaviour
         if (starterAssetsInputs.shoot)
         {
             Vector3 aimDir = (mouseWorldPosition - arrowSpawn.position).normalized;
-            Instantiate(pfArrowProjectile, arrowSpawn.position, Quaternion.LookRotation(aimDir,Vector3.up));
+            Instantiate(pfArrowProjectile, arrowSpawn.position, Quaternion.LookRotation(aimDir, Vector3.up));
             starterAssetsInputs.shoot = false;
         }
 
-        
-
-
-    }
+        }
 }
