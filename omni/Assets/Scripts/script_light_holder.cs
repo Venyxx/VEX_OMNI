@@ -58,20 +58,7 @@ public class script_light_holder : MonoBehaviour
         foreach (GameObject lan in lanterns)
         {
             lanternAccess = lan.GetComponent<script_lantern>();
-            /*if (lanternAccess.lanternIsLit == false )
-            {
-                //Debug.Log("lantern is lit "+ lanternAccess.lanternIsLit +  "-----lantern object " + lanternAccess.gameObject );
-                isThereLight = false;
-            }
-            else if (lanternAccess.lanternIsLit == true )
-            {
-                isThereLight = true;
-
-            }
-            */
-
-
-
+           
             if (lanternAccess.lanternIsLit == true)
             {
                 numberChecking ++;

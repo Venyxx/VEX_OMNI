@@ -16,7 +16,7 @@ public class script_arrow_projectile : MonoBehaviour
 
     private void Start ()
     {
-       float speed = 40f;
+       float speed = 70f;
         arrowRigidBody.velocity = transform.forward * speed;
 
     }

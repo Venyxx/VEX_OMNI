@@ -14,7 +14,7 @@ public class script_lantern : MonoBehaviour
     public float lanternWaitTime = 10f;
     public float darknessWaitTime = 3f;
 
-    private script_character_movement script_character_Movement;
+    public script_character_movement script_character_Movement;
     public bool lanternIsLit = false;
     public bool hasDarkness = false;
     public bool isSafe = true;
@@ -99,9 +99,9 @@ public class script_lantern : MonoBehaviour
         {
             script_character_Movement.hasLightRounds = true;
             hasDarkness = false;
-            //Debug.Log("has darkness " + hasDarkness);
+            Debug.Log("has darkness " + hasDarkness);
             isSafe = true;
-            //Debug.Log("can shoot light damage" + playerScriptAccess.hasLightRounds);
+            Debug.Log("can shoot light damage" + script_character_Movement.hasLightRounds);
 
             //neeeds to start counting down----
             if (script_character_Movement.weightOfDarkness > 0)
@@ -127,7 +127,7 @@ public class script_lantern : MonoBehaviour
     void darknessDisplayMethod()
     {
 
-        //darknessDisplay = (int)script_character_Movement.weightOfDarkness;
+        darknessDisplay = (int)script_character_Movement.weightOfDarkness;
         if (script_character_Movement.weightOfDarkness <= 0)
         {
             darknessGUI.text = "";

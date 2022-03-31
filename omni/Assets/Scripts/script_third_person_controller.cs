@@ -16,7 +16,7 @@ public class script_third_person_controller : MonoBehaviour
     [SerializeField] private Transform arrowSpawn;
     private StarterAssetsInputs starterAssetsInputs;
     private ThirdPersonController thirdPersonController;
-    
+     public float darknessCount = 0;
     [SerializeField] private LayerMask aimColliderLayerMask = new LayerMask();
 
 
@@ -31,6 +31,7 @@ public class script_third_person_controller : MonoBehaviour
     {
         starterAssetsInputs = GetComponent<StarterAssetsInputs>();
         thirdPersonController = GetComponent<ThirdPersonController>();
+        darknessCount = 0;
     }
     private void Update()
     {
