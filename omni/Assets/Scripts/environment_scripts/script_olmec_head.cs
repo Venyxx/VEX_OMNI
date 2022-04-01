@@ -25,7 +25,7 @@ public class script_olmec_head : MonoBehaviour
         if (collision.tag == "Player")
         {
             Debug.Log("noticed player");
-            Instantiate(meteor, meteorSpawn.position, Quaternion.identity);
+            Instantiate(meteor, meteorSpawn.transform);
 
         }
     }
