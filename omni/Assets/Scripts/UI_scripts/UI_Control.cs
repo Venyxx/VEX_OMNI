@@ -6,29 +6,20 @@ using StarterAssets;
 public class UI_Control : MonoBehaviour
 {
     public GameObject pauseUI;
-    private StarterAssetsInputs starterAssetsInputs;
+    //public StarterAssetsInputs starterAssetsInputs;
     public static bool PauseGame = false;
 
     
 
     void Start ()
     {
-        starterAssetsInputs = GetComponent<StarterAssetsInputs>();
+        //starterAssetsInputs = GetComponent<StarterAssetsInputs>();
+        PauseGame = false;
+        pauseUI.SetActive(false);
     }
     void Update()
     {
-        if (starterAssetsInputs.escape)
-        {
-            Debug.Log("internal notice esc");
-            if (PauseGame)
-            {
-                Resume();
-            }
-            
-        }else
-            {
-                Pause();
-            }
+       
     }
     public void Resume()
     {
@@ -37,11 +28,11 @@ public class UI_Control : MonoBehaviour
         Time.timeScale = 1f;
         PauseGame = false;
     }
-    void Pause()
+    public void Pause()
     {
         Cursor.lockState = CursorLockMode.None;
         pauseUI.SetActive(true);
-        Time.timeScale = 0f;
+        Time.timeScale = 0.51f;
         PauseGame = true;
     }
     public void Home()

@@ -119,6 +119,7 @@ namespace StarterAssets
 		public void EscapeInput(bool newEscapeState)
 		{
 			escape = newEscapeState;
+			Debug.Log("esc");
 		}
 
 		

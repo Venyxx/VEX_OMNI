@@ -18,20 +18,22 @@ public class script_third_person_controller : MonoBehaviour
     [SerializeField] private Transform arrowSpawn;
     private StarterAssetsInputs starterAssetsInputs;
     private ThirdPersonController thirdPersonController;
+    public UI_Control uI_Control;
     public float darknessCount = 0;
     [SerializeField] private LayerMask aimColliderLayerMask = new LayerMask();
     public Animator theAnimator;
-     
 
 
 
-    public static bool PauseGame = false;
-    public GameObject pauseUI;
+
+    //public static bool PauseGame = false;
+    //public GameObject pauseUI;
 
 
-    private void Start ()
+    private void Start()
     {
-        
+        Debug.Log(starterAssetsInputs.escape);
+        Debug.Log(UI_Control.PauseGame);
     }
     private void Awake()
 
@@ -42,7 +44,7 @@ public class script_third_person_controller : MonoBehaviour
         starterAssetsInputs.bow = true;
         //Debug.Log(starterAssetsInputs.bow);
         //Debug.Log(starterAssetsInputs.sword);
-        
+
     }
     private void Update()
     {
@@ -61,7 +63,7 @@ public class script_third_person_controller : MonoBehaviour
 
 
 
-        
+
         if (starterAssetsInputs.bow)
         {
             //Debug.Log("equipped bow");
@@ -110,10 +112,10 @@ public class script_third_person_controller : MonoBehaviour
         {
             starterAssetsInputs.bow = false;
             aimVirtualCamera.gameObject.SetActive(false);
-            
+
         }
 
-		//type of weapon sword---------
+        //type of weapon sword---------
         if (starterAssetsInputs.sword)
         {
             //Debug.Log("equipped sword");
@@ -134,7 +136,7 @@ public class script_third_person_controller : MonoBehaviour
                 //actually means swing but theyre both bound to left click
                 //swing animation
                 starterAssetsInputs.shoot = false;
-                
+
                 //play animation oneshotalse;
                 //lurch?
                 //set collider active
@@ -147,12 +149,30 @@ public class script_third_person_controller : MonoBehaviour
         {
             swordVirtualCamera.gameObject.SetActive(false);
             starterAssetsInputs.sword = false;
-            
+
 
 
 
         }
 
+
+        if (starterAssetsInputs.escape && UI_Control.PauseGame == true)
+        {
+            starterAssetsInputs.escape = false;
+            Debug.Log("internal notice esc");
+            uI_Control.Resume();
+
+
+
+        }
+
+        if (starterAssetsInputs.escape && UI_Control.PauseGame == false)
+        {
+            starterAssetsInputs.escape = false;
+            Debug.Log("noticed other");
+            uI_Control.Pause();
+            
+        }
 
 
 
