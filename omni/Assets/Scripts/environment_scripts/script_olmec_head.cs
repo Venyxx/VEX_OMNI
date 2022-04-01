@@ -18,10 +18,11 @@ public class script_olmec_head : MonoBehaviour
         
     }
 
-    void OnCollisionEnter (Collision collision)
+    void OnTriggerEnter (Collider collision)
     {
+        Debug.Log("noticed col");
         //this will change eventually, but for now it will just be on player collision
-        if (collision.collider.tag == "Player")
+        if (collision.tag == "Player")
         {
             Debug.Log("noticed player");
             Instantiate(meteor, meteorSpawn.position, Quaternion.identity);

@@ -2,28 +2,29 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
-
+using StarterAssets;
 
 public class script_melee : MonoBehaviour
 {
     // Start is called before the first frame update
-    public script_weapon_swap weaponSwapAccess;
+    
+    private StarterAssetsInputs starterAssetsInputs;
+    
     public TextMeshProUGUI swingGUI;
     void Start()
     {
         swingGUI.text = "";
+        starterAssetsInputs = GetComponent<StarterAssetsInputs>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (weaponSwapAccess.sword == true)
+        if (starterAssetsInputs.shoot && starterAssetsInputs.sword)
         {
-            if (Input.GetKeyDown(KeyCode.Mouse0))
-            {
-                Swing();
-                Invoke("UnSwing", 2f);
-            }
+        	//input sll sword related animations here 
+            
+          
         }
     }
 
@@ -31,13 +32,8 @@ public class script_melee : MonoBehaviour
     {
         //animation
         //collider
-        swingGUI.text = "SWING";
     }
 
-    void UnSwing()
-    {
-        swingGUI.text = "";
-    }
 
 
 }

@@ -76,10 +76,10 @@ public class script_lantern : MonoBehaviour
 
     void OntriggerEnter(Collider other)
     {
-        Debug.Log("lantern light detecting");
+        /*Debug.Log("lantern light detecting");
         Debug.Log("light rounds" + script_character_Movement.hasLightRounds);
         Debug.Log("safety " + isSafe);
-        Debug.Log("darkness  " + hasDarkness);
+        Debug.Log("darkness  " + hasDarkness);*/
         if (other.tag == "Player" && lanternIsLit == true)
         {
             hasDarkness = false;
@@ -137,11 +137,11 @@ public class script_lantern : MonoBehaviour
         //this is if the lantern was previously off--------------
         if (script_character_Movement.hasLightRounds && lanternIsLit == false && collision.collider.CompareTag("Arrow"))
         {
-            Debug.Log("this lanter was off and now it is turning on");
+            //Debug.Log("this lanter was off and now it is turning on");
             Instantiate(particleEffect, particleSpawn.position, Quaternion.identity);
             //Debug.Log("ran particle");
             script_character_Movement.holdingLight = false;
-            Debug.Log("boolHoldingLightChar in Hands" + script_character_Movement.holdingLight);
+           // Debug.Log("boolHoldingLightChar in Hands" + script_character_Movement.holdingLight);
             lanternIsLit = true;
             lanternChecking();
         }
@@ -186,7 +186,7 @@ public class script_lantern : MonoBehaviour
             darknessWaitTime -= Time.deltaTime;
 
         }
-        else if (darknessWaitTime < 0)
+        else if (darknessWaitTime <= 0)
         {
             script_character_Movement.weightOfDarkness++;
             darknessWaitTime = 3f;

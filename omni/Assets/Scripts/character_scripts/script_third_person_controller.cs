@@ -20,6 +20,8 @@ public class script_third_person_controller : MonoBehaviour
     private ThirdPersonController thirdPersonController;
     public float darknessCount = 0;
     [SerializeField] private LayerMask aimColliderLayerMask = new LayerMask();
+    public Animator theAnimator;
+     
 
 
 
@@ -108,10 +110,10 @@ public class script_third_person_controller : MonoBehaviour
         {
             starterAssetsInputs.bow = false;
             aimVirtualCamera.gameObject.SetActive(false);
-            starterAssetsInputs.sword = true;
+            
         }
 
-
+		//type of weapon seord---------
         if (starterAssetsInputs.sword)
         {
             //Debug.Log("equipped sword");
@@ -132,15 +134,29 @@ public class script_third_person_controller : MonoBehaviour
                 //actually means swing but theyre both bound to left click
                 //swing animation
                 starterAssetsInputs.shoot = false;
+                
+                //play animation oneshotalse;
+                //lurch?
+                //set collider active
 
             }
+
+
         }
         else
         {
             swordVirtualCamera.gameObject.SetActive(false);
             starterAssetsInputs.sword = false;
             
+
+
+
         }
+
+
+
+
+
 
 
     }
