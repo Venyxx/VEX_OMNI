@@ -8,6 +8,7 @@ namespace StarterAssets
 	public class StarterAssetsInputs : MonoBehaviour
 	{
 		private script_third_person_controller script_Third_Person_Controller;
+		private ThirdPersonController thirdPersonController;
 		[Header("Character Input Values")]
 		public Vector2 move;
 		public Vector2 look;
@@ -60,7 +61,7 @@ namespace StarterAssets
 
 		public void OnShoot(InputValue value)
 		{
-			Debug.Log("noticed shooot");
+			//Debug.Log("noticed shooot");
 			ShootInput(value.isPressed);
 		}
 
@@ -76,6 +77,7 @@ namespace StarterAssets
 		}
 		public void OnEscape(InputValue value)
 		{
+			Debug.Log("noticed esc");
 			EscapeInput(value.isPressed);
 		}
 #else
@@ -96,6 +98,7 @@ namespace StarterAssets
 		public void JumpInput(bool newJumpState)
 		{
 			jump = newJumpState;
+			//thirdPersonController.doubleJump++;
 		}
 
 		public void SprintInput(bool newSprintState)

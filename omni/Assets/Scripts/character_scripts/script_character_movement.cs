@@ -36,6 +36,7 @@ public class script_character_movement : MonoBehaviour
             lightRoundDisplay.text = "Light Rounds";
         }
         else
+            if (lightRoundDisplay != null)
             lightRoundDisplay.text = "";
 
         if (weightOfDarkness >= 10)

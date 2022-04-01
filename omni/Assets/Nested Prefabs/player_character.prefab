@@ -1314,6 +1314,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   aimVirtualCamera: {fileID: 0}
+  swordVirtualCamera: {fileID: 0}
   normalSensitivity: 1
   aimSensitivity: 0.5
   pfArrowProjectile: {fileID: 4983641342447879440, guid: c1e067edb6b16b3439cc0e3ad1ddd866, type: 3}
@@ -1322,6 +1323,7 @@ MonoBehaviour:
   aimColliderLayerMask:
     serializedVersion: 2
     m_Bits: 577
+  theAnimator: {fileID: 0}
   pauseUI: {fileID: 0}
 --- !u!114 &48148966798091098
 MonoBehaviour:

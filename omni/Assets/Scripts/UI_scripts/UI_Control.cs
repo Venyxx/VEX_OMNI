@@ -19,6 +19,7 @@ public class UI_Control : MonoBehaviour
     {
         if (starterAssetsInputs.escape)
         {
+            Debug.Log("internal notice esc");
             if (PauseGame)
             {
                 Resume();

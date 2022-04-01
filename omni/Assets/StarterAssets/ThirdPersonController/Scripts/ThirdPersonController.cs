@@ -37,6 +37,7 @@ namespace StarterAssets
 		public float JumpTimeout = 0.50f;
 		[Tooltip("Time required to pass before entering the fall state. Useful for walking down stairs")]
 		public float FallTimeout = 0.15f;
+		public int doubleJump = 0;
 
 		[Header("Player Grounded")]
 		[Tooltip("If the character is grounded or not. Not part of the CharacterController built in grounded check")]
@@ -113,6 +114,7 @@ namespace StarterAssets
 			// reset our timeouts on start
 			_jumpTimeoutDelta = JumpTimeout;
 			_fallTimeoutDelta = FallTimeout;
+			doubleJump = 0;
 		}
 
 		private void Update()
@@ -238,6 +240,7 @@ namespace StarterAssets
 		{
 			if (Grounded)
 			{
+				
 				// reset the fall timeout timer
 				_fallTimeoutDelta = FallTimeout;
 

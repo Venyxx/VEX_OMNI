@@ -113,7 +113,7 @@ public class script_third_person_controller : MonoBehaviour
             
         }
 
-		//type of weapon seord---------
+		//type of weapon sword---------
         if (starterAssetsInputs.sword)
         {
             //Debug.Log("equipped sword");
