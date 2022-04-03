@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0, g: 0.99999905, b: 0.99999905, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -3573,7 +3573,7 @@ PrefabInstance:
     - target: {fileID: 6939169187889828558, guid: ca0d49f15e1301e4c9fb5ea721c134b7, type: 3}
       propertyPath: m_Avatar
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 9000000, guid: 36078ab0369161e49a29d349ae3e0739, type: 3}
     - target: {fileID: 6939169187889828558, guid: ca0d49f15e1301e4c9fb5ea721c134b7, type: 3}
       propertyPath: m_Enabled
       value: 1
@@ -3581,7 +3581,7 @@ PrefabInstance:
     - target: {fileID: 6939169187889828558, guid: ca0d49f15e1301e4c9fb5ea721c134b7, type: 3}
       propertyPath: m_Controller
       value: 
-      objectReference: {fileID: 9100000, guid: d3dc5d30fdb36a24d8061b97b325573c, type: 2}
+      objectReference: {fileID: 9100000, guid: 40db3173a05ae3242b1c182a09b0a183, type: 2}
     - target: {fileID: 6939169187889828558, guid: ca0d49f15e1301e4c9fb5ea721c134b7, type: 3}
       propertyPath: m_ApplyRootMotion
       value: 0
