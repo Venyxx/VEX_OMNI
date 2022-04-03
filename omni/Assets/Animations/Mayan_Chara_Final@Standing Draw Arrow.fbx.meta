@@ -5,7 +5,7 @@ ModelImporter:
   internalIDToNameTable:
   - first:
       74: -203655887218126122
-    second: mixamo.com
+    second: Standing Draw Arrow
   externalObjects: {}
   materials:
     materialImportMode: 2
@@ -33,7 +33,36 @@ ModelImporter:
     animationWrapMode: 0
     extraExposedTransformPaths: []
     extraUserProperties: []
-    clipAnimations: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Standing Draw Arrow
+      takeName: mixamo.com
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 24
+      wrapMode: 0
+      orientationOffsetY: -84.11
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     isReadable: 0
   meshes:
     lODScreenPercentages: []
@@ -79,8 +108,1939 @@ ModelImporter:
   importAnimation: 1
   humanDescription:
     serializedVersion: 3
-    human: []
-    skeleton: []
+    human:
+    - boneName: mixamorig:Hips
+      humanName: Hips
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:LeftUpLeg
+      humanName: LeftUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:RightUpLeg
+      humanName: RightUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:LeftLeg
+      humanName: LeftLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:RightLeg
+      humanName: RightLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:LeftFoot
+      humanName: LeftFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:RightFoot
+      humanName: RightFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:Spine
+      humanName: Spine
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:Spine1
+      humanName: Chest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:Neck
+      humanName: Neck
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:Head
+      humanName: Head
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:LeftShoulder
+      humanName: LeftShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:RightShoulder
+      humanName: RightShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:LeftArm
+      humanName: LeftUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:RightArm
+      humanName: RightUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:LeftForeArm
+      humanName: LeftLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:RightForeArm
+      humanName: RightLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:LeftHand
+      humanName: LeftHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:RightHand
+      humanName: RightHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:LeftToeBase
+      humanName: LeftToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:RightToeBase
+      humanName: RightToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:LeftHandThumb1
+      humanName: Left Thumb Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:LeftHandThumb2
+      humanName: Left Thumb Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:LeftHandThumb3
+      humanName: Left Thumb Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:LeftHandIndex1
+      humanName: Left Index Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:LeftHandIndex2
+      humanName: Left Index Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:LeftHandIndex3
+      humanName: Left Index Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:LeftHandMiddle1
+      humanName: Left Middle Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:LeftHandMiddle2
+      humanName: Left Middle Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:LeftHandMiddle3
+      humanName: Left Middle Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:LeftHandRing1
+      humanName: Left Ring Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:LeftHandRing2
+      humanName: Left Ring Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:LeftHandRing3
+      humanName: Left Ring Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:LeftHandPinky1
+      humanName: Left Little Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:LeftHandPinky2
+      humanName: Left Little Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:LeftHandPinky3
+      humanName: Left Little Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:RightHandThumb1
+      humanName: Right Thumb Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:RightHandThumb2
+      humanName: Right Thumb Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:RightHandThumb3
+      humanName: Right Thumb Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:RightHandIndex1
+      humanName: Right Index Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:RightHandIndex2
+      humanName: Right Index Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:RightHandIndex3
+      humanName: Right Index Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:RightHandMiddle1
+      humanName: Right Middle Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:RightHandMiddle2
+      humanName: Right Middle Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:RightHandMiddle3
+      humanName: Right Middle Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:RightHandRing1
+      humanName: Right Ring Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:RightHandRing2
+      humanName: Right Ring Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:RightHandRing3
+      humanName: Right Ring Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:RightHandPinky1
+      humanName: Right Little Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:RightHandPinky2
+      humanName: Right Little Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:RightHandPinky3
+      humanName: Right Little Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:Spine2
+      humanName: UpperChest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    skeleton:
+    - name: Mayan_Chara_Final@Standing Draw Arrow(Clone)
+      parentName: 
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pSphere3
+      parentName: Mayan_Chara_Final@Standing Draw Arrow(Clone)
+      position: {x: -0, y: 0.06954072, z: 5.9604643e-10}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: transform3
+      parentName: pSphere3
+      position: {x: -0, y: -0.06954072, z: -5.9604643e-10}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pCylinder1
+      parentName: Mayan_Chara_Final@Standing Draw Arrow(Clone)
+      position: {x: 0.004031718, y: 0.07720112, z: 0.00027665388}
+      rotation: {x: 0, y: -0, z: -0.45330405, w: 0.891356}
+      scale: {x: 0.15212506, y: 0.21591909, z: 0.080695145}
+    - name: transform36
+      parentName: pCylinder1
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: group1
+      parentName: Mayan_Chara_Final@Standing Draw Arrow(Clone)
+      position: {x: -0.0049001602, y: 0.07865185, z: 0.00003248483}
+      rotation: {x: 0.041694865, y: -0.05683161, z: 0.9975056, w: -0.0037918298}
+      scale: {x: 1, y: -1, z: 1}
+    - name: pasted__pCylinder1
+      parentName: group1
+      position: {x: -0.0005046049, y: -0.00083999155, z: 0.00016549841}
+      rotation: {x: -0.0708761, y: 0.036044434, z: -0.45186874, w: 0.88853365}
+      scale: {x: 0.15212506, y: 0.21591909, z: 0.080695145}
+    - name: transform32
+      parentName: pasted__pCylinder1
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: group2
+      parentName: Mayan_Chara_Final@Standing Draw Arrow(Clone)
+      position: {x: 0.0021254828, y: 0.08081782, z: 0.0010690837}
+      rotation: {x: 0.07533375, y: 0.017160652, z: 0.22144136, w: 0.97210807}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pasted__group1
+      parentName: group2
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0.60480344, w: 0.79637486}
+      scale: {x: 1, y: -1, z: 1}
+    - name: pasted__pasted__pCylinder1
+      parentName: pasted__group1
+      position: {x: -0.0005184373, y: -0.0008589983, z: 1.4901161e-10}
+      rotation: {x: 0, y: -0, z: -0.45330405, w: 0.891356}
+      scale: {x: 0.15212506, y: 0.21591909, z: 0.080695145}
+    - name: transform34
+      parentName: pasted__pasted__pCylinder1
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: group3
+      parentName: Mayan_Chara_Final@Standing Draw Arrow(Clone)
+      position: {x: -0.0013095576, y: 0.07806012, z: 0.0012934504}
+      rotation: {x: 0, y: 0, z: 0.8188765, w: 0.5739697}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pasted__pCylinder11
+      parentName: group3
+      position: {x: 0.0014938068, y: 0.0008641767, z: -0.0022491238}
+      rotation: {x: -0.09887824, y: 0.06715634, z: -0.55781937, w: 0.82131034}
+      scale: {x: 0.15212506, y: 0.21591909, z: 0.080695145}
+    - name: transform31
+      parentName: pasted__pCylinder11
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: group4
+      parentName: Mayan_Chara_Final@Standing Draw Arrow(Clone)
+      position: {x: 0.0044114413, y: 0.079932936, z: -0.00053191005}
+      rotation: {x: -0.113191046, y: 0.030392842, z: -0.25753647, w: 0.9591345}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pasted__group2
+      parentName: group4
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0.07533375, y: 0.017160652, z: 0.22144136, w: 0.97210807}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pasted__pasted__group1
+      parentName: pasted__group2
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0.60480344, w: 0.79637486}
+      scale: {x: 1, y: -1, z: 1}
+    - name: pasted__pasted__pasted__pCylinder1
+      parentName: pasted__pasted__group1
+      position: {x: -0.0005184373, y: -0.0008589983, z: 1.4901161e-10}
+      rotation: {x: -0.07581684, y: 0.03855708, z: -0.45166126, w: 0.8881257}
+      scale: {x: 0.15212506, y: 0.21591909, z: 0.080695145}
+    - name: transform33
+      parentName: pasted__pasted__pasted__pCylinder1
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: group5
+      parentName: Mayan_Chara_Final@Standing Draw Arrow(Clone)
+      position: {x: -0.00093777536, y: 0.08138845, z: 0.00027665374}
+      rotation: {x: 0, y: 0, z: 0.51883066, w: 0.8548771}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pasted__pCylinder12
+      parentName: group5
+      position: {x: -0.0005184373, y: -0.0008589983, z: 1.6763806e-10}
+      rotation: {x: 0.052839227, y: -0.026871683, z: -0.45250687, w: 0.88978845}
+      scale: {x: 0.15212506, y: 0.21591909, z: 0.080695145}
+    - name: transform30
+      parentName: pasted__pCylinder12
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: group6
+      parentName: Mayan_Chara_Final@Standing Draw Arrow(Clone)
+      position: {x: 0.0023904433, y: 0.07867355, z: -0.0019352209}
+      rotation: {x: -0.26181096, y: 0, z: -0, w: 0.9651192}
+      scale: {x: 1, y: 1, z: -1}
+    - name: pasted__pCylinder13
+      parentName: group6
+      position: {x: 0.0016412747, y: -0.0022035742, z: 0.00073300547}
+      rotation: {x: 0.053327072, y: -0.020168781, z: -0.35317814, w: 0.93381727}
+      scale: {x: 0.15212506, y: 0.21591909, z: 0.080695145}
+    - name: transform29
+      parentName: pasted__pCylinder13
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pasted__group11 1
+      parentName: group6
+      position: {x: -0.007290604, y: -0.0007528435, z: 0.00048883643}
+      rotation: {x: 0.041694865, y: -0.05683161, z: 0.9975056, w: -0.0037918298}
+      scale: {x: 1, y: -1, z: 1}
+    - name: pasted__pasted__pCylinder11
+      parentName: pasted__group11 1
+      position: {x: -0.0004490122, y: -0.00032815457, z: 0.0008453472}
+      rotation: {x: 0.057900872, y: 0.0077358917, z: -0.30688897, w: 0.949951}
+      scale: {x: 0.15212506, y: 0.21591909, z: 0.080695145}
+    - name: transform28
+      parentName: pasted__pasted__pCylinder11
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pasted__group21 1
+      parentName: group6
+      position: {x: -0.00026496066, y: 0.0014131233, z: 0.0015254351}
+      rotation: {x: 0.07533375, y: 0.017160652, z: 0.22144136, w: 0.97210807}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pasted__pasted__group11 1
+      parentName: pasted__group21 1
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0.60480344, w: 0.79637486}
+      scale: {x: 1, y: -1, z: 1}
+    - name: pasted__pasted__pasted__pCylinder11
+      parentName: pasted__pasted__group11 1
+      position: {x: -0.00024009556, y: -0.00083460804, z: 0.000351059}
+      rotation: {x: 0.048463624, y: -0.024646444, z: -0.45263353, w: 0.8900375}
+      scale: {x: 0.15212506, y: 0.21591909, z: 0.080695145}
+    - name: transform35
+      parentName: pasted__pasted__pasted__pCylinder11
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pasted__group3
+      parentName: group6
+      position: {x: -0.003700001, y: -0.0013445761, z: 0.001749802}
+      rotation: {x: 0, y: 0, z: 0.8188765, w: 0.5739697}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pasted__pasted__pCylinder12
+      parentName: pasted__group3
+      position: {x: 0.00085456134, y: -0.0025676298, z: -0.002280664}
+      rotation: {x: -0.1464836, y: 0.06308495, z: -0.6988783, w: 0.69723165}
+      scale: {x: 0.15212506, y: 0.21591909, z: 0.080695145}
+    - name: transform38
+      parentName: pasted__pasted__pCylinder12
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pasted__group4
+      parentName: group6
+      position: {x: 0.002020998, y: 0.0005282361, z: -0.00007555842}
+      rotation: {x: -0.113191046, y: 0.030392842, z: -0.25753647, w: 0.9591345}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pasted__pasted__group2
+      parentName: pasted__group4
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0.07533375, y: 0.017160652, z: 0.22144136, w: 0.97210807}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pasted__pasted__pasted__group1
+      parentName: pasted__pasted__group2
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0.60480344, w: 0.79637486}
+      scale: {x: 1, y: -1, z: 1}
+    - name: pasted__pasted__pasted__pasted__pCylinder1
+      parentName: pasted__pasted__pasted__group1
+      position: {x: -0.0005184373, y: -0.0008589983, z: 1.4901161e-10}
+      rotation: {x: 0.017173244, y: -0.005463918, z: -0.5913896, w: 0.8061846}
+      scale: {x: 0.15212506, y: 0.21591909, z: 0.080695145}
+    - name: transform39
+      parentName: pasted__pasted__pasted__pasted__pCylinder1
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pasted__group5
+      parentName: group6
+      position: {x: -0.0033282186, y: 0.0019837522, z: 0.0007330053}
+      rotation: {x: 0, y: 0, z: 0.51883066, w: 0.8548771}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pasted__pasted__pCylinder13
+      parentName: pasted__group5
+      position: {x: -0.0010514357, y: -0.00060750486, z: 0.00038810592}
+      rotation: {x: 0.050549418, y: -0.030964948, z: -0.38074547, w: 0.9227778}
+      scale: {x: 0.15212506, y: 0.21591909, z: 0.080695145}
+    - name: transform37
+      parentName: pasted__pasted__pCylinder13
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pSphere4
+      parentName: Mayan_Chara_Final@Standing Draw Arrow(Clone)
+      position: {x: 0.0010936217, y: 0.05857573, z: 0.003255592}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 0.3621721, y: 0.3621721, z: 0.3621721}
+    - name: transform7
+      parentName: pSphere4
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: group7
+      parentName: Mayan_Chara_Final@Standing Draw Arrow(Clone)
+      position: {x: -0.0009778993, y: 0.05855004, z: 0.0045447294}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pasted__pSphere4
+      parentName: group7
+      position: {x: 0.00014292113, y: 0, z: -0.0012397239}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 0.36555156, y: 0.36555156, z: 0.36555156}
+    - name: transform8
+      parentName: pasted__pSphere4
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: group8
+      parentName: Mayan_Chara_Final@Standing Draw Arrow(Clone)
+      position: {x: -0.0026731929, y: 0.059397686, z: 0.0045447294}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pasted__group7
+      parentName: group8
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pasted__pasted__pSphere4
+      parentName: pasted__group7
+      position: {x: 0.00014157436, y: -0.0003235197, z: -0.0013190672}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 0.3278087, y: 0.3278087, z: 0.3278087}
+    - name: transform9
+      parentName: pasted__pasted__pSphere4
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: group9
+      parentName: Mayan_Chara_Final@Standing Draw Arrow(Clone)
+      position: {x: -0.0041886824, y: 0.06060495, z: 0.0045447294}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pasted__group8
+      parentName: group9
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pasted__pasted__group7
+      parentName: pasted__group8
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pasted__pasted__pasted__pSphere4
+      parentName: pasted__pasted__group7
+      position: {x: 0.00045041187, y: -0.00056799885, z: -0.001684744}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 0.3278087, y: 0.3278087, z: 0.3278087}
+    - name: transform10
+      parentName: pasted__pasted__pasted__pSphere4
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: group10
+      parentName: Mayan_Chara_Final@Standing Draw Arrow(Clone)
+      position: {x: -0.0053188787, y: 0.062351607, z: 0.0045447294}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pasted__group9
+      parentName: group10
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pasted__pasted__group8
+      parentName: pasted__group9
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pasted__pasted__pasted__group7
+      parentName: pasted__pasted__group8
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pasted__pasted__pasted__pasted__pSphere4
+      parentName: pasted__pasted__pasted__group7
+      position: {x: 0.0008892986, y: -0.0009896469, z: -0.0025910484}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 0.3278087, y: 0.3278087, z: 0.3278087}
+    - name: transform11
+      parentName: pasted__pasted__pasted__pasted__pSphere4
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: group11
+      parentName: Mayan_Chara_Final@Standing Draw Arrow(Clone)
+      position: {x: -0.0048308396, y: 0.06396984, z: 0.0045447294}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pasted__group10
+      parentName: group11
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pasted__pasted__group9
+      parentName: pasted__group10
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pasted__pasted__pasted__group8
+      parentName: pasted__pasted__group9
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pasted__pasted__pasted__pasted__group7
+      parentName: pasted__pasted__pasted__group8
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pasted__pasted__pasted__pasted__pasted__pSphere4
+      parentName: pasted__pasted__pasted__pasted__group7
+      position: {x: 0.00013950869, y: -0.0015064096, z: -0.0039399113}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 0.3278087, y: 0.3278087, z: 0.3278087}
+    - name: transform12
+      parentName: pasted__pasted__pasted__pasted__pasted__pSphere4
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: group12
+      parentName: Mayan_Chara_Final@Standing Draw Arrow(Clone)
+      position: {x: 0.0026952373, y: 0.05952612, z: 0.0045447294}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pasted__group11
+      parentName: group12
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pasted__pasted__group10
+      parentName: pasted__group11
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pasted__pasted__pasted__group9
+      parentName: pasted__pasted__group10
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pasted__pasted__pasted__pasted__group8
+      parentName: pasted__pasted__pasted__group9
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pasted__pasted__pasted__pasted__pasted__group7
+      parentName: pasted__pasted__pasted__pasted__group8
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pasted__pasted__pasted__pasted__pasted__pasted__pSphere4
+      parentName: pasted__pasted__pasted__pasted__pasted__group7
+      position: {x: -7.4505804e-11, y: 0, z: -0.0015209633}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 0.34872255, y: 0.34872255, z: 0.34872255}
+    - name: transform13
+      parentName: pasted__pasted__pasted__pasted__pasted__pasted__pSphere4
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: group13
+      parentName: Mayan_Chara_Final@Standing Draw Arrow(Clone)
+      position: {x: 0.0039795507, y: 0.061221417, z: 0.0045447294}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pasted__group12
+      parentName: group13
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pasted__pasted__group11
+      parentName: pasted__group12
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pasted__pasted__pasted__group10
+      parentName: pasted__pasted__group11
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pasted__pasted__pasted__pasted__group9
+      parentName: pasted__pasted__pasted__group10
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pasted__pasted__pasted__pasted__pasted__group8
+      parentName: pasted__pasted__pasted__pasted__group9
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pasted__pasted__pasted__pasted__pasted__pasted__group7
+      parentName: pasted__pasted__pasted__pasted__pasted__group8
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pasted__pasted__pasted__pasted__pasted__pasted__pasted__pSphere4
+      parentName: pasted__pasted__pasted__pasted__pasted__pasted__group7
+      position: {x: -0.00046219313, y: -0.0001611948, z: -0.0021882039}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 0.3278087, y: 0.3278087, z: 0.3278087}
+    - name: transform14
+      parentName: pasted__pasted__pasted__pasted__pasted__pasted__pasted__pSphere4
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: group14
+      parentName: Mayan_Chara_Final@Standing Draw Arrow(Clone)
+      position: {x: 0.005007001, y: 0.06260847, z: 0.0045447294}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pasted__group13
+      parentName: group14
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pasted__pasted__group12
+      parentName: pasted__group13
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pasted__pasted__pasted__group11
+      parentName: pasted__pasted__group12
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pasted__pasted__pasted__pasted__group10
+      parentName: pasted__pasted__pasted__group11
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pasted__pasted__pasted__pasted__pasted__group9
+      parentName: pasted__pasted__pasted__pasted__group10
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pasted__pasted__pasted__pasted__pasted__pasted__group8
+      parentName: pasted__pasted__pasted__pasted__pasted__group9
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pasted__pasted__pasted__pasted__pasted__pasted__pasted__group7
+      parentName: pasted__pasted__pasted__pasted__pasted__pasted__group8
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pSphere4
+      parentName: pasted__pasted__pasted__pasted__pasted__pasted__pasted__group7
+      position: {x: -0.0011832193, y: -0.00017904758, z: -0.0034158279}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 0.3457725, y: 0.3457725, z: 0.3457725}
+    - name: transform15
+      parentName: pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pSphere4
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: group15
+      parentName: Mayan_Chara_Final@Standing Draw Arrow(Clone)
+      position: {x: 0.0034401387, y: 0.0636873, z: 0.0045447294}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pasted__group14
+      parentName: group15
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pasted__pasted__group13
+      parentName: pasted__group14
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pasted__pasted__pasted__group12
+      parentName: pasted__pasted__group13
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pasted__pasted__pasted__pasted__group11
+      parentName: pasted__pasted__pasted__group12
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pasted__pasted__pasted__pasted__pasted__group10
+      parentName: pasted__pasted__pasted__pasted__group11
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pasted__pasted__pasted__pasted__pasted__pasted__group9
+      parentName: pasted__pasted__pasted__pasted__pasted__group10
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pasted__pasted__pasted__pasted__pasted__pasted__pasted__group8
+      parentName: pasted__pasted__pasted__pasted__pasted__pasted__group9
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__group7
+      parentName: pasted__pasted__pasted__pasted__pasted__pasted__pasted__group8
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pSphere4
+      parentName: pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__group7
+      position: {x: 0.00043617561, y: -0.0002534771, z: -0.0048744525}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 0.3278087, y: 0.3278087, z: 0.3278087}
+    - name: transform16
+      parentName: pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pSphere4
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: group16
+      parentName: Mayan_Chara_Final@Standing Draw Arrow(Clone)
+      position: {x: 0.0036701183, y: 0.0636873, z: -0.0019988895}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pasted__group15
+      parentName: group16
+      position: {x: -0.00043617567, y: 0, z: 0.0047882544}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pasted__pasted__group14
+      parentName: pasted__group15
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pasted__pasted__pasted__group13
+      parentName: pasted__pasted__group14
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pasted__pasted__pasted__pasted__group12
+      parentName: pasted__pasted__pasted__group13
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pasted__pasted__pasted__pasted__pasted__group11
+      parentName: pasted__pasted__pasted__pasted__group12
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pasted__pasted__pasted__pasted__pasted__pasted__group10
+      parentName: pasted__pasted__pasted__pasted__pasted__group11
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pasted__pasted__pasted__pasted__pasted__pasted__pasted__group9
+      parentName: pasted__pasted__pasted__pasted__pasted__pasted__group10
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__group8
+      parentName: pasted__pasted__pasted__pasted__pasted__pasted__pasted__group9
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__group7
+      parentName: pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__group8
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pSphere4
+      parentName: pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__group7
+      position: {x: 0.00043617561, y: 0, z: -0.004788254}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 0.35331824, y: 0.35331824, z: 0.35331824}
+    - name: transform17
+      parentName: pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pSphere4
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: group17
+      parentName: Mayan_Chara_Final@Standing Draw Arrow(Clone)
+      position: {x: 0.002268299, y: 0.06366807, z: -0.0033092513}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pasted__group16
+      parentName: group17
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pasted__pasted__group15
+      parentName: pasted__group16
+      position: {x: -0.00043617567, y: 0, z: 0.0047882544}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pasted__pasted__pasted__group14
+      parentName: pasted__pasted__group15
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pasted__pasted__pasted__pasted__group13
+      parentName: pasted__pasted__pasted__group14
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pasted__pasted__pasted__pasted__pasted__group12
+      parentName: pasted__pasted__pasted__pasted__group13
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pasted__pasted__pasted__pasted__pasted__pasted__group11
+      parentName: pasted__pasted__pasted__pasted__pasted__group12
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pasted__pasted__pasted__pasted__pasted__pasted__pasted__group10
+      parentName: pasted__pasted__pasted__pasted__pasted__pasted__group11
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__group9
+      parentName: pasted__pasted__pasted__pasted__pasted__pasted__pasted__group10
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__group8
+      parentName: pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__group9
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__group7
+      parentName: pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__group8
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pSphere4
+      parentName: pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__group7
+      position: {x: 0.00043617561, y: 0, z: -0.004788254}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 0.37202144, y: 0.37202144, z: 0.37202144}
+    - name: transform18
+      parentName: pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pSphere4
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: group18
+      parentName: Mayan_Chara_Final@Standing Draw Arrow(Clone)
+      position: {x: 0.0004310897, y: 0.063668065, z: -0.0044747824}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pasted__group17
+      parentName: group18
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pasted__pasted__group16
+      parentName: pasted__group17
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pasted__pasted__pasted__group15
+      parentName: pasted__pasted__group16
+      position: {x: -0.00043617567, y: 0, z: 0.0047882544}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pasted__pasted__pasted__pasted__group14
+      parentName: pasted__pasted__pasted__group15
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pasted__pasted__pasted__pasted__pasted__group13
+      parentName: pasted__pasted__pasted__pasted__group14
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pasted__pasted__pasted__pasted__pasted__pasted__group12
+      parentName: pasted__pasted__pasted__pasted__pasted__group13
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pasted__pasted__pasted__pasted__pasted__pasted__pasted__group11
+      parentName: pasted__pasted__pasted__pasted__pasted__pasted__group12
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__group10
+      parentName: pasted__pasted__pasted__pasted__pasted__pasted__pasted__group11
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__group9
+      parentName: pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__group10
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__group8
+      parentName: pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__group9
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__group7
+      parentName: pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__group8
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pSphere4
+      parentName: pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__group7
+      position: {x: 0.00053502736, y: 0, z: -0.00436888}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 0.34892213, y: 0.34892213, z: 0.34892213}
+    - name: transform19
+      parentName: pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pSphere4
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: group19
+      parentName: Mayan_Chara_Final@Standing Draw Arrow(Clone)
+      position: {x: -0.0015080725, y: 0.063668065, z: -0.0037774954}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pasted__group18
+      parentName: group19
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pasted__pasted__group17
+      parentName: pasted__group18
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pasted__pasted__pasted__group16
+      parentName: pasted__pasted__group17
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pasted__pasted__pasted__pasted__group15
+      parentName: pasted__pasted__pasted__group16
+      position: {x: -0.00043617567, y: 0, z: 0.0047882544}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pasted__pasted__pasted__pasted__pasted__group14
+      parentName: pasted__pasted__pasted__pasted__group15
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pasted__pasted__pasted__pasted__pasted__pasted__group13
+      parentName: pasted__pasted__pasted__pasted__pasted__group14
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pasted__pasted__pasted__pasted__pasted__pasted__pasted__group12
+      parentName: pasted__pasted__pasted__pasted__pasted__pasted__group13
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__group11
+      parentName: pasted__pasted__pasted__pasted__pasted__pasted__pasted__group12
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__group10
+      parentName: pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__group11
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__group9
+      parentName: pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__group10
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__group8
+      parentName: pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__group9
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__group7
+      parentName: pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__group8
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pSphere4
+      parentName: pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__group7
+      position: {x: 0.0006220531, y: 0, z: -0.004897895}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 0.35084844, y: 0.35084844, z: 0.35084844}
+    - name: transform20
+      parentName: pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pSphere4
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: group20
+      parentName: Mayan_Chara_Final@Standing Draw Arrow(Clone)
+      position: {x: -0.0031586397, y: 0.063668065, z: -0.0029587299}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pasted__group19
+      parentName: group20
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pasted__pasted__group18
+      parentName: pasted__group19
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pasted__pasted__pasted__group17
+      parentName: pasted__pasted__group18
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pasted__pasted__pasted__pasted__group16
+      parentName: pasted__pasted__pasted__group17
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pasted__pasted__pasted__pasted__pasted__group15
+      parentName: pasted__pasted__pasted__pasted__group16
+      position: {x: -0.00043617567, y: 0, z: 0.0047882544}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pasted__pasted__pasted__pasted__pasted__pasted__group14
+      parentName: pasted__pasted__pasted__pasted__pasted__group15
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pasted__pasted__pasted__pasted__pasted__pasted__pasted__group13
+      parentName: pasted__pasted__pasted__pasted__pasted__pasted__group14
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__group12
+      parentName: pasted__pasted__pasted__pasted__pasted__pasted__pasted__group13
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__group11
+      parentName: pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__group12
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__group10
+      parentName: pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__group11
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__group9
+      parentName: pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__group10
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__group8
+      parentName: pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__group9
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__group7
+      parentName: pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__group8
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pSphere4
+      parentName: pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__group7
+      position: {x: 0.0005756843, y: 0, z: -0.0051927}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 0.3278087, y: 0.3278087, z: 0.3278087}
+    - name: transform21
+      parentName: pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pSphere4
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: group21
+      parentName: Mayan_Chara_Final@Standing Draw Arrow(Clone)
+      position: {x: -0.004635846, y: 0.063668065, z: -0.0013885723}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pasted__group20
+      parentName: group21
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pasted__pasted__group19
+      parentName: pasted__group20
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pasted__pasted__pasted__group18
+      parentName: pasted__pasted__group19
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pasted__pasted__pasted__pasted__group17
+      parentName: pasted__pasted__pasted__group18
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pasted__pasted__pasted__pasted__pasted__group16
+      parentName: pasted__pasted__pasted__pasted__group17
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pasted__pasted__pasted__pasted__pasted__pasted__group15
+      parentName: pasted__pasted__pasted__pasted__pasted__group16
+      position: {x: -0.00043617567, y: 0, z: 0.0047882544}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pasted__pasted__pasted__pasted__pasted__pasted__pasted__group14
+      parentName: pasted__pasted__pasted__pasted__pasted__pasted__group15
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__group13
+      parentName: pasted__pasted__pasted__pasted__pasted__pasted__pasted__group14
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__group12
+      parentName: pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__group13
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__group11
+      parentName: pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__group12
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__group10
+      parentName: pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__group11
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__group9
+      parentName: pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__group10
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__group8
+      parentName: pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__group9
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__group7
+      parentName: pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__group8
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pSphere4
+      parentName: pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__group7
+      position: {x: 0.000852105, y: 0, z: -0.005755816}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 0.3278087, y: 0.3278087, z: 0.3278087}
+    - name: transform23
+      parentName: pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pSphere4
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: group22
+      parentName: Mayan_Chara_Final@Standing Draw Arrow(Clone)
+      position: {x: -0.004635846, y: 0.063225284, z: -0.0010641617}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pasted__group21
+      parentName: group22
+      position: {x: -0, y: 0, z: 0.0013022712}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pasted__pasted__group20
+      parentName: pasted__group21
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pasted__pasted__pasted__group19
+      parentName: pasted__pasted__group20
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pasted__pasted__pasted__pasted__group18
+      parentName: pasted__pasted__pasted__group19
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pasted__pasted__pasted__pasted__pasted__group17
+      parentName: pasted__pasted__pasted__pasted__group18
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pasted__pasted__pasted__pasted__pasted__pasted__group16
+      parentName: pasted__pasted__pasted__pasted__pasted__group17
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pasted__pasted__pasted__pasted__pasted__pasted__pasted__group15
+      parentName: pasted__pasted__pasted__pasted__pasted__pasted__group16
+      position: {x: -0.00043617567, y: 0, z: 0.0047882544}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__group14
+      parentName: pasted__pasted__pasted__pasted__pasted__pasted__pasted__group15
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__group13
+      parentName: pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__group14
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__group12
+      parentName: pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__group13
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__group11
+      parentName: pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__group12
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__group10
+      parentName: pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__group11
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__group9
+      parentName: pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__group10
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__group8
+      parentName: pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__group9
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__group7
+      parentName: pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__group8
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pSphere4
+      parentName: pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__group7
+      position: {x: 0.0005756843, y: 0, z: -0.005884092}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 0.3278087, y: 0.3278087, z: 0.3278087}
+    - name: transform22
+      parentName: pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pSphere4
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pCone1
+      parentName: Mayan_Chara_Final@Standing Draw Arrow(Clone)
+      position: {x: -0.00000734644, y: 0.06660902, z: 0.0032586781}
+      rotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
+      scale: {x: 0.6753947, y: 0.3439876, z: 0.6753947}
+    - name: transform26
+      parentName: pCone1
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: group23
+      parentName: Mayan_Chara_Final@Standing Draw Arrow(Clone)
+      position: {x: 0.026764223, y: 0.045205712, z: -0.0012650513}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1.6752716, y: 1.6752716, z: 1.6752716}
+    - name: pasted__group
+      parentName: group23
+      position: {x: -0.019734008, y: -0.016612614, z: 0.01770651}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pasted__pasted__polySurface1
+      parentName: pasted__group
+      position: {x: -0, y: -0.021157837, z: -0.0139206825}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pasted__polySurface2
+      parentName: pasted__pasted__polySurface1
+      position: {x: 0.021300938, y: 0.035653856, z: -0.0036423965}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: transform2
+      parentName: pasted__polySurface2
+      position: {x: -0.021924952, y: -0.035959013, z: 0.0037858274}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pSphere5
+      parentName: Mayan_Chara_Final@Standing Draw Arrow(Clone)
+      position: {x: 0.002998518, y: 0.041291494, z: -0.00004244059}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: polySurface4
+      parentName: pSphere5
+      position: {x: -0.002998518, y: -0.041291494, z: 0.00004244059}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: transform5
+      parentName: polySurface4
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: transform4
+      parentName: pSphere5
+      position: {x: -0.002998518, y: -0.041291494, z: 0.00004244059}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pSphere6
+      parentName: Mayan_Chara_Final@Standing Draw Arrow(Clone)
+      position: {x: 0.002998518, y: 0.041291494, z: -0.00004244059}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: transform6
+      parentName: pSphere6
+      position: {x: -0.002998518, y: -0.041291494, z: 0.00004244059}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pSphere7
+      parentName: Mayan_Chara_Final@Standing Draw Arrow(Clone)
+      position: {x: -0.017958552, y: 0.050358687, z: -0.00012788578}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: transform27
+      parentName: pSphere7
+      position: {x: 0.017958552, y: -0.050358687, z: 0.00012788578}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pTorus1
+      parentName: Mayan_Chara_Final@Standing Draw Arrow(Clone)
+      position: {x: 0.00013286101, y: 0.057832178, z: 0.0033232416}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 0.072336115, y: 0.072336115, z: 0.072336115}
+    - name: transform24
+      parentName: pTorus1
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pCone2
+      parentName: Mayan_Chara_Final@Standing Draw Arrow(Clone)
+      position: {x: -0.000039426246, y: 0.056462616, z: 0.0033209284}
+      rotation: {x: -0.7040923, y: 0.06522279, z: -0.06522279, w: 0.7040923}
+      scale: {x: 0.47758138, y: 0.16513352, z: 1.6124004}
+    - name: transform25
+      parentName: pCone2
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pCone3
+      parentName: Mayan_Chara_Final@Standing Draw Arrow(Clone)
+      position: {x: -0.0004075081, y: 0.06015236, z: -0.00035307722}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: transform40
+      parentName: pCone3
+      position: {x: 0.0004075081, y: -0.06015236, z: 0.00035307722}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pSphere8
+      parentName: Mayan_Chara_Final@Standing Draw Arrow(Clone)
+      position: {x: 0.0000034081936, y: 0.041291494, z: -0.00004244059}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: transform41
+      parentName: pSphere8
+      position: {x: -0.0000034081936, y: -0.041291494, z: 0.00004244059}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pSphere9
+      parentName: Mayan_Chara_Final@Standing Draw Arrow(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mixamorig:Hips
+      parentName: Mayan_Chara_Final@Standing Draw Arrow(Clone)
+      position: {x: 5.820766e-11, y: 0.039316952, z: -0.00023807428}
+      rotation: {x: -0.0000000020008883, y: 0.000000023283064, z: -7.275957e-10, w: 1}
+      scale: {x: 1.0000002, y: 1, z: 1.0000002}
+    - name: mixamorig:Spine
+      parentName: mixamorig:Hips
+      position: {x: -0, y: 0.0037554358, z: -0.000093272254}
+      rotation: {x: -0.012415442, y: -0.000000023579373, z: 0.000000023719744, w: 0.99992293}
+      scale: {x: 1.0000002, y: 1.0000001, z: 1.0000002}
+    - name: mixamorig:Spine1
+      parentName: mixamorig:Spine
+      position: {x: -0, y: 0.004382693, z: 5.075807e-12}
+      rotation: {x: -0.000000009313226, y: 0.000000059345904, z: -0.000000045106543, w: 1}
+      scale: {x: 0.9999998, y: 0.9999999, z: 0.9999998}
+    - name: mixamorig:Spine2
+      parentName: mixamorig:Spine1
+      position: {x: -0, y: 0.005008792, z: 1.7289103e-12}
+      rotation: {x: 0.000000030733645, y: -0.000000035202874, z: 0.0000000107707985, w: 1}
+      scale: {x: 0.9999999, y: 1.0000001, z: 1}
+    - name: mixamorig:Neck
+      parentName: mixamorig:Spine2
+      position: {x: -0, y: 0.0056348857, z: -7.9207176e-11}
+      rotation: {x: 0.012415404, y: 0.000000011640633, z: 1.4453527e-10, w: 0.99992293}
+      scale: {x: 1.0000001, y: 0.9999999, z: 1}
+    - name: mixamorig:Head
+      parentName: mixamorig:Neck
+      position: {x: -0, y: 0.0025461293, z: 0.000029693916}
+      rotation: {x: 0.0000000121071935, y: -0.00000003783498, z: 0.000000011641531, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mixamorig:HeadTop_End
+      parentName: mixamorig:Head
+      position: {x: -0, y: 0.015385747, z: 0.00017943434}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mixamorig:LeftShoulder
+      parentName: mixamorig:Spine2
+      position: {x: -0.002254173, y: 0.0044401786, z: -0.000012280733}
+      rotation: {x: 0.5740867, y: -0.411426, z: 0.57462966, w: 0.4134657}
+      scale: {x: 0.99999994, y: 1.0000004, z: 1.0000005}
+    - name: mixamorig:LeftArm
+      parentName: mixamorig:LeftShoulder
+      position: {x: 8.6869785e-13, y: 0.005159927, z: -9.497105e-11}
+      rotation: {x: -0.13190931, y: 0.000014677644, z: -0.0047020614, w: 0.9912507}
+      scale: {x: 1.0000001, y: 0.99999994, z: 0.9999998}
+    - name: mixamorig:LeftForeArm
+      parentName: mixamorig:LeftArm
+      position: {x: 5.0650087e-12, y: 0.009726005, z: 8.0771475e-12}
+      rotation: {x: -0.04397724, y: 0.0006822559, z: -0.015496082, w: 0.9989121}
+      scale: {x: 1.0000002, y: 1.0000002, z: 1.0000004}
+    - name: mixamorig:LeftHand
+      parentName: mixamorig:LeftForeArm
+      position: {x: 1.0937629e-11, y: 0.013060078, z: -1.3922317e-10}
+      rotation: {x: -0.03635589, y: 0.069320165, z: 0.09818901, w: 0.9920846}
+      scale: {x: 0.9999998, y: 0.9999998, z: 0.99999994}
+    - name: mixamorig:LeftHandThumb1
+      parentName: mixamorig:LeftHand
+      position: {x: 0.0014637415, y: 0.0006591901, z: -0.000043714503}
+      rotation: {x: 0.013664954, y: -0.008009521, z: -0.50001156, w: 0.8658739}
+      scale: {x: 1.0000004, y: 1.0000002, z: 1}
+    - name: mixamorig:LeftHandThumb2
+      parentName: mixamorig:LeftHandThumb1
+      position: {x: -0.0000004143135, y: 0.0012847368, z: 1.1007506e-11}
+      rotation: {x: 0.032825846, y: -0.000000040978183, z: 0.000000051397354, w: 0.99946105}
+      scale: {x: 0.99999994, y: 1.0000002, z: 1}
+    - name: mixamorig:LeftHandThumb3
+      parentName: mixamorig:LeftHandThumb2
+      position: {x: -0.000059191596, y: 0.0017445816, z: 4.733021e-11}
+      rotation: {x: -0.009090572, y: 0.0000000035978283, z: 0.000000024433142, w: 0.9999587}
+      scale: {x: 1.0000004, y: 1.0000001, z: 1.0000005}
+    - name: mixamorig:LeftHandThumb4
+      parentName: mixamorig:LeftHandThumb3
+      position: {x: 0.000059605758, y: 0.0015417404, z: 3.9823825e-11}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mixamorig:LeftHandPinky1
+      parentName: mixamorig:LeftHand
+      position: {x: -0.0013672219, y: 0.0027077072, z: -0.000080396756}
+      rotation: {x: 0.0026888435, y: 0.0061674183, z: 0.006664878, w: 0.9999552}
+      scale: {x: 1.0000002, y: 1.0000005, z: 1.0000001}
+    - name: mixamorig:LeftHandPinky2
+      parentName: mixamorig:LeftHandPinky1
+      position: {x: 0.0000005155203, y: 0.001624132, z: 3.4668747e-11}
+      rotation: {x: -0.018011909, y: 0.000000042840835, z: -0.00000011962946, w: 0.9998378}
+      scale: {x: 1.0000002, y: 1.0000004, z: 1.0000005}
+    - name: mixamorig:LeftHandPinky3
+      parentName: mixamorig:LeftHandPinky2
+      position: {x: 0.0000013321538, y: 0.0012544518, z: 1.979572e-12}
+      rotation: {x: 0.03990614, y: -0.000012075994, z: -0.0006516724, w: 0.9992032}
+      scale: {x: 0.9999998, y: 0.99999994, z: 0.9999997}
+    - name: mixamorig:LeftHandPinky4
+      parentName: mixamorig:LeftHandPinky3
+      position: {x: -0.0000018477601, y: 0.0010503194, z: 3.3172663e-11}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mixamorig:LeftHandIndex1
+      parentName: mixamorig:LeftHand
+      position: {x: 0.0014347252, y: 0.002887081, z: -0.000078804434}
+      rotation: {x: 0.012711001, y: -0.0047214543, z: -0.14179285, w: 0.98980355}
+      scale: {x: 1.0000002, y: 1.0000007, z: 1.0000001}
+    - name: mixamorig:LeftHandIndex2
+      parentName: mixamorig:LeftHandIndex1
+      position: {x: 0.0000019335532, y: 0.001797638, z: 3.2559226e-11}
+      rotation: {x: -0.009795451, y: -0.00000021699813, z: -0.000000034022374, w: 0.9999521}
+      scale: {x: 0.99999994, y: 1, z: 1.0000005}
+    - name: mixamorig:LeftHandIndex3
+      parentName: mixamorig:LeftHandIndex2
+      position: {x: 0.0000010618072, y: 0.0017688834, z: 1.0533681e-11}
+      rotation: {x: -0.03819645, y: 0.000050190873, z: -0.00084899436, w: 0.9992699}
+      scale: {x: 0.99999994, y: 1.0000005, z: 1.0000001}
+    - name: mixamorig:LeftHandIndex4
+      parentName: mixamorig:LeftHandIndex3
+      position: {x: -0.0000029952955, y: 0.001481159, z: 1.711129e-12}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mixamorig:LeftHandMiddle1
+      parentName: mixamorig:LeftHand
+      position: {x: 0.0004387271, y: 0.0033583194, z: -0.000028129627}
+      rotation: {x: 0.022410458, y: -0.0018901748, z: -0.08401922, w: 0.99621034}
+      scale: {x: 1, y: 1.0000002, z: 1}
+    - name: mixamorig:LeftHandMiddle2
+      parentName: mixamorig:LeftHandMiddle1
+      position: {x: 0.00000030384655, y: 0.0019768078, z: 1.1461394e-10}
+      rotation: {x: -0.01008619, y: 0.000000010593793, z: 8.894857e-10, w: 0.99994916}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1.0000006}
+    - name: mixamorig:LeftHandMiddle3
+      parentName: mixamorig:LeftHandMiddle2
+      position: {x: 0.000000068690255, y: 0.0017855926, z: -7.348355e-11}
+      rotation: {x: -0.03871749, y: 0.00000007584649, z: -0.00000005908661, w: 0.9992503}
+      scale: {x: 1, y: 1.0000006, z: 1.0000001}
+    - name: mixamorig:LeftHandMiddle4
+      parentName: mixamorig:LeftHandMiddle3
+      position: {x: -0.00000037257254, y: 0.0015487412, z: 3.7704045e-11}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mixamorig:LeftHandRing1
+      parentName: mixamorig:LeftHand
+      position: {x: -0.0005062305, y: 0.0034880613, z: 0.000000371008}
+      rotation: {x: 0.016907308, y: 0.0006794779, z: 0.014932943, w: 0.99974537}
+      scale: {x: 1, y: 1.0000006, z: 1.0000001}
+    - name: mixamorig:LeftHandRing2
+      parentName: mixamorig:LeftHandRing1
+      position: {x: 0.00000015940554, y: 0.0015968672, z: -6.7647644e-11}
+      rotation: {x: -0.020125922, y: -0.000000093656105, z: 0.000000068097265, w: 0.99979746}
+      scale: {x: 1.0000002, y: 1.0000004, z: 1.0000006}
+    - name: mixamorig:LeftHandRing3
+      parentName: mixamorig:LeftHandRing2
+      position: {x: 0.0000005272504, y: 0.0015886428, z: 2.7908403e-11}
+      rotation: {x: 0.03976266, y: -0.0000033925592, z: -0.00020787455, w: 0.9992092}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1.0000006}
+    - name: mixamorig:LeftHandRing4
+      parentName: mixamorig:LeftHandRing3
+      position: {x: -0.00000068678594, y: 0.0013078619, z: -1.7847323e-12}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mixamorig:RightShoulder
+      parentName: mixamorig:Spine2
+      position: {x: 0.002254173, y: 0.004441042, z: -0.000047042988}
+      rotation: {x: -0.56860054, y: -0.41626856, z: 0.5798482, w: -0.4088889}
+      scale: {x: 1.0000001, y: 1.0000004, z: 1.0000002}
+    - name: mixamorig:RightArm
+      parentName: mixamorig:RightShoulder
+      position: {x: -4.4672013e-12, y: 0.005159927, z: -9.48699e-11}
+      rotation: {x: -0.13194126, y: -0.000020891423, z: 0.0012980994, w: 0.9912567}
+      scale: {x: 1.0000001, y: 1, z: 1.0000001}
+    - name: mixamorig:RightForeArm
+      parentName: mixamorig:RightArm
+      position: {x: 5.962275e-12, y: 0.00972493, z: 1.4243265e-10}
+      rotation: {x: -0.044050116, y: -0.00049126707, z: 0.011142864, w: 0.9989671}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1}
+    - name: mixamorig:RightHand
+      parentName: mixamorig:RightForeArm
+      position: {x: 1.8798237e-11, y: 0.013060111, z: 4.226037e-10}
+      rotation: {x: -0.05209954, y: 0.02577224, z: -0.0951896, w: 0.99376076}
+      scale: {x: 1, y: 1.0000001, z: 1}
+    - name: mixamorig:RightHandPinky1
+      parentName: mixamorig:RightHand
+      position: {x: 0.0013029237, y: 0.0026537084, z: 0.0000029265213}
+      rotation: {x: 0.004685385, y: 0.00085330167, z: -0.017172083, w: 0.9998412}
+      scale: {x: 1, y: 1.0000001, z: 0.99999994}
+    - name: mixamorig:RightHandPinky2
+      parentName: mixamorig:RightHandPinky1
+      position: {x: -0.0000022803029, y: 0.0016349743, z: -2.2020287e-11}
+      rotation: {x: 0.039988823, y: 0.000000027474009, z: -0.000000017666022, w: 0.99920017}
+      scale: {x: 1.0000005, y: 1.0000004, z: 1.0000002}
+    - name: mixamorig:RightHandPinky3
+      parentName: mixamorig:RightHandPinky2
+      position: {x: 0.0000007592097, y: 0.0013054181, z: 3.2938683e-11}
+      rotation: {x: 0.016727725, y: -8.250892e-10, z: -0.00000012126091, w: 0.9998601}
+      scale: {x: 1.0000004, y: 1.0000004, z: 1.0000002}
+    - name: mixamorig:RightHandPinky4
+      parentName: mixamorig:RightHandPinky3
+      position: {x: 0.0000015209974, y: 0.0010812314, z: -5.9077808e-12}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mixamorig:RightHandThumb1
+      parentName: mixamorig:RightHand
+      position: {x: -0.001429835, y: 0.00063786656, z: -0.000077735014}
+      rotation: {x: 0.013650025, y: 0.009932278, z: -0.49592587, w: -0.86820084}
+      scale: {x: 0.9999996, y: 0.9999998, z: 1.0000001}
+    - name: mixamorig:RightHandThumb2
+      parentName: mixamorig:RightHandThumb1
+      position: {x: -0.000021879656, y: 0.0012538813, z: 9.477938e-12}
+      rotation: {x: 0.012084626, y: 0.00000003259628, z: 0.00000013603126, w: 0.999927}
+      scale: {x: 1.0000004, y: 1, z: 0.99999994}
+    - name: mixamorig:RightHandThumb3
+      parentName: mixamorig:RightHandThumb2
+      position: {x: -0.00001593485, y: 0.001753533, z: 6.2162324e-11}
+      rotation: {x: 0.03975868, y: -0.000000005034831, z: -0.00000012532101, w: 0.99920934}
+      scale: {x: 1.0000002, y: 1.0000005, z: 1}
+    - name: mixamorig:RightHandThumb4
+      parentName: mixamorig:RightHandThumb3
+      position: {x: 0.00003781442, y: 0.0015535469, z: -4.649097e-11}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mixamorig:RightHandIndex1
+      parentName: mixamorig:RightHand
+      position: {x: -0.0014782755, y: 0.0028471942, z: -0.000024196353}
+      rotation: {x: -0.0023908685, y: -0.0002299528, z: -0.1347746, w: -0.9908734}
+      scale: {x: 0.99999994, y: 1, z: 1.0000001}
+    - name: mixamorig:RightHandIndex2
+      parentName: mixamorig:RightHandIndex1
+      position: {x: 0.0000012708325, y: 0.0018469079, z: -3.334117e-11}
+      rotation: {x: 0.028674828, y: -0.000000012689267, z: -0.000000023183015, w: 0.9995888}
+      scale: {x: 1.0000001, y: 1.0000004, z: 0.9999998}
+    - name: mixamorig:RightHandIndex3
+      parentName: mixamorig:RightHandIndex2
+      position: {x: -0.0000015797908, y: 0.0017432575, z: 1.5562981e-11}
+      rotation: {x: -0.017235817, y: 0.0000000657005, z: 0.00000007948955, w: 0.99985147}
+      scale: {x: 1.0000001, y: 0.99999994, z: 0.9999998}
+    - name: mixamorig:RightHandIndex4
+      parentName: mixamorig:RightHandIndex3
+      position: {x: 0.00000030896888, y: 0.0014242806, z: -1.9916423e-12}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mixamorig:RightHandRing1
+      parentName: mixamorig:RightHand
+      position: {x: 0.00052628753, y: 0.00322985, z: -0.0000342194}
+      rotation: {x: 0.013553569, y: -0.00011414847, z: -0.008422943, w: 0.99987274}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1}
+    - name: mixamorig:RightHandRing2
+      parentName: mixamorig:RightHandRing1
+      position: {x: -0.0000000052574043, y: 0.0017040282, z: -5.093959e-11}
+      rotation: {x: 0.021218361, y: -0.00000012102822, z: -0.000000047014034, w: 0.9997749}
+      scale: {x: 1.0000002, y: 1.0000004, z: 1}
+    - name: mixamorig:RightHandRing3
+      parentName: mixamorig:RightHandRing2
+      position: {x: -0.00000023268588, y: 0.0016640421, z: 7.7363144e-11}
+      rotation: {x: -0.040726703, y: -0.00000012522938, z: 0.000046316785, w: 0.99917036}
+      scale: {x: 1.0000005, y: 1.0000001, z: 0.99999994}
+    - name: mixamorig:RightHandRing4
+      parentName: mixamorig:RightHandRing3
+      position: {x: 0.00000023796244, y: 0.0014089373, z: -3.99156e-11}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mixamorig:RightHandMiddle1
+      parentName: mixamorig:RightHand
+      position: {x: -0.0003509359, y: 0.0031503555, z: 0.00005647474}
+      rotation: {x: 0.01168116, y: 0.0013337893, z: -0.11342758, w: -0.9934767}
+      scale: {x: 1.0000001, y: 1.0000004, z: 1}
+    - name: mixamorig:RightHandMiddle2
+      parentName: mixamorig:RightHandMiddle1
+      position: {x: 0.0000023450857, y: 0.0019525327, z: -4.776286e-12}
+      rotation: {x: 0.0411745, y: 0.0000001756707, z: 0.00000006057598, w: 0.999152}
+      scale: {x: 1.0000005, y: 1.0000001, z: 0.99999994}
+    - name: mixamorig:RightHandMiddle3
+      parentName: mixamorig:RightHandMiddle2
+      position: {x: -0.00000044334735, y: 0.0018878712, z: -1.5899074e-10}
+      rotation: {x: 0.026411094, y: -0.00000008242174, z: 0.000000016453953, w: 0.99965125}
+      scale: {x: 1.0000011, y: 1.0000015, z: 1.0000001}
+    - name: mixamorig:RightHandMiddle4
+      parentName: mixamorig:RightHandMiddle3
+      position: {x: -0.0000019017332, y: 0.0016459303, z: -3.6917046e-11}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mixamorig:LeftUpLeg
+      parentName: mixamorig:Hips
+      position: {x: -0.0037865564, y: -0.00207592, z: -0.000023402423}
+      rotation: {x: -0.000005262585, y: -0.0031367135, z: 0.9999937, w: -0.0016736496}
+      scale: {x: 1.0000002, y: 1.0000004, z: 1.0000001}
+    - name: mixamorig:LeftLeg
+      parentName: mixamorig:LeftUpLeg
+      position: {x: 3.8184844e-13, y: 0.017632997, z: -1.9658732e-13}
+      rotation: {x: -0.022069208, y: 0.0004164289, z: -0.018862821, w: 0.9995784}
+      scale: {x: 1.0000005, y: 1.0000005, z: 1.0000002}
+    - name: mixamorig:LeftFoot
+      parentName: mixamorig:LeftLeg
+      position: {x: 2.2647812e-11, y: 0.016401056, z: 1.1268085e-11}
+      rotation: {x: 0.5597014, y: -0.008525911, z: 0.005758824, w: 0.8286305}
+      scale: {x: 1.0000004, y: 1.0000001, z: 1.0000004}
+    - name: mixamorig:LeftToeBase
+      parentName: mixamorig:LeftFoot
+      position: {x: 1.2964119e-12, y: 0.0058275633, z: 4.044503e-11}
+      rotation: {x: 0.21576378, y: 0.11550644, z: -0.025712762, w: 0.9692488}
+      scale: {x: 1.0000007, y: 1.0000004, z: 1.0000001}
+    - name: mixamorig:LeftToe_End
+      parentName: mixamorig:LeftToeBase
+      position: {x: -5.0685944e-12, y: 0.002619523, z: -1.1759993e-12}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mixamorig:RightUpLeg
+      parentName: mixamorig:Hips
+      position: {x: 0.0037865564, y: -0.00207592, z: -0.00019619963}
+      rotation: {x: -0.00000026654428, y: 0.00014331241, z: 0.9999986, w: 0.0016736584}
+      scale: {x: 1.0000002, y: 1.0000005, z: 1.0000002}
+    - name: mixamorig:RightLeg
+      parentName: mixamorig:RightUpLeg
+      position: {x: -1.2624723e-12, y: 0.01763265, z: 1.0212581e-13}
+      rotation: {x: -0.02686992, y: -0.0005072036, z: 0.018866021, w: 0.9994608}
+      scale: {x: 0.99999994, y: 1.0000002, z: 1.0000002}
+    - name: mixamorig:RightFoot
+      parentName: mixamorig:RightLeg
+      position: {x: 3.223477e-11, y: 0.016403656, z: -5.3191067e-12}
+      rotation: {x: 0.56322986, y: 0.008463947, z: -0.00576974, w: 0.82623684}
+      scale: {x: 1.0000002, y: 1, z: 1}
+    - name: mixamorig:RightToeBase
+      parentName: mixamorig:RightFoot
+      position: {x: -3.859742e-12, y: 0.0058975304, z: 7.786701e-11}
+      rotation: {x: 0.21312481, y: -0.11653214, z: 0.02561161, w: 0.96971244}
+      scale: {x: 0.99999994, y: 1, z: 1.0000001}
+    - name: mixamorig:RightToe_End
+      parentName: mixamorig:RightToeBase
+      position: {x: 9.70084e-12, y: 0.00262044, z: -1.3186619e-12}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
     armTwist: 0.5
     foreArmTwist: 0.5
     upperLegTwist: 0.5

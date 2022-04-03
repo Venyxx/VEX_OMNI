@@ -22,8 +22,12 @@ public class script_third_person_controller : MonoBehaviour
     public float darknessCount = 0;
     [SerializeField] private LayerMask aimColliderLayerMask = new LayerMask();
     public Animator animator;
+    private int animFiring; 
+    private int animAiming; 
+    private bool shootCheck;
 
     float swapWaitVar = 1;
+    Vector3 mouseWorldPosition;
 
 
 
@@ -36,6 +40,7 @@ public class script_third_person_controller : MonoBehaviour
     {
         Debug.Log(starterAssetsInputs.escape);
         Debug.Log(UI_Control.PauseGame);
+        AssignAnimationIDs();
     }
     private void Awake()
 
@@ -51,7 +56,7 @@ public class script_third_person_controller : MonoBehaviour
     }
     private void Update()
     {
-        Vector3 mouseWorldPosition = Vector3.zero;
+         mouseWorldPosition = Vector3.zero;
         Vector2 screenCenterPoint = new Vector2(Screen.width / 2f, Screen.height / 2f);
         Ray ray = Camera.main.ScreenPointToRay(screenCenterPoint);
         if (Physics.Raycast(ray, out RaycastHit raycastHit, 999f, aimColliderLayerMask))
@@ -64,12 +69,12 @@ public class script_third_person_controller : MonoBehaviour
         //weapon swapping
 
 
-        /*if (!starterAssetsInputs.bow && !starterAssetsInputs.sword)
+        if (!starterAssetsInputs.bow && !starterAssetsInputs.sword)
         {
             animator.SetLayerWeight(2, Mathf.Lerp(animator.GetLayerWeight(2), 1f, Time.deltaTime));
         }
         else
-        animator.SetLayerWeight(2, Mathf.Lerp(animator.GetLayerWeight(2), 0f, Time.deltaTime)); */
+        animator.SetLayerWeight(2, Mathf.Lerp(animator.GetLayerWeight(2), 0f, Time.deltaTime)); 
 
 
 
@@ -83,6 +88,7 @@ public class script_third_person_controller : MonoBehaviour
             starterAssetsInputs.sword = false;
             if (starterAssetsInputs.Aim)
             {
+                animator.SetBool(animAiming, true);
                 aimVirtualCamera.gameObject.SetActive(true);
                 thirdPersonController.SetSensitivity(aimSensitivity);
                 thirdPersonController.SetRotateOnMove(false);
@@ -100,33 +106,31 @@ public class script_third_person_controller : MonoBehaviour
                 aimVirtualCamera.gameObject.SetActive(false);
                 thirdPersonController.SetSensitivity(normalSensitivity);
                 thirdPersonController.SetRotateOnMove(true);
+                animator.SetBool(animAiming, false);
                 
             }
 
-            if (starterAssetsInputs.shoot)
+            if (starterAssetsInputs.shoot && starterAssetsInputs.Aim)
             {
-                Vector3 worldAimTarget = mouseWorldPosition;
-                worldAimTarget.y = transform.position.y;
-
-                Vector3 aimDirection = (worldAimTarget - transform.position).normalized;
-
-
-                transform.forward = Vector3.Lerp(transform.forward, aimDirection, 200f);
-
-
-
-                Vector3 aimDir = (mouseWorldPosition - arrowSpawn.position).normalized;
-                Instantiate(pfArrowProjectile, arrowSpawn.position, Quaternion.LookRotation(aimDir, Vector3.up));
+                animator.SetBool(animFiring, true);
+                shootCheck = true;
+                //Debug.Log(animFiring);
+                Invoke ("FiringTheBow", 0.5f);
                 starterAssetsInputs.shoot = false;
 
-
+                
+            }
+            else if (starterAssetsInputs.shoot == false && shootCheck == true)
+            {
+                Invoke ("waitShoot", .667f);
             }
         }
-        else
+        else 
         {
             starterAssetsInputs.bow = false;
             aimVirtualCamera.gameObject.SetActive(false);
             animator.SetLayerWeight(1, Mathf.Lerp(animator.GetLayerWeight(1), 0f, Time.deltaTime * swapWaitVar));
+            //animator.SetBool(animAiming, false);
 
         }
 
@@ -134,7 +138,7 @@ public class script_third_person_controller : MonoBehaviour
         if (starterAssetsInputs.sword)
         {
             //TEMPPPPPPPPPPPPPPPPPPPP
-            animator.SetLayerWeight(2, Mathf.Lerp(animator.GetLayerWeight(2), 2f, Time.deltaTime * swapWaitVar));
+            animator.SetLayerWeight(3, Mathf.Lerp(animator.GetLayerWeight(3), 2f, Time.deltaTime * swapWaitVar));
             
             //Debug.Log("equipped sword");
             starterAssetsInputs.bow = false;
@@ -167,7 +171,7 @@ public class script_third_person_controller : MonoBehaviour
         {
             swordVirtualCamera.gameObject.SetActive(false);
             starterAssetsInputs.sword = false;
-            animator.SetLayerWeight(2, Mathf.Lerp(animator.GetLayerWeight(2), 0f, Time.deltaTime * swapWaitVar));
+            animator.SetLayerWeight(3, Mathf.Lerp(animator.GetLayerWeight(3), 0f, Time.deltaTime * swapWaitVar));
 
 
 
@@ -193,10 +197,34 @@ public class script_third_person_controller : MonoBehaviour
             
         }
 
+    }
+    private void AssignAnimationIDs()
+		{
+			animFiring = Animator.StringToHash("Firing");
+            animAiming = Animator.StringToHash("Aiming");
+			
+
+		}
+
+
+    private void waitShoot ()
+    {
+        animator.SetBool(animFiring, false);
+        shootCheck = false;
+    }
+    private void FiringTheBow ()
+    {
+         Vector3 worldAimTarget = mouseWorldPosition;
+                worldAimTarget.y = transform.position.y;
+
+                Vector3 aimDirection = (worldAimTarget - transform.position).normalized;
+
+
+                transform.forward = Vector3.Lerp(transform.forward, aimDirection, 200f);
 
 
 
-
-
+                Vector3 aimDir = (mouseWorldPosition - arrowSpawn.position).normalized;
+                Instantiate(pfArrowProjectile, arrowSpawn.position, Quaternion.LookRotation(aimDir, Vector3.up));
     }
 }

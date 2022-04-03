@@ -32,7 +32,10 @@ AnimatorStateTransition:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: 
-  m_Conditions: []
+  m_Conditions:
+  - m_ConditionMode: 2
+    m_ConditionEvent: Aiming
+    m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 8230117582008292585}
   m_Solo: 0
@@ -56,7 +59,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 1
-    m_ConditionEvent: Firing
+    m_ConditionEvent: Aiming
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 8723911785667916513}
@@ -211,14 +214,17 @@ AnimatorStateTransition:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: 
-  m_Conditions: []
+  m_Conditions:
+  - m_ConditionMode: 1
+    m_ConditionEvent: Firing
+    m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 7317048283263766192}
   m_Solo: 0
   m_Mute: 0
   m_IsExit: 0
   serializedVersion: 3
-  m_TransitionDuration: 0.25
+  m_TransitionDuration: 0.04
   m_TransitionOffset: 0
   m_ExitTime: 0.75
   m_HasExitTime: 1
@@ -436,7 +442,7 @@ AnimatorStateMachine:
     m_Position: {x: 230, y: 330, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -7898137309719475823}
-    m_Position: {x: 30, y: 440, z: 0}
+    m_Position: {x: 40, y: 450, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -4403279493359689026}
     m_Position: {x: -170, y: 330, z: 0}
@@ -516,7 +522,7 @@ AnimatorStateTransition:
   m_Mute: 0
   m_IsExit: 0
   serializedVersion: 3
-  m_TransitionDuration: 0.25
+  m_TransitionDuration: 0.04
   m_TransitionOffset: 0
   m_ExitTime: 0.625
   m_HasExitTime: 1
@@ -567,7 +573,7 @@ AnimatorState:
   - {fileID: 3672551234102002685}
   m_StateMachineBehaviours: []
   m_Position: {x: 50, y: 50, z: 0}
-  m_IKOnFeet: 0
+  m_IKOnFeet: 1
   m_WriteDefaultValues: 1
   m_Mirror: 0
   m_SpeedParameterActive: 0
@@ -626,6 +632,12 @@ AnimatorController:
     m_DefaultBool: 0
     m_Controller: {fileID: 0}
   - m_Name: Firing
+    m_Type: 4
+    m_DefaultFloat: 0
+    m_DefaultInt: 0
+    m_DefaultBool: 0
+    m_Controller: {fileID: 0}
+  - m_Name: Aiming
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
@@ -941,7 +953,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 1
-    m_ConditionEvent: Firing
+    m_ConditionEvent: Aiming
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 8723911785667916513}
@@ -1063,10 +1075,10 @@ AnimatorStateMachine:
   m_ChildStates:
   - serializedVersion: 1
     m_State: {fileID: 8723911785667916513}
-    m_Position: {x: 30, y: 360, z: 0}
+    m_Position: {x: 30, y: 350, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 7317048283263766192}
-    m_Position: {x: 30, y: 500, z: 0}
+    m_Position: {x: 280, y: 470, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -6479517921563699393}
     m_Position: {x: 330, y: 210, z: 0}
@@ -1289,7 +1301,7 @@ AnimatorState:
   m_SpeedParameter: 
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
-  m_TimeParameter: 
+  m_TimeParameter: Speed
 --- !u!206 &8732894373883177261
 BlendTree:
   m_ObjectHideFlags: 1
