@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028352, g: 0.22571376, b: 0.30692244, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1912,7 +1912,7 @@ GameObject:
   - component: {fileID: 1417078873}
   - component: {fileID: 1417078872}
   m_Layer: 5
-  m_Name: Concept
+  m_Name: Controls
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1957,8 +1957,17 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Insert game controls here. waiting for final mechanics to be implemented
-    to put in final controls.
+  m_text: 'WASD to move
+
+    Shift to sprint
+
+    Space to jump
+
+    1 for bow -
+    right mouse to aim, left mouse to shoot
+
+    2 for macuahuitl - left mouse to
+    swing/activate'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ac3e3de59661ccc4889d4688103d7bb5, type: 2}
   m_sharedMaterial: {fileID: -5714247441169774101, guid: ac3e3de59661ccc4889d4688103d7bb5, type: 2}

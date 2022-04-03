@@ -8,7 +8,7 @@ public class MainMenuControl : MonoBehaviour
 {
    public void GameStart ()
    {
-SceneManager.LoadScene("scene_maze");
+SceneManager.LoadScene("scene_vs_eclipse");
    }
     
 public void ExitGame ()
