@@ -25,8 +25,6 @@ public class script_third_person_controller : MonoBehaviour
     private int animFiring; 
     private int animAiming; 
     private bool shootCheck;
-    public static bool GameIsPaused = false;
-    public GameObject PauseCanvas;
 
 
     float swapWaitVar = 1;
@@ -42,7 +40,7 @@ public class script_third_person_controller : MonoBehaviour
     private void Start()
     {
         Debug.Log(starterAssetsInputs.escape);
-        Debug.Log(UI_Control.PauseGame);
+        //Debug.Log(UI_Control.PauseGame);
         AssignAnimationIDs();
     }
     private void Awake()
@@ -200,33 +198,8 @@ public class script_third_person_controller : MonoBehaviour
             
         } */
 
-        if (starterAssetsInputs.escape)
-        {
-            if (GameIsPaused)
-            {
-                Resume();
-            }
-            else
-            {
-                Pause();
-            }
-        }
 
 
-
-    }
-    public void Resume()
-    {
-        PauseCanvas.SetActive(false);
-        Time.timeScale = 1f;
-        GameIsPaused = false;
-    }
-
-    public void Pause()
-    {
-        PauseCanvas.SetActive(true);
-        Time.timeScale = 0f;
-        GameIsPaused = true;
     }
     private void AssignAnimationIDs()
 		{

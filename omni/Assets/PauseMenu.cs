@@ -2,17 +2,29 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using StarterAssets;
 
 public class PauseMenu : MonoBehaviour
 {
     // Start is called before the first frame update
+    private StarterAssetsInputs starterAssetsInputs;
     public static bool GameIsPaused = false;
     public GameObject pauseMenuUI;
+
+    private void Start()
+    {
+        Debug.Log(starterAssetsInputs.escape);
+    }
+
+    private void Awake()
+    {
+        starterAssetsInputs = GetComponent<StarterAssetsInputs>();
+    }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape) || Input.GetKeyDown("joystick button 7"))
+        if (starterAssetsInputs.escape)
         {
             if (GameIsPaused)
             {
