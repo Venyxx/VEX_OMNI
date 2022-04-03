@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0.99999905, b: 0.99999905, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -8269,6 +8269,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: object_olmec_head
       objectReference: {fileID: 0}
+    - target: {fileID: 7802720015565692401, guid: 1f89215a1c2bff447b251b4be5231274, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e275310bf612e6043a7303064893339c, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1f89215a1c2bff447b251b4be5231274, type: 3}
 --- !u!1 &1459022609
@@ -12276,6 +12280,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2053531796}
   - component: {fileID: 2053531797}
+  - component: {fileID: 2053531798}
   m_Layer: 5
   m_Name: PauseMenu
   m_TagString: Untagged
@@ -12314,12 +12319,25 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2053531795}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 580c59bcaaabaaf4d9883ef1053aec42, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   pauseUI: {fileID: 2053531795}
+--- !u!114 &2053531798
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2053531795}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fefc6207bd1e1a9498681fad8fbdf465, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pauseMenuUI: {fileID: 2053531795}
 --- !u!1 &2057265525
 GameObject:
   m_ObjectHideFlags: 0
@@ -12838,7 +12856,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: 9a0112217c48f594d9c41a10b2a32217, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
