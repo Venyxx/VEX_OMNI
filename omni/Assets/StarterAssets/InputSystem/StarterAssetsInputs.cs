@@ -61,7 +61,7 @@ namespace StarterAssets
 
 		public void OnShoot(InputValue value)
 		{
-			//Debug.Log("noticed shooot");
+			Debug.Log("noticed shooot");
 			ShootInput(value.isPressed);
 		}
 
