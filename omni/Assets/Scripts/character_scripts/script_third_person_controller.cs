@@ -18,7 +18,7 @@ public class script_third_person_controller : MonoBehaviour
     [SerializeField] private Transform arrowSpawn;
     private StarterAssetsInputs starterAssetsInputs;
     private ThirdPersonController thirdPersonController;
-    public UI_Control uI_Control;
+    //public UI_Control uI_Control;
     public float darknessCount = 0;
     [SerializeField] private LayerMask aimColliderLayerMask = new LayerMask();
     public Animator animator;
@@ -39,7 +39,7 @@ public class script_third_person_controller : MonoBehaviour
     private void Start()
     {
         Debug.Log(starterAssetsInputs.escape);
-        Debug.Log(UI_Control.PauseGame);
+        //Debug.Log(UI_Control.PauseGame);
         AssignAnimationIDs();
     }
     private void Awake()
@@ -179,7 +179,7 @@ public class script_third_person_controller : MonoBehaviour
         }
 
 
-        if (starterAssetsInputs.escape && UI_Control.PauseGame == true)
+       /* if (starterAssetsInputs.escape && UI_Control.PauseGame == true)
         {
             starterAssetsInputs.escape = false;
             Debug.Log("internal notice esc");
@@ -195,7 +195,7 @@ public class script_third_person_controller : MonoBehaviour
             Debug.Log("noticed other");
             uI_Control.Pause();
             
-        }
+        } */
 
     }
     private void AssignAnimationIDs()
