@@ -21,7 +21,9 @@ public class script_third_person_controller : MonoBehaviour
     public UI_Control uI_Control;
     public float darknessCount = 0;
     [SerializeField] private LayerMask aimColliderLayerMask = new LayerMask();
-    public Animator theAnimator;
+    public Animator animator;
+
+    float swapWaitVar = 1;
 
 
 
@@ -42,6 +44,7 @@ public class script_third_person_controller : MonoBehaviour
         thirdPersonController = GetComponent<ThirdPersonController>();
         darknessCount = 0;
         starterAssetsInputs.bow = true;
+        animator = GetComponent<Animator>();
         //Debug.Log(starterAssetsInputs.bow);
         //Debug.Log(starterAssetsInputs.sword);
 
@@ -61,11 +64,21 @@ public class script_third_person_controller : MonoBehaviour
         //weapon swapping
 
 
+        /*if (!starterAssetsInputs.bow && !starterAssetsInputs.sword)
+        {
+            animator.SetLayerWeight(2, Mathf.Lerp(animator.GetLayerWeight(2), 1f, Time.deltaTime));
+        }
+        else
+        animator.SetLayerWeight(2, Mathf.Lerp(animator.GetLayerWeight(2), 0f, Time.deltaTime)); */
 
 
 
         if (starterAssetsInputs.bow)
         {
+            animator.SetLayerWeight(1, Mathf.Lerp(animator.GetLayerWeight(1), 1f, Time.deltaTime * swapWaitVar));
+            
+            
+            
             //Debug.Log("equipped bow");
             starterAssetsInputs.sword = false;
             if (starterAssetsInputs.Aim)
@@ -87,6 +100,7 @@ public class script_third_person_controller : MonoBehaviour
                 aimVirtualCamera.gameObject.SetActive(false);
                 thirdPersonController.SetSensitivity(normalSensitivity);
                 thirdPersonController.SetRotateOnMove(true);
+                
             }
 
             if (starterAssetsInputs.shoot)
@@ -112,12 +126,16 @@ public class script_third_person_controller : MonoBehaviour
         {
             starterAssetsInputs.bow = false;
             aimVirtualCamera.gameObject.SetActive(false);
+            animator.SetLayerWeight(1, Mathf.Lerp(animator.GetLayerWeight(1), 0f, Time.deltaTime * swapWaitVar));
 
         }
 
         //type of weapon sword---------
         if (starterAssetsInputs.sword)
         {
+            //TEMPPPPPPPPPPPPPPPPPPPP
+            animator.SetLayerWeight(2, Mathf.Lerp(animator.GetLayerWeight(2), 2f, Time.deltaTime * swapWaitVar));
+            
             //Debug.Log("equipped sword");
             starterAssetsInputs.bow = false;
             swordVirtualCamera.gameObject.SetActive(true);
@@ -149,6 +167,7 @@ public class script_third_person_controller : MonoBehaviour
         {
             swordVirtualCamera.gameObject.SetActive(false);
             starterAssetsInputs.sword = false;
+            animator.SetLayerWeight(2, Mathf.Lerp(animator.GetLayerWeight(2), 0f, Time.deltaTime * swapWaitVar));
 
 
 
