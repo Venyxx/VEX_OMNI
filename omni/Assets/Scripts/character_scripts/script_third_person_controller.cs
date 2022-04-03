@@ -28,6 +28,7 @@ public class script_third_person_controller : MonoBehaviour
 
     float swapWaitVar = 1;
     Vector3 mouseWorldPosition;
+    public GameObject reticle;
 
 
 
@@ -88,6 +89,8 @@ public class script_third_person_controller : MonoBehaviour
             starterAssetsInputs.sword = false;
             if (starterAssetsInputs.Aim)
             {
+                reticle.SetActive(true);
+                starterAssetsInputs.sprint = false;
                 animator.SetBool(animAiming, true);
                 aimVirtualCamera.gameObject.SetActive(true);
                 thirdPersonController.SetSensitivity(aimSensitivity);
@@ -103,6 +106,7 @@ public class script_third_person_controller : MonoBehaviour
             }
             else
             {
+                reticle.SetActive(false);
                 aimVirtualCamera.gameObject.SetActive(false);
                 thirdPersonController.SetSensitivity(normalSensitivity);
                 thirdPersonController.SetRotateOnMove(true);
@@ -112,6 +116,7 @@ public class script_third_person_controller : MonoBehaviour
 
             if (starterAssetsInputs.shoot && starterAssetsInputs.Aim)
             {
+                starterAssetsInputs.sprint = false;
                 animator.SetBool(animFiring, true);
                 shootCheck = true;
                 //Debug.Log(animFiring);

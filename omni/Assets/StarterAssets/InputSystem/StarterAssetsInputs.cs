@@ -19,6 +19,7 @@ namespace StarterAssets
 		public bool bow;
 		public bool sword;
 		public bool escape;
+		public GameObject reticle;
 
 		[Header("Movement Settings")]
 		public bool analogMovement;
@@ -51,6 +52,9 @@ namespace StarterAssets
 		public void OnSprint(InputValue value)
 		{
 			SprintInput(value.isPressed);
+			reticle.SetActive(false);
+			Aim = false;
+			shoot = false;
 		}
 
 		public void OnAim(InputValue value)

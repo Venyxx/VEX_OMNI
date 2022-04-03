@@ -10,6 +10,7 @@ public class ui_control : MonoBehaviour
     public static bool PauseGame = false;
 
     public GameObject pauseUI;
+    public GameObject reticle;
 
     // Update is called once per frame
     void Update()
@@ -32,12 +33,14 @@ public class ui_control : MonoBehaviour
        Cursor.lockState = CursorLockMode.Locked;
         //time scale was 0? -v
         pauseUI.SetActive(false);
+        reticle.SetActive(true);
         Time.timeScale = 1f;
         PauseGame = false;
     }
     void Pause()
     {
         Cursor.lockState = CursorLockMode.None;
+        reticle.SetActive(false);
         pauseUI.SetActive(true);
         Time.timeScale = 0f;
         PauseGame = true;
