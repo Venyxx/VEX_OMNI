@@ -20,7 +20,7 @@ public class script_lantern : MonoBehaviour
     public bool isSafe = true;
     bool lanternTimeRunner = false;
     public GameObject particleEffect;
-    public Transform particleSpawn;
+    //public Transform particleSpawn;
 
 
     // Start is called before the first frame update
@@ -29,6 +29,7 @@ public class script_lantern : MonoBehaviour
         darknessDisplayMethod();
         GameObject player = GameObject.FindGameObjectWithTag("Player");
         script_character_Movement = player.GetComponent<script_character_movement>();
+        particleEffect.SetActive(false);
 
 
     }
@@ -60,7 +61,7 @@ public class script_lantern : MonoBehaviour
             {
                 lanternIsLit = false;
                 lanternTimeRunner = false;
-                Destroy(particleEffect);
+                particleEffect.SetActive(false);
                 Debug.Log("the lantern turned off");
                 lanternWaitTime = 18;
             }
@@ -121,13 +122,17 @@ public class script_lantern : MonoBehaviour
     void darknessDisplayMethod()
     {
 
-        darknessDisplay = (int)script_character_Movement.weightOfDarkness;
+        if (darknessGUI)
+        {
+            darknessDisplay = (int)script_character_Movement.weightOfDarkness;
         if (script_character_Movement.weightOfDarkness <= 0)
         {
             darknessGUI.text = "";
         }
         else
             darknessGUI.text = "SOMBRE x" + darknessDisplay.ToString();
+        }
+        
     }
 
     void OnCollisionEnter(Collision collision)
@@ -137,8 +142,9 @@ public class script_lantern : MonoBehaviour
         //this is if the lantern was previously off--------------
         if (script_character_Movement.hasLightRounds && lanternIsLit == false && collision.collider.CompareTag("Arrow"))
         {
-            //Debug.Log("this lanter was off and now it is turning on");
-            Instantiate(particleEffect, particleSpawn.position, Quaternion.identity);
+            Debug.Log("this lanter was off and now it is turning on");
+            //Instantiate(particleEffect, particleSpawn.position, Quaternion.identity);
+            particleEffect.SetActive(true);
             //Debug.Log("ran particle");
             script_character_Movement.holdingLight = false;
            // Debug.Log("boolHoldingLightChar in Hands" + script_character_Movement.holdingLight);
@@ -148,8 +154,9 @@ public class script_lantern : MonoBehaviour
 
         if (script_character_Movement.holdingLight && collision.collider.CompareTag("Arrow"))
         {
-            Instantiate(particleEffect, particleSpawn.position, Quaternion.identity);
-            //Debug.Log("ran particle");
+            //Instantiate(particleEffect, particleSpawn.position, Quaternion.identity);
+            particleEffect.SetActive(true);
+            Debug.Log("ran particle");
             script_character_Movement.holdingLight = false;
             lanternIsLit = true;
             lanternChecking();
@@ -189,7 +196,7 @@ public class script_lantern : MonoBehaviour
         else if (darknessWaitTime <= 0)
         {
             script_character_Movement.weightOfDarkness++;
-            darknessWaitTime = 3f;
+            darknessWaitTime = 4f;
             Debug.Log("added one to weight of darkness");
         }
 
