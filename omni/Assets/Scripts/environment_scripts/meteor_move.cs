@@ -53,7 +53,7 @@ public class meteor_move : MonoBehaviour
 
         if( collision.collider.CompareTag("Player"))
         {
-            SceneManager.LoadScene("scene_vs_eclipse");
+            SceneManager.LoadScene("GameOver");
         }
 
         Destroy(gameObject);

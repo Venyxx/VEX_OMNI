@@ -20,6 +20,7 @@ public class script_lantern : MonoBehaviour
     public bool isSafe = true;
     bool lanternTimeRunner = false;
     public GameObject particleEffect;
+    public bool firstLantern;
     //public Transform particleSpawn;
 
 
@@ -195,7 +196,11 @@ public class script_lantern : MonoBehaviour
         }
         else if (darknessWaitTime <= 0)
         {
-            script_character_Movement.weightOfDarkness++;
+           if(firstLantern)
+           {
+               script_character_Movement.weightOfDarkness++;
+           }
+            
             darknessWaitTime = 4f;
             Debug.Log("added one to weight of darkness");
         }
