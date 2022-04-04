@@ -25,7 +25,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6973277216340307206}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 10.33, y: 0.5, z: -1.72}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -49,7 +49,6 @@ MonoBehaviour:
   playerScriptAccess: {fileID: 0}
   lanternAccess: {fileID: 5572128403013945698, guid: 587664025f734e74a9f2cfb9c7f4d6ee, type: 3}
   lanterns: []
-  lightHolderGUI: {fileID: 0}
   waitToCheckLightMax: 5
   waitToCheckLight: 0
 --- !u!65 &6973277216340307201
@@ -63,8 +62,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1, y: 4.000168, z: 1}
+  m_Center: {x: 0, y: 1.4264405, z: 0}
 --- !u!1 &6973277216517192942
 GameObject:
   m_ObjectHideFlags: 0
