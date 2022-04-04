@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class meteor_move : MonoBehaviour
 {
@@ -48,6 +49,11 @@ public class meteor_move : MonoBehaviour
                     Destroy(ps.gameObject, ps.main.duration + ps.main.startLifetime.constantMax);
                 }
             }
+        }
+
+        if( collision.collider.CompareTag("Player"))
+        {
+            SceneManager.LoadScene("scene_vs_eclipse");
         }
 
         Destroy(gameObject);

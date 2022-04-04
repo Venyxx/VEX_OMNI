@@ -41,15 +41,9 @@ public class script_character_movement : MonoBehaviour
 
         if (weightOfDarkness >= 10)
         {
-            SceneManager.LoadScene("scene_maze");
+            SceneManager.LoadScene("scene_vs_eclipse");
         }
 
-
-
-
-
-
-
-
     }
+
 }

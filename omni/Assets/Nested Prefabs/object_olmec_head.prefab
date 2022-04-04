@@ -24,7 +24,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 414636476006339209}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.10000135, y: 57.1, z: 11.600273}
+  m_LocalPosition: {x: 0.10000135, y: 9.8, z: 11.600273}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 414636477580908939}
@@ -92,7 +92,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   meteorSpawn: {fileID: 414636476006339222}
-  meteor: {fileID: 347596692781632778, guid: 0c0749fbe436dd748a54326f9360426c, type: 3}
+  meteor: {fileID: 4452532492927252290, guid: beb7af170efe24342b72b4e8f901db47, type: 3}
 --- !u!65 &1685995200
 BoxCollider:
   m_ObjectHideFlags: 0
