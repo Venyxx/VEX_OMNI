@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028352, g: 0.22571376, b: 0.30692244, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -960,14 +960,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.8773585, g: 0.76008207, b: 0.45937166, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: fd1d5cc6d103a435dae37294425905a2, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 60e7cf8e6d9dd6644b52917a9d9ad8ec, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1762,8 +1762,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7659434e2b4dfc4499e815a8c8623345, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _StartButton: {fileID: 1285358416}
-  _cyclelength: 2
 --- !u!1 &1296969870
 GameObject:
   m_ObjectHideFlags: 0
