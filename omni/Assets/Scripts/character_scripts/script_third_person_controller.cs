@@ -32,7 +32,7 @@ public class script_third_person_controller : MonoBehaviour
     public GameObject sword;
     public GameObject bow;
 
-    public GameObject WinCanvas;
+    //public GameObject WinCanvas;
 
 
 
@@ -251,7 +251,7 @@ public class script_third_person_controller : MonoBehaviour
     {
         if (collider.tag == "Portal")
         {
-           WinCanvas.SetActive(true);
+           //WinCanvas.SetActive(true);
            SceneManager.LoadScene("WinGame");
         }
     }
