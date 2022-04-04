@@ -36,6 +36,7 @@ public class ui_control : MonoBehaviour
         reticle.SetActive(true);
         Time.timeScale = 1f;
         PauseGame = false;
+        AudioListener.pause = false;
     }
     void Pause()
     {
@@ -44,6 +45,7 @@ public class ui_control : MonoBehaviour
         pauseUI.SetActive(true);
         Time.timeScale = 0f;
         PauseGame = true;
+        AudioListener.pause = true;
     }
     public void MainMenu()
     {
