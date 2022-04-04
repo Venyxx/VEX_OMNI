@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class ui_control : MonoBehaviour
 {
     // Start is called before the first frame update
-     // when audio is implemented can deafen with function 
+    // when audio is implemented can deafen with function 
     public static bool PauseGame = false;
 
     public GameObject pauseUI;
@@ -29,8 +29,8 @@ public class ui_control : MonoBehaviour
     }
     public void Resume()
     {
-       Debug.Log("called resume");
-       Cursor.lockState = CursorLockMode.Locked;
+        Debug.Log("called resume");
+        Cursor.lockState = CursorLockMode.Locked;
         //time scale was 0? -v
         pauseUI.SetActive(false);
         reticle.SetActive(true);
@@ -58,5 +58,10 @@ public class ui_control : MonoBehaviour
         Cursor.lockState = CursorLockMode.None;
         Debug.Log("you are quitten");
         Application.Quit();
+    }
+
+    public void RestartGame()
+    {
+        SceneManager.LoadScene("scene_vs_eclipse");
     }
 }

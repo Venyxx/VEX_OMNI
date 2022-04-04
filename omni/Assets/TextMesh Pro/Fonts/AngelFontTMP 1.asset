@@ -56,7 +56,7 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: AngelFontTMP Material
   m_Shader: {fileID: 4800000, guid: 68e6db2ebdc24f95958faec2be5558d6, type: 3}
-  m_ShaderKeywords: GLOW_ON UNDERLAY_ON
+  m_ShaderKeywords: UNDERLAY_ON
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -101,9 +101,9 @@ Material:
     - _FaceDilate: 0.14
     - _FaceUVSpeedX: 0
     - _FaceUVSpeedY: 0
-    - _GlowInner: 1
-    - _GlowOffset: 0.22
-    - _GlowOuter: 0.703
+    - _GlowInner: 0.099
+    - _GlowOffset: 0.27
+    - _GlowOuter: 0
     - _GlowPower: 0.548
     - _GradientScale: 6
     - _LightAngle: 3.1416
@@ -142,7 +142,7 @@ Material:
     - _ClipRect: {r: -32767, g: -32767, b: 32767, a: 32767}
     - _EnvMatrixRotation: {r: 0, g: 0, b: 0, a: 0}
     - _FaceColor: {r: 1, g: 1, b: 1, a: 1}
-    - _GlowColor: {r: 0.13353555, g: 0, b: 0.38679248, a: 0.5}
+    - _GlowColor: {r: 1, g: 0.9111863, b: 0.3254717, a: 0.5}
     - _MaskCoord: {r: 0, g: 0, b: 32767, a: 32767}
     - _OutlineColor: {r: 1, g: 1, b: 1, a: 1}
     - _ReflectFaceColor: {r: 0, g: 0, b: 0, a: 1}
@@ -160,11 +160,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 71c1514a6bd24e1e882cebbe1904ce04, type: 3}
-  m_Name: AngelFontTMP
+  m_Name: AngelFontTMP 1
   m_EditorClassIdentifier: 
-  hashCode: -413470917
+  hashCode: 701738538
   material: {fileID: -3378137358900054319}
-  materialHashCode: -564127685
+  materialHashCode: 797362634
   m_Version: 1.1.0
   m_SourceFontFileGUID: b8af122dbd3a3f944a496a60cfbd2825
   m_SourceFontFile_EditorRef: {fileID: 12800000, guid: b8af122dbd3a3f944a496a60cfbd2825, type: 3}

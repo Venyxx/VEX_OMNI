@@ -252,6 +252,7 @@ public class script_third_person_controller : MonoBehaviour
         if (collider.tag == "Portal")
         {
            WinCanvas.SetActive(true);
+            AudioListener.pause = true;
         }
     }
 }
