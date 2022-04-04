@@ -32,6 +32,8 @@ public class script_third_person_controller : MonoBehaviour
     public GameObject sword;
     public GameObject bow;
 
+    public GameObject WinCanvas;
+
 
 
 
@@ -244,5 +246,12 @@ public class script_third_person_controller : MonoBehaviour
 
                 Vector3 aimDir = (mouseWorldPosition - arrowSpawn.position).normalized;
                 Instantiate(pfArrowProjectile, arrowSpawn.position, Quaternion.LookRotation(aimDir, Vector3.up));
+    }
+    void OnTriggerEnter(Collider collider)
+    {
+        if (collider.tag == "Portal")
+        {
+           WinCanvas.SetActive(true);
+        }
     }
 }
