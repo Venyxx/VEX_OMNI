@@ -9,7 +9,7 @@ public class script_light_holder : MonoBehaviour
     public script_character_movement playerScriptAccess;
     public script_lantern lanternAccess;
     public GameObject[] lanterns;
-    public TextMeshProUGUI lightHolderGUI;
+    //public TextMeshProUGUI lightHolderGUI;
     bool isThereLight;
     public float waitToCheckLightMax = 5;
     public float waitToCheckLight = 0;
@@ -21,7 +21,7 @@ public class script_light_holder : MonoBehaviour
         playerScriptAccess = player.GetComponent<script_character_movement>();
         hasLightInHolder = true;
         Debug.Log(hasLightInHolder);
-        lightHolderGUI.text = "Active";
+        //lightHolderGUI.text = "Active";
     }
 
     // Update is called once per frame
@@ -91,15 +91,15 @@ public class script_light_holder : MonoBehaviour
 
         if (hasLightInHolder == true)
         {
-            lightHolderGUI.text = "Active";
+            //lightHolderGUI.text = "Active";
         }
-        else if (hasLightInHolder == false)
-            lightHolderGUI.text = "Inactive";
+        else if (hasLightInHolder == false){}
+            //lightHolderGUI.text = "Inactive";
     }
 
     void OnCollisionEnter(Collision collision)
     {
-        //Debug.Log("the holder noticed");
+        Debug.Log("the holder noticed");
         //GameObject other = collision.gameObject;
         //this is if the lantern was previously off--------------
         if (collision.collider.CompareTag("Arrow") && hasLightInHolder == true)

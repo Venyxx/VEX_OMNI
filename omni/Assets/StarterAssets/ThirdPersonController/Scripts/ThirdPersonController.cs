@@ -64,7 +64,7 @@ namespace StarterAssets
 		// cinemachine
 		private float _cinemachineTargetYaw;
 		private float _cinemachineTargetPitch;
-
+		private StarterAssetsInputs starterAssetsInputs;
 		// player
 		private float _speed;
 		private float _animationBlend;
@@ -108,6 +108,7 @@ namespace StarterAssets
 			_hasAnimator = TryGetComponent(out _animator);
 			_controller = GetComponent<CharacterController>();
 			_input = GetComponent<StarterAssetsInputs>();
+			starterAssetsInputs = GetComponent<StarterAssetsInputs>();
 
 			AssignAnimationIDs();
 
@@ -268,6 +269,7 @@ namespace StarterAssets
 					{
 						_animator.SetBool(_animIDJump, true);
 					}
+					_input.jump = false;
 				}
 
 				// jump timeout
@@ -302,7 +304,7 @@ namespace StarterAssets
 			// apply gravity over time if under terminal (multiply by delta time twice to linearly speed up over time)
 			if (_verticalVelocity < _terminalVelocity)
 			{
-				_verticalVelocity += Gravity * Time.deltaTime;
+				_verticalVelocity += Gravity * Time.deltaTime ;
 			}
 		}
 
