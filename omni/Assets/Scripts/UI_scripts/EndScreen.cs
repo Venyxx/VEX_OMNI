@@ -7,6 +7,7 @@ public class EndScreen : MonoBehaviour
 {
     public void LoadMenu()
     {
+        Cursor.lockState = CursorLockMode.None;
         Debug.Log("Loading Main Menu...");
         SceneManager.LoadScene("scene_mainmenu");
     }
