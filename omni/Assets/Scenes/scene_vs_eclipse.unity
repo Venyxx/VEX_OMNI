@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0, g: 0.99999905, b: 0.99999905, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -3953,6 +3953,11 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 528281103}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &552826559 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: cc1fb41fb12e99d4386a4d638fa8c0d0, type: 3}
+  m_PrefabInstance: {fileID: 735218930}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &569334754
 GameObject:
   m_ObjectHideFlags: 0
@@ -4361,6 +4366,14 @@ PrefabInstance:
       propertyPath: m_LocalPosition.x
       value: -0.077
       objectReference: {fileID: 0}
+    - target: {fileID: 48148966522840606, guid: ca0d49f15e1301e4c9fb5ea721c134b7, type: 3}
+      propertyPath: bow
+      value: 
+      objectReference: {fileID: 1977563929}
+    - target: {fileID: 48148966522840606, guid: ca0d49f15e1301e4c9fb5ea721c134b7, type: 3}
+      propertyPath: sword
+      value: 
+      objectReference: {fileID: 552826559}
     - target: {fileID: 48148966522840606, guid: ca0d49f15e1301e4c9fb5ea721c134b7, type: 3}
       propertyPath: reticle
       value: 
@@ -11545,6 +11558,11 @@ Transform:
   m_Father: {fileID: 2057265526}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 45, z: 0}
+--- !u!1 &1977563929 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3047423391258866667, guid: ca0d49f15e1301e4c9fb5ea721c134b7, type: 3}
+  m_PrefabInstance: {fileID: 663640845}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1981371878
 GameObject:
   m_ObjectHideFlags: 0

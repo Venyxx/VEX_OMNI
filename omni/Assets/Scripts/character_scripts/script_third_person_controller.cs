@@ -29,6 +29,8 @@ public class script_third_person_controller : MonoBehaviour
     float swapWaitVar = 1;
     Vector3 mouseWorldPosition;
     public GameObject reticle;
+    public GameObject sword;
+    public GameObject bow;
 
 
 
@@ -70,17 +72,20 @@ public class script_third_person_controller : MonoBehaviour
         //weapon swapping
 
 
-        if (!starterAssetsInputs.bow && !starterAssetsInputs.sword)
+        /*if (!starterAssetsInputs.bow && !starterAssetsInputs.sword)
         {
             animator.SetLayerWeight(2, Mathf.Lerp(animator.GetLayerWeight(2), 1f, Time.deltaTime));
         }
         else
-        animator.SetLayerWeight(2, Mathf.Lerp(animator.GetLayerWeight(2), 0f, Time.deltaTime)); 
+        animator.SetLayerWeight(2, Mathf.Lerp(animator.GetLayerWeight(2), 0f, Time.deltaTime)); */
 
 
 
         if (starterAssetsInputs.bow)
         {
+            bow.SetActive(true);
+            sword.SetActive(false);
+            //Debug.Log("bow" + bow + ",sword" + sword);
             animator.SetLayerWeight(1, Mathf.Lerp(animator.GetLayerWeight(1), 1f, Time.deltaTime * swapWaitVar));
             
             
@@ -142,8 +147,11 @@ public class script_third_person_controller : MonoBehaviour
         //type of weapon sword---------
         if (starterAssetsInputs.sword)
         {
-            //TEMPPPPPPPPPPPPPPPPPPPP
-            animator.SetLayerWeight(3, Mathf.Lerp(animator.GetLayerWeight(3), 2f, Time.deltaTime * swapWaitVar));
+            sword.SetActive(true);
+            bow.SetActive(false);
+            //Debug.Log("bow" + bow + ",sword" + sword);
+            
+            animator.SetLayerWeight(3, Mathf.Lerp(animator.GetLayerWeight(3), 1f, Time.deltaTime * swapWaitVar));
             
             //Debug.Log("equipped sword");
             starterAssetsInputs.bow = false;
@@ -162,12 +170,17 @@ public class script_third_person_controller : MonoBehaviour
             {
                 //actually means swing but theyre both bound to left click
                 //swing animation
+                animator.SetBool(animFiring, true);
+                shootCheck = true;
                 starterAssetsInputs.shoot = false;
 
                 //play animation oneshotalse;
                 //lurch?
                 //set collider active
-
+                
+            }else if (starterAssetsInputs.shoot == false && shootCheck == true)
+            {
+                Invoke ("waitShoot", .667f);
             }
 
 

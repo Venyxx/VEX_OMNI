@@ -7,6 +7,8 @@ public class script_olmec_head : MonoBehaviour
     // Start is called before the first frame update
     public Transform meteorSpawn;
     public GameObject meteor;
+    
+
     void Start()
     {
         
@@ -20,10 +22,12 @@ public class script_olmec_head : MonoBehaviour
 
     void OnTriggerEnter (Collider collision)
     {
+        GameObject player = collision.GetComponent<GameObject>();
         Debug.Log("noticed col");
         //this will change eventually, but for now it will just be on player collision
         if (collision.tag == "Player")
         {
+            
             Debug.Log("noticed player");
             Instantiate(meteor, meteorSpawn.transform);
 
