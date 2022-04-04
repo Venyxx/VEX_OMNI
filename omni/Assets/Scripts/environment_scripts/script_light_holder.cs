@@ -14,6 +14,7 @@ public class script_light_holder : MonoBehaviour
     public float waitToCheckLightMax = 5;
     public float waitToCheckLight = 0;
     int numberChecking;
+     public GameObject particleSys;
 
     void Start()
     {
@@ -22,6 +23,7 @@ public class script_light_holder : MonoBehaviour
         hasLightInHolder = true;
         Debug.Log(hasLightInHolder);
         //lightHolderGUI.text = "Active";
+        particleSys.SetActive(true);
     }
 
     // Update is called once per frame
@@ -77,6 +79,7 @@ public class script_light_holder : MonoBehaviour
         numberChecking = 0;
         if (isThereLight == false)
         {
+            particleSys.SetActive(true);
             hasLightInHolder = true;
             Debug.Log("there is no light remaining, adding back " + hasLightInHolder);
 
@@ -104,7 +107,7 @@ public class script_light_holder : MonoBehaviour
         //this is if the lantern was previously off--------------
         if (collision.collider.CompareTag("Arrow") && hasLightInHolder == true)
         {
-
+            particleSys.SetActive(false);
             playerScriptAccess.holdingLight = true;
             Debug.Log("boolHoldingLight in Hands " + playerScriptAccess.holdingLight);
             hasLightInHolder = false;
