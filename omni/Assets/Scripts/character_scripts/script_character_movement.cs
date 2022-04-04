@@ -41,7 +41,7 @@ public class script_character_movement : MonoBehaviour
 
         if (weightOfDarkness >= 10)
         {
-            SceneManager.LoadScene("scene_vs_eclipse");
+            SceneManager.LoadScene("GameOver");
         }
 
     }
