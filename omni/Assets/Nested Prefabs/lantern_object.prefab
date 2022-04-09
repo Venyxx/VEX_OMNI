@@ -48,15 +48,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   darknessDisplay: 0
-  darknessGUI: {fileID: 0}
+  darknessGUI: {fileID: 6426498036235837691, guid: ac2c572f1e9bf0e4c9eb4cc748760161, type: 3}
   waitTime: 1
   lanternWaitTime: 18
   darknessWaitTime: 5
-  script_character_Movement: {fileID: 0}
+  script_character_Movement: {fileID: 6977064899227499359, guid: 66609e3120e349b4ab4753ae6b905215, type: 3}
   lanternIsLit: 0
   hasDarkness: 0
   isSafe: 1
   particleEffect: {fileID: 2198278632967001326}
+  firstLantern: 0
 --- !u!65 &5572128403013945703
 BoxCollider:
   m_ObjectHideFlags: 0

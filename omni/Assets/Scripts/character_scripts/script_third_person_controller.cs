@@ -21,6 +21,7 @@ public class script_third_person_controller : MonoBehaviour
     //public UI_Control uI_Control;
     public float darknessCount = 0;
     [SerializeField] private LayerMask aimColliderLayerMask = new LayerMask();
+
     public Animator animator;
     private int animFiring; 
     private int animAiming; 
@@ -31,6 +32,7 @@ public class script_third_person_controller : MonoBehaviour
     public GameObject reticle;
     public GameObject sword;
     public GameObject bow;
+    public GameObject postprocessing;
 
     //public GameObject WinCanvas;
 
@@ -44,7 +46,8 @@ public class script_third_person_controller : MonoBehaviour
     private void Start()
     {
         Debug.Log(starterAssetsInputs.escape);
-        //Debug.Log(UI_Control.PauseGame);
+        
+                //Debug.Log(UI_Control.PauseGame);
         AssignAnimationIDs();
     }
     private void Awake()
@@ -90,6 +93,7 @@ public class script_third_person_controller : MonoBehaviour
             //Debug.Log("bow" + bow + ",sword" + sword);
             animator.SetLayerWeight(1, Mathf.Lerp(animator.GetLayerWeight(1), 1f, Time.deltaTime * swapWaitVar));
             
+            //ui effects with light and dark
             
             
             //Debug.Log("equipped bow");
