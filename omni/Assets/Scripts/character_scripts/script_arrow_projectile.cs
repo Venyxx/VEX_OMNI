@@ -7,6 +7,8 @@ public class script_arrow_projectile : MonoBehaviour
     // Start is called before the first frame update
     private Rigidbody arrowRigidBody;
     public LayerMask whatIsEnemies;
+    private float despawntime = 10f;
+    private float despawn;
 
     private void Awake ()
     {
@@ -18,15 +20,29 @@ public class script_arrow_projectile : MonoBehaviour
     {
        float speed = 70f;
         arrowRigidBody.velocity = transform.forward * speed;
+        despawn = despawntime;
+        Debug.Log("spawn");
+    }
 
+    private void Update()
+    {
+        if (despawn > 0)
+        {
+            despawn -= despawntime;
+            Debug.Log(despawn);
+        }
+        else if (despawn < 0 )
+        {
+            Destroy(arrowRigidBody);
+            Debug.Log("destroy");
+        }
+        
     }
 
     private void OnCollisonEnter (Collision collision)
     {
-        if (collision.collider.CompareTag("Lantern"))
-        {
-            Destroy(gameObject);
-        }
+        Destroy(arrowRigidBody);
+        Debug.Log("randestrroy");
         
     }
 }

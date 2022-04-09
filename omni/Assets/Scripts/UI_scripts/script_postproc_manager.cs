@@ -31,12 +31,12 @@ public class script_postproc_manager : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        Debug.Log(bloom.intensity.value);
+        //Debug.Log(bloom.intensity.value);
         //vignette.intensity.value = Mathf.Sin(Time.deltaTime);
         //Debug.Log("infixedupdate");
         if (charAccess.weightOfDarkness != internalDarkness)
         {
-            Debug.Log("changing vignette");
+           // Debug.Log("changing vignette");
             vignette.intensity.value = Mathf.Lerp(charAccess.weightOfDarkness / 15, internalDarkness, Time.deltaTime / 2);
             internalDarkness = charAccess.weightOfDarkness;
         }
@@ -49,7 +49,7 @@ public class script_postproc_manager : MonoBehaviour
         {
             chromaticAberration.intensity.value = Mathf.PingPong(Time.time * 6, 8);
             bloom.intensity.value = Mathf.Lerp(normalBloom, upperBloom, 20);
-            Debug.Log(bloom.intensity.value);
+            //Debug.Log(bloom.intensity.value);
             bloomMod = false;
         }
         else

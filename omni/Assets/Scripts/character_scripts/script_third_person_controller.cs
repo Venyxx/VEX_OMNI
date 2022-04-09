@@ -14,7 +14,7 @@ public class script_third_person_controller : MonoBehaviour
     [SerializeField] private CinemachineVirtualCamera swordVirtualCamera;
     [SerializeField] private float normalSensitivity;
     [SerializeField] private float aimSensitivity;
-    [SerializeField] private Transform pfArrowProjectile;
+    [SerializeField] private GameObject pfArrowProjectile;
     [SerializeField] private Transform arrowSpawn;
     private StarterAssetsInputs starterAssetsInputs;
     private ThirdPersonController thirdPersonController;
@@ -73,16 +73,6 @@ public class script_third_person_controller : MonoBehaviour
             mouseWorldPosition = raycastHit.point;
 
         }
-
-        //weapon swapping
-
-
-        /*if (!starterAssetsInputs.bow && !starterAssetsInputs.sword)
-        {
-            animator.SetLayerWeight(2, Mathf.Lerp(animator.GetLayerWeight(2), 1f, Time.deltaTime));
-        }
-        else
-        animator.SetLayerWeight(2, Mathf.Lerp(animator.GetLayerWeight(2), 0f, Time.deltaTime)); */
 
 
 

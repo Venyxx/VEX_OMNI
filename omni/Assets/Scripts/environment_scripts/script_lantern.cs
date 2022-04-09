@@ -144,13 +144,13 @@ public class script_lantern : MonoBehaviour
         if (script_character_Movement.hasLightRounds && lanternIsLit == false && collision.collider.CompareTag("Arrow"))
         {
             Debug.Log("this lanter was off and now it is turning on");
-            //Instantiate(particleEffect, particleSpawn.position, Quaternion.identity);
             particleEffect.SetActive(true);
             //Debug.Log("ran particle");
             script_character_Movement.holdingLight = false;
            // Debug.Log("boolHoldingLightChar in Hands" + script_character_Movement.holdingLight);
             lanternIsLit = true;
             lanternChecking();
+            Destroy(collision.gameObject);
         }
 
         if (script_character_Movement.holdingLight && collision.collider.CompareTag("Arrow"))
@@ -161,6 +161,7 @@ public class script_lantern : MonoBehaviour
             script_character_Movement.holdingLight = false;
             lanternIsLit = true;
             lanternChecking();
+            Destroy(collision.gameObject);
         }
 
 
