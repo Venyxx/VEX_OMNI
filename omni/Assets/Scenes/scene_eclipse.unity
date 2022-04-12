@@ -1846,6 +1846,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1272051226}
     - target: {fileID: 5572128403013945698, guid: 587664025f734e74a9f2cfb9c7f4d6ee, type: 3}
+      propertyPath: firstLantern
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5572128403013945698, guid: 587664025f734e74a9f2cfb9c7f4d6ee, type: 3}
       propertyPath: script_character_Movement
       value: 
       objectReference: {fileID: 48148966185056343}
@@ -4090,6 +4094,10 @@ PrefabInstance:
       propertyPath: playerScriptAccess
       value: 
       objectReference: {fileID: 48148966185056343}
+    - target: {fileID: 6973277216340307201, guid: ea65851da086e854699bc5d4e8ae3063, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6973277216340307203, guid: ea65851da086e854699bc5d4e8ae3063, type: 3}
       propertyPath: m_RootOrder
       value: 2

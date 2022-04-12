@@ -100,12 +100,12 @@ public class script_light_holder : MonoBehaviour
             //lightHolderGUI.text = "Inactive";
     }
 
-    void OnCollisionEnter(Collision collision)
+    void OnTriggerEnter(Collider collider)
     {
         Debug.Log("the holder noticed");
         //GameObject other = collision.gameObject;
         //this is if the lantern was previously off--------------
-        if (collision.collider.CompareTag("Arrow") && hasLightInHolder == true)
+        if (collider.tag == "Player" && hasLightInHolder == true)
         {
             particleSys.SetActive(false);
             playerScriptAccess.holdingLight = true;
