@@ -3,17 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
-
 public class script_lantern : MonoBehaviour
 {
-
     public int darknessDisplay;
     public TextMeshProUGUI darknessGUI;
-    
     public float waitTime = 1.0f;
     public float lanternWaitTime = 10f;
     public float darknessWaitTime = 3f;
-
     public script_character_movement script_character_Movement;
     public bool lanternIsLit = false;
     public bool hasDarkness = false;
@@ -23,7 +19,6 @@ public class script_lantern : MonoBehaviour
     public bool firstLantern;
     //public Transform particleSpawn;
 
-
     // Start is called before the first frame update
     void Start()
     {
@@ -31,8 +26,6 @@ public class script_lantern : MonoBehaviour
         GameObject player = GameObject.FindGameObjectWithTag("Player");
         script_character_Movement = player.GetComponent<script_character_movement>();
         particleEffect.SetActive(false);
-
-
     }
 
     // Update is called once per frame
@@ -49,6 +42,7 @@ public class script_lantern : MonoBehaviour
             darknessChecking();
             //Debug.Log(isSafe);
         }
+        
         else if (isSafe == true)
         {
             hasDarkness = false;
@@ -67,13 +61,7 @@ public class script_lantern : MonoBehaviour
                 lanternWaitTime = 18;
             }
         }
-
-
-
         //DISPLAY FOR ITS ON OR NO DEV BUILD----------------------------
-
-        
-
     }
 
     void OntriggerEnter(Collider other)
@@ -113,8 +101,6 @@ public class script_lantern : MonoBehaviour
                     script_character_Movement.weightOfDarkness -= 1;
                     waitTime = 1.0f;
                 }
-
-
             }
         }
         else
@@ -126,14 +112,15 @@ public class script_lantern : MonoBehaviour
         if (darknessGUI)
         {
             darknessDisplay = (int)script_character_Movement.weightOfDarkness;
-        if (script_character_Movement.weightOfDarkness <= 0)
-        {
-            darknessGUI.text = "";
-        }
-        else
-            darknessGUI.text = "SOMBRE x" + darknessDisplay.ToString();
-        }
         
+            if (script_character_Movement.weightOfDarkness <= 0)
+            {
+                darknessGUI.text = "";
+            }
+
+            else
+                darknessGUI.text = "SOMBRE x" + darknessDisplay.ToString();
+        }
     }
 
     void OnCollisionEnter(Collision collision)
@@ -147,7 +134,7 @@ public class script_lantern : MonoBehaviour
             particleEffect.SetActive(true);
             //Debug.Log("ran particle");
             script_character_Movement.holdingLight = false;
-           // Debug.Log("boolHoldingLightChar in Hands" + script_character_Movement.holdingLight);
+            // Debug.Log("boolHoldingLightChar in Hands" + script_character_Movement.holdingLight);
             lanternIsLit = true;
             lanternChecking();
             Destroy(collision.gameObject);
@@ -163,26 +150,21 @@ public class script_lantern : MonoBehaviour
             lanternChecking();
             Destroy(collision.gameObject);
         }
-
-
     }
 
     void OnTriggerExit(Collider collision)
     {
         if (collision.CompareTag("Player"))
         {
-
             script_character_Movement.hasLightRounds = false;
             Debug.Log("has light rounds" + script_character_Movement.hasLightRounds);
             isSafe = false;
             hasDarkness = true;
         }
-
     }
 
     void lanternChecking()
     {
-
         lanternTimeRunner = true;
     }
 
@@ -193,11 +175,11 @@ public class script_lantern : MonoBehaviour
         {
             //Debug.Log("passed test, wait time : has dark : is safe " + darknessWaitTime + hasDarkness + isSafe);
             darknessWaitTime -= Time.deltaTime;
-
         }
+        
         else if (darknessWaitTime <= 0)
         {
-           if(firstLantern)
+           if (firstLantern)
            {
                script_character_Movement.weightOfDarkness++;
            }
@@ -205,6 +187,5 @@ public class script_lantern : MonoBehaviour
             darknessWaitTime = 4f;
             Debug.Log("added one to weight of darkness");
         }
-
     }
 }

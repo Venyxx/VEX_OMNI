@@ -14,7 +14,7 @@ public class script_light_holder : MonoBehaviour
     public float waitToCheckLightMax = 5;
     public float waitToCheckLight = 0;
     int numberChecking;
-     public GameObject particleSys;
+    public GameObject particleSys;
 
     void Start()
     {
@@ -30,6 +30,7 @@ public class script_light_holder : MonoBehaviour
     void Update()
     {
         waitSpace();
+        
         if (playerScriptAccess.holdingLight == true)
         {
             hasLightInHolder = false;
@@ -42,14 +43,13 @@ public class script_light_holder : MonoBehaviour
             holderChecking();
             waitToCheckLight = waitToCheckLightMax;
         }
+        
         else if (waitToCheckLight > 0)
         {
             waitToCheckLight -= Time.deltaTime;
             
             //Debug.Log ("waiting " + waitToCheckLight);
         }
-
-
     }
 
     void holderChecking()
@@ -65,37 +65,39 @@ public class script_light_holder : MonoBehaviour
             {
                 numberChecking ++;
             }
-             if (numberChecking > 0 || playerScriptAccess.holdingLight == true)
-             {
-                 //somethings is on somewhere
-                 isThereLight = true;
-             } else if (numberChecking <= 0 && playerScriptAccess.holdingLight == false)
-             { 
-                 //no light anywhere
-                 isThereLight = false;
-             }
             
+            if (numberChecking > 0 || playerScriptAccess.holdingLight == true)
+            {
+                //somethings is on somewhere
+                isThereLight = true;
+            } 
+            
+            else if (numberChecking <= 0 && playerScriptAccess.holdingLight == false)
+            { 
+                //no light anywhere
+                isThereLight = false;
+            }
         }
         numberChecking = 0;
+        
         if (isThereLight == false)
         {
             particleSys.SetActive(true);
             hasLightInHolder = true;
             Debug.Log("there is no light remaining, adding back " + hasLightInHolder);
-
         }
+        
         else if (isThereLight == true)
         {
             Debug.Log("there is light");
             hasLightInHolder = false;
         }
-
-
-
+        
         if (hasLightInHolder == true)
         {
             //lightHolderGUI.text = "Active";
         }
+        
         else if (hasLightInHolder == false){}
             //lightHolderGUI.text = "Inactive";
     }
@@ -111,9 +113,6 @@ public class script_light_holder : MonoBehaviour
             playerScriptAccess.holdingLight = true;
             Debug.Log("boolHoldingLight in Hands " + playerScriptAccess.holdingLight);
             hasLightInHolder = false;
-
-
         }
-
     }
 }
