@@ -72,6 +72,7 @@ public class script_lantern : MonoBehaviour
         Debug.Log("darkness  " + hasDarkness);*/
         if (other.tag == "Player" && lanternIsLit == true)
         {
+            script_character_Movement.firstPickLight = false;
             hasDarkness = false;
             isSafe = true;
         }

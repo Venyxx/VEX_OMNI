@@ -1239,9 +1239,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   darknessDisplay: 0
   darknessGUI: {fileID: 1272051226}
-  waitTime: 5
-  lanternWaitTime: 0
-  darknessWaitTime: 5
+  waitTime: 1
+  lanternWaitTime: 10
+  darknessWaitTime: 3
   script_character_Movement: {fileID: 48148966185056343}
   lanternIsLit: 0
   hasDarkness: 0
@@ -1466,6 +1466,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 587664025f734e74a9f2cfb9c7f4d6ee, type: 3}
+--- !u!114 &1234880745 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5572128403013945698, guid: 587664025f734e74a9f2cfb9c7f4d6ee, type: 3}
+  m_PrefabInstance: {fileID: 1584591374}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1083db69fb01ee0488397f25817fc537, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &1272051226 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3380816349371003603, guid: b86ff17568169e848a5cca7dc963423c, type: 3}
@@ -1927,7 +1938,7 @@ PrefabInstance:
       objectReference: {fileID: 48148966185056343}
     - target: {fileID: 5572128403013945699, guid: 587664025f734e74a9f2cfb9c7f4d6ee, type: 3}
       propertyPath: m_Name
-      value: lantern_object
+      value: first_lantern_DONOTRENAME
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 587664025f734e74a9f2cfb9c7f4d6ee, type: 3}
@@ -4166,6 +4177,10 @@ PrefabInstance:
       propertyPath: particleSys
       value: 
       objectReference: {fileID: 335439184}
+    - target: {fileID: 6973277216340307200, guid: ea65851da086e854699bc5d4e8ae3063, type: 3}
+      propertyPath: lanternAccess
+      value: 
+      objectReference: {fileID: 1234880745}
     - target: {fileID: 6973277216340307200, guid: ea65851da086e854699bc5d4e8ae3063, type: 3}
       propertyPath: playerScriptAccess
       value: 

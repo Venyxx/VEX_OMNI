@@ -7,6 +7,7 @@ public class script_light_holder : MonoBehaviour
     // Start is called before the first frame update
     public bool hasLightInHolder = true;
     public script_character_movement playerScriptAccess;
+    //public script_lantern script_Lantern;
     public script_lantern lanternAccess;
     public GameObject[] lanterns;
     //public TextMeshProUGUI lightHolderGUI;
@@ -19,7 +20,9 @@ public class script_light_holder : MonoBehaviour
     void Start()
     {
         GameObject player = GameObject.FindGameObjectWithTag("Player");
+        GameObject lanterns = GameObject.Find("first_lantern_DONOTRENAME");
         playerScriptAccess = player.GetComponent<script_character_movement>();
+        lanternAccess = lanterns.GetComponent<script_lantern>();
         hasLightInHolder = true;
         Debug.Log(hasLightInHolder);
         //lightHolderGUI.text = "Active";
@@ -113,6 +116,17 @@ public class script_light_holder : MonoBehaviour
             playerScriptAccess.holdingLight = true;
             Debug.Log("boolHoldingLight in Hands " + playerScriptAccess.holdingLight);
             hasLightInHolder = false;
+        }
+    }
+    void OnTriggerExit(Collider collision)
+    {
+        if (collision.CompareTag("Player"))
+        {
+            playerScriptAccess.hasLightRounds = false;
+            Debug.Log("has light rounds" + playerScriptAccess.hasLightRounds);
+            lanternAccess.isSafe = false;
+            lanternAccess.hasDarkness = true;
+            playerScriptAccess.firstPickLight = true;
         }
     }
 }
