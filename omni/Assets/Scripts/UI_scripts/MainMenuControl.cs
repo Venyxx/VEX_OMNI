@@ -6,9 +6,16 @@ using UnityEngine.SceneManagement;
 
 public class MainMenuControl : MonoBehaviour
 {
-   public void GameStart ()
+
+    void Update()
+    {
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.None;
+    }
+
+    public void GameStart ()
    {
-SceneManager.LoadScene("scene_vs_eclipse");
+    SceneManager.LoadScene("scene_eclipse");
    }
     
 public void ExitGame ()
@@ -16,4 +23,5 @@ public void ExitGame ()
     Debug.Log("Quitter");
     Application.Quit();
 }
+
 }
