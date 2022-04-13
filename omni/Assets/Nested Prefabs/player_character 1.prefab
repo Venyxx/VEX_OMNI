@@ -2622,8 +2622,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26e54e5a728a9234ab24fcf1460ed8a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MoveSpeed: 2
-  SprintSpeed: 5.335
+  MoveSpeed: 3
+  SprintSpeed: 6
   RotationSmoothTime: 0.12
   SpeedChangeRate: 10
   Sensitivity: 1
@@ -2799,7 +2799,7 @@ MonoBehaviour:
   swordVirtualCamera: {fileID: 0}
   normalSensitivity: 1
   aimSensitivity: 0.5
-  pfArrowProjectile: {fileID: 4983641342447879440, guid: c1e067edb6b16b3439cc0e3ad1ddd866, type: 3}
+  pfArrowProjectile: {fileID: 4983641342447879443, guid: c1e067edb6b16b3439cc0e3ad1ddd866, type: 3}
   arrowSpawn: {fileID: 6977064899542912870}
   darknessCount: 0
   aimColliderLayerMask:
@@ -2824,6 +2824,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   holdingLight: 0
   hasLightRounds: 0
+  firstPickLight: 0
   lightRoundDisplay: {fileID: 0}
   weightOfDarkness: 0
 --- !u!136 &6951460736949060458
@@ -2834,7 +2835,7 @@ CapsuleCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6746270547330435595}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   m_Radius: 0.21284008
   m_Height: 1.723115
@@ -3924,14 +3925,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cc1fb41fb12e99d4386a4d638fa8c0d0, type: 3}
---- !u!4 &7490108266901530641 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: cc1fb41fb12e99d4386a4d638fa8c0d0, type: 3}
-  m_PrefabInstance: {fileID: 6951460736805408762}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &7834545245710824107 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: cc1fb41fb12e99d4386a4d638fa8c0d0, type: 3}
+  m_PrefabInstance: {fileID: 6951460736805408762}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &7490108266901530641 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: cc1fb41fb12e99d4386a4d638fa8c0d0, type: 3}
   m_PrefabInstance: {fileID: 6951460736805408762}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &6951460738120551180
