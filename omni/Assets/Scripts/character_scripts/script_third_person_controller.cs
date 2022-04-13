@@ -248,5 +248,10 @@ public class script_third_person_controller : MonoBehaviour
            //WinCanvas.SetActive(true);
            SceneManager.LoadScene("WinGame");
         }
+
+        if (collider.tag == "Win")
+        {
+            SceneManager.LoadScene("scene_hub");
+        }
     }
 }
