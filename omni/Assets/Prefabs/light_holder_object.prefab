@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 6973277216340307203}
   - component: {fileID: 6973277216340307200}
   - component: {fileID: 6973277216340307201}
+  - component: {fileID: 1011230613}
   m_Layer: 0
   m_Name: light_holder_object
   m_TagString: Untagged
@@ -48,10 +49,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hasLightInHolder: 1
   playerScriptAccess: {fileID: 0}
-  lanternAccess: {fileID: 5572128403013945698, guid: 587664025f734e74a9f2cfb9c7f4d6ee, type: 3}
+  lanternAccess: {fileID: 0}
   lanterns: []
   waitToCheckLightMax: 5
   waitToCheckLight: 0
+  particleSys: {fileID: 4077640698305309723}
 --- !u!65 &6973277216340307201
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -60,11 +62,34 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6973277216340307206}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 4.000168, z: 1}
   m_Center: {x: 0, y: 1.4264405, z: 0}
+--- !u!114 &1011230613
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6973277216340307206}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1083db69fb01ee0488397f25817fc537, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  darknessDisplay: 0
+  darknessGUI: {fileID: 0}
+  waitTime: 1
+  lanternWaitTime: 10
+  darknessWaitTime: 3
+  script_character_Movement: {fileID: 0}
+  lanternIsLit: 0
+  hasDarkness: 0
+  isSafe: 1
+  particleEffect: {fileID: 0}
+  firstLantern: 1
 --- !u!1 &6973277216517192942
 GameObject:
   m_ObjectHideFlags: 0
@@ -203,6 +228,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e0f48b7252f60fc4898c25a22a1ec7b1, type: 3}
+--- !u!1 &4077640698305309723 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1289777833365982131, guid: e0f48b7252f60fc4898c25a22a1ec7b1, type: 3}
+  m_PrefabInstance: {fileID: 2986034469420017576}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &4077640698305309722 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1289777833365982130, guid: e0f48b7252f60fc4898c25a22a1ec7b1, type: 3}

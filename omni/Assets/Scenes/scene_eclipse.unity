@@ -2554,11 +2554,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0f15f5a7247ca75449a5ef39952d1f29, type: 3}
---- !u!1 &335439184 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4077640698305309723, guid: ea65851da086e854699bc5d4e8ae3063, type: 3}
-  m_PrefabInstance: {fileID: 2081014620}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &336057578
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2801,6 +2796,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2091557361}
     m_Modifications:
+    - target: {fileID: 1011230613, guid: ea65851da086e854699bc5d4e8ae3063, type: 3}
+      propertyPath: firstLantern
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6973277216340307200, guid: ea65851da086e854699bc5d4e8ae3063, type: 3}
       propertyPath: particleSys
       value: 
@@ -2899,7 +2898,7 @@ MonoBehaviour:
   hasDarkness: 0
   isSafe: 1
   particleEffect: {fileID: 0}
-  firstLantern: 1
+  firstLantern: 0
 --- !u!4 &369533099 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6973277216340307203, guid: ea65851da086e854699bc5d4e8ae3063, type: 3}
@@ -5628,39 +5627,11 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
---- !u!1 &1011230609 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6973277216340307206, guid: ea65851da086e854699bc5d4e8ae3063, type: 3}
-  m_PrefabInstance: {fileID: 2081014620}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1011230612 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6973277216340307203, guid: ea65851da086e854699bc5d4e8ae3063, type: 3}
   m_PrefabInstance: {fileID: 2081014620}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1011230613
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1011230609}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1083db69fb01ee0488397f25817fc537, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  darknessDisplay: 0
-  darknessGUI: {fileID: 1272051226}
-  waitTime: 1
-  lanternWaitTime: 10
-  darknessWaitTime: 3
-  script_character_Movement: {fileID: 48148966185056343}
-  lanternIsLit: 0
-  hasDarkness: 0
-  isSafe: 1
-  particleEffect: {fileID: 0}
-  firstLantern: 1
 --- !u!1001 &1031957384
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5668,6 +5639,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2091557361}
     m_Modifications:
+    - target: {fileID: 1011230613, guid: ea65851da086e854699bc5d4e8ae3063, type: 3}
+      propertyPath: firstLantern
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6973277216340307200, guid: ea65851da086e854699bc5d4e8ae3063, type: 3}
       propertyPath: particleSys
       value: 
@@ -5766,7 +5741,7 @@ MonoBehaviour:
   hasDarkness: 0
   isSafe: 1
   particleEffect: {fileID: 0}
-  firstLantern: 1
+  firstLantern: 0
 --- !u!4 &1031957388 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6973277216340307203, guid: ea65851da086e854699bc5d4e8ae3063, type: 3}
@@ -8657,6 +8632,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2091557361}
     m_Modifications:
+    - target: {fileID: 1011230613, guid: ea65851da086e854699bc5d4e8ae3063, type: 3}
+      propertyPath: firstLantern
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6973277216340307200, guid: ea65851da086e854699bc5d4e8ae3063, type: 3}
       propertyPath: particleSys
       value: 
@@ -8755,7 +8734,7 @@ MonoBehaviour:
   hasDarkness: 0
   isSafe: 1
   particleEffect: {fileID: 0}
-  firstLantern: 1
+  firstLantern: 0
 --- !u!4 &1436821982 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6973277216340307203, guid: ea65851da086e854699bc5d4e8ae3063, type: 3}
@@ -15936,10 +15915,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2091557361}
     m_Modifications:
-    - target: {fileID: 6973277216340307200, guid: ea65851da086e854699bc5d4e8ae3063, type: 3}
-      propertyPath: particleSys
+    - target: {fileID: 1011230613, guid: ea65851da086e854699bc5d4e8ae3063, type: 3}
+      propertyPath: darknessGUI
       value: 
-      objectReference: {fileID: 335439184}
+      objectReference: {fileID: 1272051226}
+    - target: {fileID: 1011230613, guid: ea65851da086e854699bc5d4e8ae3063, type: 3}
+      propertyPath: script_character_Movement
+      value: 
+      objectReference: {fileID: 48148966185056343}
     - target: {fileID: 6973277216340307200, guid: ea65851da086e854699bc5d4e8ae3063, type: 3}
       propertyPath: lanternAccess
       value: 
@@ -15948,10 +15931,6 @@ PrefabInstance:
       propertyPath: playerScriptAccess
       value: 
       objectReference: {fileID: 48148966185056343}
-    - target: {fileID: 6973277216340307201, guid: ea65851da086e854699bc5d4e8ae3063, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 6973277216340307203, guid: ea65851da086e854699bc5d4e8ae3063, type: 3}
       propertyPath: m_RootOrder
       value: 0
