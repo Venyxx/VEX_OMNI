@@ -62,6 +62,6 @@ public class ui_control : MonoBehaviour
 
     public void RestartGame()
     {
-        SceneManager.LoadScene("scene_vs_eclipse");
+        SceneManager.LoadScene("scene_eclipse");
     }
 }
