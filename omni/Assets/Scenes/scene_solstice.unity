@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.723927, g: 0.5831834, b: 0.23433833, a: 1}
+  m_IndirectSpecularColor: {r: 0.72392344, g: 0.5831812, b: 0.23433758, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -5812,6 +5812,51 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 00010c7c99b019f4ba08202fd06ef4e7, type: 3}
+--- !u!1 &325986043
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 325986045}
+  - component: {fileID: 325986044}
+  m_Layer: 0
+  m_Name: PauseSysterm
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &325986044
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 325986043}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23b9d5efe4525704db16dbfd1b2f4337, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pauseUI: {fileID: 2115912211}
+  reticle: {fileID: 1461713899}
+--- !u!4 &325986045
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 325986043}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -91.760666, y: -7.386593, z: 54.335056}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 27
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &327931427
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20538,6 +20583,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b86ff17568169e848a5cca7dc963423c, type: 3}
+--- !u!1 &2115912211 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8630184846332608284, guid: b86ff17568169e848a5cca7dc963423c, type: 3}
+  m_PrefabInstance: {fileID: 2115912210}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &2123618721 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8773836648317972675, guid: 00010c7c99b019f4ba08202fd06ef4e7, type: 3}
