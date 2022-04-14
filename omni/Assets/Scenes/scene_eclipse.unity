@@ -253,12 +253,12 @@ Transform:
   - {fileID: 268752707}
   - {fileID: 867186168}
   - {fileID: 2069722963}
+  - {fileID: 615754128}
   - {fileID: 1450268044}
   - {fileID: 1552222090}
   - {fileID: 251077407}
-  - {fileID: 819551522}
-  - {fileID: 615754128}
   - {fileID: 2138200047}
+  - {fileID: 819551522}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -14808,21 +14808,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6746270547330435584, guid: 66609e3120e349b4ab4753ae6b905215, type: 3}
-      propertyPath: MoveSpeed
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 6746270547330435584, guid: 66609e3120e349b4ab4753ae6b905215, type: 3}
-      propertyPath: SprintSpeed
-      value: 6
-      objectReference: {fileID: 0}
     - target: {fileID: 6746270547330435595, guid: 66609e3120e349b4ab4753ae6b905215, type: 3}
       propertyPath: m_Name
       value: player_character
-      objectReference: {fileID: 0}
-    - target: {fileID: 6951460736949060458, guid: 66609e3120e349b4ab4753ae6b905215, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6977064899227499359, guid: 66609e3120e349b4ab4753ae6b905215, type: 3}
       propertyPath: lightRoundDisplay
@@ -14837,10 +14825,6 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1068642292}
     - target: {fileID: 6977064900059545115, guid: 66609e3120e349b4ab4753ae6b905215, type: 3}
-      propertyPath: pfArrowProjectile
-      value: 
-      objectReference: {fileID: 4983641342447879443, guid: c1e067edb6b16b3439cc0e3ad1ddd866, type: 3}
-    - target: {fileID: 6977064900059545115, guid: 66609e3120e349b4ab4753ae6b905215, type: 3}
       propertyPath: swordVirtualCamera
       value: 
       objectReference: {fileID: 752477031}
@@ -14848,10 +14832,6 @@ PrefabInstance:
       propertyPath: reticle
       value: 
       objectReference: {fileID: 1682114446}
-    - target: {fileID: 7834545244880057949, guid: 66609e3120e349b4ab4753ae6b905215, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 66609e3120e349b4ab4753ae6b905215, type: 3}
 --- !u!4 &8291415886300213343 stripped
