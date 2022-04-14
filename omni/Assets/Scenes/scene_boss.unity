@@ -2455,13 +2455,25 @@ PrefabInstance:
     m_TransformParent: {fileID: 445205176}
     m_Modifications:
     - target: {fileID: 1011230613, guid: ea65851da086e854699bc5d4e8ae3063, type: 3}
+      propertyPath: waitTime
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1011230613, guid: ea65851da086e854699bc5d4e8ae3063, type: 3}
       propertyPath: darknessGUI
       value: 
       objectReference: {fileID: 1459640255}
     - target: {fileID: 1011230613, guid: ea65851da086e854699bc5d4e8ae3063, type: 3}
       propertyPath: particleEffect
       value: 
-      objectReference: {fileID: 1289777833365982131, guid: e0f48b7252f60fc4898c25a22a1ec7b1, type: 3}
+      objectReference: {fileID: 0}
+    - target: {fileID: 1011230613, guid: ea65851da086e854699bc5d4e8ae3063, type: 3}
+      propertyPath: lanternWaitTime
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1011230613, guid: ea65851da086e854699bc5d4e8ae3063, type: 3}
+      propertyPath: darknessWaitTime
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 1011230613, guid: ea65851da086e854699bc5d4e8ae3063, type: 3}
       propertyPath: script_character_Movement
       value: 
