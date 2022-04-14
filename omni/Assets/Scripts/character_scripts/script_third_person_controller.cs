@@ -243,10 +243,16 @@ public class script_third_person_controller : MonoBehaviour
     }
     void OnTriggerEnter(Collider collider)
     {
-        if (collider.tag == "Portal")
+        if (collider.tag == "Solstice")
         {
            //WinCanvas.SetActive(true);
-           SceneManager.LoadScene("WinGame");
+           SceneManager.LoadScene("scene_solstice");
+        }
+
+        if (collider.tag == "Eclipse")
+        {
+           //WinCanvas.SetActive(true);
+           SceneManager.LoadScene("Scene_eclipse");
         }
 
         if (collider.tag == "Win")
