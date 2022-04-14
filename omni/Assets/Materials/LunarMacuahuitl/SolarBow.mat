@@ -1,0 +1,51 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: SolarBow
+  m_Shader: {fileID: -6465566751694194690, guid: 00839ed47a81ed843a78b6401314c4b4, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - Texture2D_040345ff53e14055aee165331d042fda:
+        m_Texture: {fileID: 2800000, guid: cc8e00962d2997b468564c4b9addd4f6, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_35f5d6002c8b436a80c59527b9b6a6ca:
+        m_Texture: {fileID: 2800000, guid: 1bf4f34ecc85aff4c98f4f7bf12db61f, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_Lightmaps:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_LightmapsInd:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_ShadowMasks:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - Vector1_127a670031524b65a6e8e7adf4d800dc: 5
+    - Vector1_24f077b7ba784344890619abc2aff187: 0.5
+    - Vector1_5e1dd617cb2e44d2a98fa5787b6d7956: 15
+    - Vector1_8b77bf1df7e54f54b1d66c8bc8df8f73: 2
+    m_Colors:
+    - Color_3cf5f5b64bfd43b7b938b894aa5708f6: {r: 1, g: 1, b: 1, a: 1}
+    - Color_89caebc4e0e4483ea158364f65bbc8cf: {r: 14.259482, g: 12.393059, b: 2.5383372, a: 1}
+    - Vector2_5e5f61d1bef34c96b40fe27b61f2b130: {r: 0, g: 0.2, b: 0, a: 0}
+  m_BuildTextureStacks: []
