@@ -2,13 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
-public class script_light_holder : MonoBehaviour
+public class scipt_light_holder_boss_variant : MonoBehaviour
 {
     // Start is called before the first frame update
     public bool hasLightInHolder = true;
     public script_character_movement playerScriptAccess;
     //public script_lantern script_Lantern;
-    public script_lantern lanternAccess;
+    public script_lantern_boss lanternAccess;
     public GameObject[] lanterns;
     //public TextMeshProUGUI lightHolderGUI;
     bool isThereLight;
@@ -22,7 +22,7 @@ public class script_light_holder : MonoBehaviour
         GameObject player = GameObject.FindGameObjectWithTag("Player");
         GameObject lanterns = GameObject.Find("first_lantern_DONOTRENAME");
         playerScriptAccess = player.GetComponent<script_character_movement>();
-        lanternAccess = lanterns.GetComponent<script_lantern>();
+        lanternAccess = lanterns.GetComponent<script_lantern_boss>();
         hasLightInHolder = true;
         Debug.Log(hasLightInHolder);
         //lightHolderGUI.text = "Active";
@@ -62,7 +62,7 @@ public class script_light_holder : MonoBehaviour
         lanterns = GameObject.FindGameObjectsWithTag("Lantern");
         foreach (GameObject lan in lanterns)
         {
-            lanternAccess = lan.GetComponent<script_lantern>();
+            lanternAccess = lan.GetComponent<script_lantern_boss>();
            
             if (lanternAccess.lanternIsLit == true)
             {
