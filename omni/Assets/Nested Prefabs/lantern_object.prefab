@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5572128403013945697}
   - component: {fileID: 5572128403013945698}
   - component: {fileID: 5572128403013945703}
-  - component: {fileID: 937730536630774306}
+  - component: {fileID: 1218100116867718750}
   m_Layer: 9
   m_Name: lantern_object
   m_TagString: Lantern
@@ -71,8 +71,8 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 3.645553, z: 2.0874991}
   m_Center: {x: 0, y: 0.34810615, z: 0.06933856}
---- !u!65 &937730536630774306
-BoxCollider:
+--- !u!136 &1218100116867718750
+CapsuleCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -81,9 +81,10 @@ BoxCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 6.7189207, y: 0.52234745, z: 7.2263026}
-  m_Center: {x: -0.23048782, y: -1.3008826, z: 0.018121481}
+  m_Radius: 4.5
+  m_Height: 1
+  m_Direction: 1
+  m_Center: {x: 0, y: -1, z: 0}
 --- !u!1001 &1110116271793872733
 PrefabInstance:
   m_ObjectHideFlags: 0
