@@ -154,7 +154,7 @@ namespace StarterAssets
 				_animator.SetBool(_animIDGrounded, Grounded);
 			}
 		}
-
+	
 		private void CameraRotation()
 		{
 			// if there is an input and camera position is not fixed
