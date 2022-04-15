@@ -14,10 +14,10 @@ public class script_lantern_boss : MonoBehaviour
     public bool lanternIsLit = false;
     public bool hasGaze = false;
     public bool isSafe = true;
-    bool lanternTimeRunner = false;
+    //bool lanternTimeRunner = false;
     public GameObject particleEffect;
     public bool firstLantern;
-    public float gazeMax = 15f;
+    public float gazeMax = 16f;
     public float gazeCurrent;
     //public Transform particleSpawn;
 
@@ -28,7 +28,7 @@ public class script_lantern_boss : MonoBehaviour
         GameObject player = GameObject.FindGameObjectWithTag("Player");
         script_character_Movement = player.GetComponent<script_character_movement>();
         particleEffect.SetActive(false);
-        
+
     }
 
     // Update is called once per frame
@@ -43,16 +43,16 @@ public class script_lantern_boss : MonoBehaviour
 
         if (isSafe == false)
         {
-            
+
             //Debug.Log(isSafe);
         }
-        
+
         else if (isSafe == true)
         {
             hasGaze = false;
         }
 
-        
+
         //DISPLAY FOR ITS ON OR NO DEV BUILD----------------------------
     }
 
@@ -81,7 +81,7 @@ public class script_lantern_boss : MonoBehaviour
             //Debug.Log("can shoot light damage" + script_character_Movement.hasLightRounds);
 
             //neeeds to start counting down----
-            
+
         }
         else
             script_character_Movement.hasLightRounds = false;
@@ -89,24 +89,27 @@ public class script_lantern_boss : MonoBehaviour
     void gazeDisplayMethod()
     {
 
-        if (gazeGUI)
+
+        if (hasGaze)
         {
-            if (hasGaze)
-            {
-                gazeDisplay = (int)gazeCurrent;
-        
+            gazeDisplay = (int)gazeCurrent;
+
             if (gazeCurrent <= 0)
             {
                 gazeGUI.text = "";
             }
+            gazeGUI.text = "God's Gaze 0:" + gazeDisplay.ToString();
 
-            else
-                gazeGUI.text = "God's Gaze 0:" + gazeDisplay.ToString();
-            }
-            
+
         }
-        else
-         gazeGUI.text = "";
+
+
+
+        if (script_character_Movement.hasLightRounds == true)
+            gazeGUI.text = "";
+
+
+
     }
 
     void OnCollisionEnter(Collision collision)
@@ -122,7 +125,7 @@ public class script_lantern_boss : MonoBehaviour
             script_character_Movement.holdingLight = false;
             // Debug.Log("boolHoldingLightChar in Hands" + script_character_Movement.holdingLight);
             lanternIsLit = true;
-            lanternChecking();
+            //lanternChecking();
             Destroy(collision.gameObject);
         }
 
@@ -133,7 +136,7 @@ public class script_lantern_boss : MonoBehaviour
             Debug.Log("ran particle");
             script_character_Movement.holdingLight = false;
             lanternIsLit = true;
-            lanternChecking();
+            //lanternChecking();
             Destroy(collision.gameObject);
         }
     }
@@ -150,21 +153,27 @@ public class script_lantern_boss : MonoBehaviour
         }
     }
 
-    void lanternChecking()
-    {
-        lanternTimeRunner = true;
-    }
 
-    void gazeChecking ()
+
+    void gazeChecking()
     {
         if (hasGaze)
         {
-             if (gazeCurrent > 0)
-             {
-                 gazeCurrent -= Time.deltaTime;
-             }
+            if (script_character_Movement.hasLightRounds == false && firstLantern)
+            {
+                gazeCurrent -= Time.deltaTime;
+            }
+        }
+        else if (hasGaze == false || script_character_Movement.hasLightRounds == true)
+        {
+            gazeCurrent = gazeMax;
+        }
+
+        if (script_character_Movement.hasLightRounds == true)
+        {
+            gazeCurrent = gazeMax;
         }
     }
 
-   
+
 }

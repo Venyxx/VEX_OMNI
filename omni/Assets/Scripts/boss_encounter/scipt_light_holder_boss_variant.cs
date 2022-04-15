@@ -15,18 +15,20 @@ public class scipt_light_holder_boss_variant : MonoBehaviour
     public float waitToCheckLightMax = 5;
     public float waitToCheckLight = 0;
     int numberChecking;
-    public GameObject particleSys;
+   
+    public GameObject pillarItself;
 
     void Start()
     {
         GameObject player = GameObject.FindGameObjectWithTag("Player");
-        GameObject lanterns = GameObject.Find("first_lantern_DONOTRENAME");
+        GameObject lanternsOBJ = GameObject.Find("first_lantern_DONOTRENAME");
         playerScriptAccess = player.GetComponent<script_character_movement>();
-        lanternAccess = lanterns.GetComponent<script_lantern_boss>();
+        lanternAccess = lanternsOBJ.GetComponent<script_lantern_boss>();
         hasLightInHolder = true;
         Debug.Log(hasLightInHolder);
         //lightHolderGUI.text = "Active";
-        particleSys.SetActive(true);
+        
+        pillarItself.SetActive(true);
     }
 
     // Update is called once per frame
@@ -85,7 +87,8 @@ public class scipt_light_holder_boss_variant : MonoBehaviour
         
         if (isThereLight == false)
         {
-            particleSys.SetActive(true);
+            
+            pillarItself.SetActive(true);
             hasLightInHolder = true;
             Debug.Log("there is no light remaining, adding back " + hasLightInHolder);
         }
@@ -112,7 +115,8 @@ public class scipt_light_holder_boss_variant : MonoBehaviour
         //this is if the lantern was previously off--------------
         if (collider.tag == "Player" && hasLightInHolder == true)
         {
-            particleSys.SetActive(false);
+            
+            pillarItself.SetActive(false);
             playerScriptAccess.holdingLight = true;
             Debug.Log("boolHoldingLight in Hands " + playerScriptAccess.holdingLight);
             hasLightInHolder = false;
@@ -122,7 +126,7 @@ public class scipt_light_holder_boss_variant : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            
+            lanternAccess.hasGaze = true;
             playerScriptAccess.firstPickLight = true;
         }
     }
