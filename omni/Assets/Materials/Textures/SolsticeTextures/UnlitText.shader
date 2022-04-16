@@ -10,7 +10,7 @@ Shader "Custom/UnlitText"
 {
     Properties
     {
-    _MainText("Texture", 2D) = "white" {}
+    _MainTex("Texture", 2D) = "white" {}
     }
     SubShader
     {

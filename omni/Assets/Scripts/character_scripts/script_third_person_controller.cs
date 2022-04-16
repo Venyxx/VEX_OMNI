@@ -259,5 +259,9 @@ public class script_third_person_controller : MonoBehaviour
         {
             SceneManager.LoadScene("scene_hub");
         }
+        if (collider.tag == "Equinox")
+        {
+            SceneManager.LoadScene("scene_boss");
+        }
     }
 }

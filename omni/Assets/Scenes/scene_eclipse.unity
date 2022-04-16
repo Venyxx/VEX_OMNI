@@ -10303,6 +10303,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2213201661652951866, guid: 42cf57320d5cf4b07801a8be7f44c0b4, type: 3}
+      propertyPath: m_Materials.Array.data[3]
+      value: 
+      objectReference: {fileID: 2100000, guid: f25b5508f0f252245a27ca9052f721c1, type: 2}
     - target: {fileID: 4636213813251891720, guid: 42cf57320d5cf4b07801a8be7f44c0b4, type: 3}
       propertyPath: m_Name
       value: FINAL_eclipse_lvl_v.06
