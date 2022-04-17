@@ -2646,9 +2646,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 188947590}
     - target: {fileID: 6977064900059545115, guid: 66609e3120e349b4ab4753ae6b905215, type: 3}
+      propertyPath: bowClip
+      value: 
+      objectReference: {fileID: 8300000, guid: e05422bf4892286489544355f4dd17d7, type: 3}
+    - target: {fileID: 6977064900059545115, guid: 66609e3120e349b4ab4753ae6b905215, type: 3}
       propertyPath: reticle
       value: 
       objectReference: {fileID: 303635087}
+    - target: {fileID: 6977064900059545115, guid: 66609e3120e349b4ab4753ae6b905215, type: 3}
+      propertyPath: macuaClip
+      value: 
+      objectReference: {fileID: 8300000, guid: ddef67e66c70f024e89b849c4b57deeb, type: 3}
     - target: {fileID: 6977064900059545115, guid: 66609e3120e349b4ab4753ae6b905215, type: 3}
       propertyPath: aimVirtualCamera
       value: 

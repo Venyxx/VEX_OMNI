@@ -148,7 +148,7 @@ public class script_third_person_controller : MonoBehaviour
                 //Debug.Log(animFiring);
                 Invoke ("FiringTheBow", 0.5f);
                 starterAssetsInputs.shoot = false;
-                 audioSource.PlayOneShot(bowClip, 0.1F);
+               //  audioSource.PlayOneShot(bowClip, 0.1F);
 
                 
             }
