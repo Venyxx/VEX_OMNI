@@ -35,11 +35,16 @@ public class script_character_movement : MonoBehaviour
         if (hasLightRounds)
         {
             lightRoundDisplay.text = "Light Rounds";
+            Debug.Log("has light");
         }
         else
-            if (lightRoundDisplay != null)
+        {
+             if (lightRoundDisplay != null)
             lightRoundDisplay.text = "";
+            Debug.Log("no light");
 
+        }
+           
         
         if (weightOfDarkness >= 10)
         {

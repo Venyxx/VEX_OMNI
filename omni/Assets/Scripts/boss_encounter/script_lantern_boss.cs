@@ -19,6 +19,8 @@ public class script_lantern_boss : MonoBehaviour
     public bool firstLantern;
     public float gazeMax = 16f;
     public float gazeCurrent;
+
+    
     //public Transform particleSpawn;
 
     // Start is called before the first frame update
@@ -64,6 +66,7 @@ public class script_lantern_boss : MonoBehaviour
         Debug.Log("darkness  " + hasDarkness);*/
         if (other.tag == "Player" && lanternIsLit == true)
         {
+            //INSERT SOUND CLIP FOR GETTING LIGHT HERE
             script_character_Movement.firstPickLight = false;
             hasGaze = false;
             isSafe = true;
@@ -83,7 +86,7 @@ public class script_lantern_boss : MonoBehaviour
             //neeeds to start counting down----
 
         }
-        else
+        else if (other.tag == "Player" && lanternIsLit == false)
             script_character_Movement.hasLightRounds = false;
     }
     void gazeDisplayMethod()
@@ -120,23 +123,19 @@ public class script_lantern_boss : MonoBehaviour
         if (script_character_Movement.hasLightRounds && lanternIsLit == false && collision.collider.CompareTag("Arrow"))
         {
             Debug.Log("this lanter was off and now it is turning on");
-            particleEffect.SetActive(true);
-            //Debug.Log("ran particle");
+            particleEffect.SetActive(true);  
             script_character_Movement.holdingLight = false;
             // Debug.Log("boolHoldingLightChar in Hands" + script_character_Movement.holdingLight);
             lanternIsLit = true;
-            //lanternChecking();
             Destroy(collision.gameObject);
         }
 
         if (script_character_Movement.holdingLight && collision.collider.CompareTag("Arrow"))
         {
-            //Instantiate(particleEffect, particleSpawn.position, Quaternion.identity);
             particleEffect.SetActive(true);
             Debug.Log("ran particle");
             script_character_Movement.holdingLight = false;
             lanternIsLit = true;
-            //lanternChecking();
             Destroy(collision.gameObject);
         }
     }
@@ -145,6 +144,7 @@ public class script_lantern_boss : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
+            //INSERT SOUND CLIP FOR LOSING LIGHT HERE
             script_character_Movement.hasLightRounds = false;
             Debug.Log("getting gaze");
             isSafe = false;

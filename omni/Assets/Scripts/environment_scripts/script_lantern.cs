@@ -72,6 +72,7 @@ public class script_lantern : MonoBehaviour
         Debug.Log("darkness  " + hasDarkness);*/
         if (other.tag == "Player" && lanternIsLit == true)
         {
+            //INSERT SOUND CLIP FOR GETTING LIGHT HERE
             script_character_Movement.firstPickLight = false;
             hasDarkness = false;
             isSafe = true;
@@ -157,6 +158,7 @@ public class script_lantern : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
+            //INSERT SOUND CLIP FOR LOSING LIGHT HERE
             script_character_Movement.hasLightRounds = false;
             Debug.Log("has light rounds" + script_character_Movement.hasLightRounds);
             isSafe = false;

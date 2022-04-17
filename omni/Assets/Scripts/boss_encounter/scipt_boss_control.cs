@@ -14,6 +14,8 @@ public class scipt_boss_control : MonoBehaviour
     public Material skybox_light;
     public Material skybox_dark;
     public TextMeshProUGUI favorsGUI;
+    public GameObject postProcLight;
+    public GameObject postProcDark;
     
 
     void Start()
@@ -33,6 +35,8 @@ public class scipt_boss_control : MonoBehaviour
             //boss regains favor of dark
             RenderSettings.skybox = skybox_dark;
             LDTimerCurrent = LDTimerMax;
+            postProcDark.SetActive(true);
+            postProcLight.SetActive(false);
             favorsLight = false;
             favorsDark = true;
             favorsGUI.text = "___ regains favor of the Dark";
@@ -44,6 +48,8 @@ public class scipt_boss_control : MonoBehaviour
             //regains favor of light;
             RenderSettings.skybox = skybox_light;
             LDTimerCurrent = LDTimerMax;
+            postProcDark.SetActive(false);
+            postProcLight.SetActive(true);
             favorsDark = false;
             favorsLight = true;
             favorsGUI.text = "____regains favor of the Light";

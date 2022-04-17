@@ -28,8 +28,8 @@ public class script_arrow_projectile : MonoBehaviour
     {
         if (despawn > 0)
         {
-            despawn -= despawntime;
-            Debug.Log(despawn);
+            despawn -= Time.deltaTime;
+            //Debug.Log(despawn);
         }
         else if (despawn < 0 )
         {
@@ -41,8 +41,7 @@ public class script_arrow_projectile : MonoBehaviour
 
     private void OnCollisonEnter (Collision collision)
     {
-        Destroy(arrowRigidBody);
-        Debug.Log("randestrroy");
+        
         
     }
 }

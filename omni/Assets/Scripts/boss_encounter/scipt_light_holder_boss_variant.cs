@@ -115,7 +115,7 @@ public class scipt_light_holder_boss_variant : MonoBehaviour
         //this is if the lantern was previously off--------------
         if (collider.tag == "Player" && hasLightInHolder == true)
         {
-            
+            //INSERT SOUND CLIP FOR GETTING LIGHT HERE
             pillarItself.SetActive(false);
             playerScriptAccess.holdingLight = true;
             Debug.Log("boolHoldingLight in Hands " + playerScriptAccess.holdingLight);

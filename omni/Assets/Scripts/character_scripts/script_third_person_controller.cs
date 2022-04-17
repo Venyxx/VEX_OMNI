@@ -32,7 +32,12 @@ public class script_third_person_controller : MonoBehaviour
     public GameObject reticle;
     public GameObject sword;
     public GameObject bow;
+    public GameObject swordlitOBJ;
+    public GameObject bowlitOBJ;
     public GameObject postprocessing;
+
+    public bool swordLit;
+    public bool bowLit;
 
     //public GameObject WinCanvas;
 
@@ -49,6 +54,8 @@ public class script_third_person_controller : MonoBehaviour
         
                 //Debug.Log(UI_Control.PauseGame);
         AssignAnimationIDs();
+        swordLit = false;
+        bowLit = false;
     }
     private void Awake()
 
@@ -78,12 +85,25 @@ public class script_third_person_controller : MonoBehaviour
 
         if (starterAssetsInputs.bow)
         {
+            
+            if(bowLit)
+            {
+                bowlitOBJ.SetActive(true);
+                bow.SetActive(false);
+                sword.SetActive(false);
+                swordlitOBJ.SetActive(false);
+            }else if (bowLit == false)
+            {
+                bowlitOBJ.SetActive(false);
+                bow.SetActive(true);
+                sword.SetActive(false);
+                swordlitOBJ.SetActive(false);
+            }
+            
             bow.SetActive(true);
             sword.SetActive(false);
-            //Debug.Log("bow" + bow + ",sword" + sword);
             animator.SetLayerWeight(1, Mathf.Lerp(animator.GetLayerWeight(1), 1f, Time.deltaTime * swapWaitVar));
-            
-            //ui effects with light and dark
+
             
             
             //Debug.Log("equipped bow");
@@ -117,6 +137,7 @@ public class script_third_person_controller : MonoBehaviour
 
             if (starterAssetsInputs.shoot && starterAssetsInputs.Aim)
             {
+                //INSERT THE SOUND CLIP HERE FOR BOW
                 starterAssetsInputs.sprint = false;
                 animator.SetBool(animFiring, true);
                 shootCheck = true;
@@ -143,13 +164,22 @@ public class script_third_person_controller : MonoBehaviour
         //type of weapon sword---------
         if (starterAssetsInputs.sword)
         {
-            sword.SetActive(true);
-            bow.SetActive(false);
-            //Debug.Log("bow" + bow + ",sword" + sword);
+            if(swordLit)
+            {
+                bowlitOBJ.SetActive(false);
+                bow.SetActive(false);
+                sword.SetActive(false);
+                swordlitOBJ.SetActive(true);
+            }else if (swordLit == false)
+            {
+                bowlitOBJ.SetActive(false);
+                bow.SetActive(false);
+                sword.SetActive(true);
+                swordlitOBJ.SetActive(false);
+            }
             
             animator.SetLayerWeight(3, Mathf.Lerp(animator.GetLayerWeight(3), 1f, Time.deltaTime * swapWaitVar));
             
-            //Debug.Log("equipped sword");
             starterAssetsInputs.bow = false;
             swordVirtualCamera.gameObject.SetActive(true);
             aimVirtualCamera.gameObject.SetActive(false);
@@ -165,14 +195,12 @@ public class script_third_person_controller : MonoBehaviour
             if (starterAssetsInputs.shoot)
             {
                 //actually means swing but theyre both bound to left click
-                //swing animation
+                //INSERT THE SOUND CLIP HERE
                 animator.SetBool(animFiring, true);
                 shootCheck = true;
                 starterAssetsInputs.shoot = false;
 
-                //play animation oneshotalse;
-                //lurch?
-                //set collider active
+                
                 
             }else if (starterAssetsInputs.shoot == false && shootCheck == true)
             {
@@ -187,29 +215,8 @@ public class script_third_person_controller : MonoBehaviour
             starterAssetsInputs.sword = false;
             animator.SetLayerWeight(3, Mathf.Lerp(animator.GetLayerWeight(3), 0f, Time.deltaTime * swapWaitVar));
 
-
-
-
         }
 
-
-       /* if (starterAssetsInputs.escape && UI_Control.PauseGame == true)
-        {
-            starterAssetsInputs.escape = false;
-            Debug.Log("internal notice esc");
-            uI_Control.Resume();
-
-
-
-        }
-
-        if (starterAssetsInputs.escape && UI_Control.PauseGame == false)
-        {
-            starterAssetsInputs.escape = false;
-            Debug.Log("noticed other");
-            uI_Control.Pause();
-            
-        } */
 
     }
     private void AssignAnimationIDs()
