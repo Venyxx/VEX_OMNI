@@ -16,6 +16,9 @@ public class script_character_movement : MonoBehaviour
     public bool hasLightRounds = false;
     public bool firstPickLight = false;
     public TextMeshProUGUI lightRoundDisplay;
+    script_third_person_controller playerAccess;
+    public GameObject player;
+
 
 
     public float weightOfDarkness = 0;
@@ -26,6 +29,7 @@ public class script_character_movement : MonoBehaviour
     void Start()
     {
         weightOfDarkness = 0;
+        playerAccess = player.GetComponent<script_third_person_controller>();        
     }
     void Update()
     {
@@ -34,15 +38,22 @@ public class script_character_movement : MonoBehaviour
         //light rounds gui---------------------
         if (hasLightRounds)
         {
-            lightRoundDisplay.text = "Light Rounds";
-            Debug.Log("has light");
+            //lightRoundDisplay.text = "Light Rounds";
+            
+            
+            
         }
         else
         {
-             if (lightRoundDisplay != null)
-            lightRoundDisplay.text = "";
-            Debug.Log("no light");
+             //if (lightRoundDisplay != null)
+            //lightRoundDisplay.text = "";
+            //Debug.Log("no light");
+            
 
+        }
+        if (holdingLight)
+        {
+        playerAccess.bowLit = true;
         }
            
         

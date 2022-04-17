@@ -270,6 +270,7 @@ namespace StarterAssets
 						_animator.SetBool(_animIDJump, true);
 					}
 					_input.jump = false;
+					Debug.Log(_input.jump);
 				}
 
 				// jump timeout
@@ -299,6 +300,7 @@ namespace StarterAssets
 
 				// if we are not grounded, do not jump
 				_input.jump = false;
+				Debug.Log(_input.jump);
 			}
 
 			// apply gravity over time if under terminal (multiply by delta time twice to linearly speed up over time)

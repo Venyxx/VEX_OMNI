@@ -11,6 +11,7 @@ public class script_lantern_boss : MonoBehaviour
     //public float lanternWaitTime = 10f;
     //public float darknessWaitTime = 3f;
     public script_character_movement script_character_Movement;
+    public script_third_person_controller thirdpersonAccess;
     public bool lanternIsLit = false;
     public bool hasGaze = false;
     public bool isSafe = true;
@@ -29,6 +30,7 @@ public class script_lantern_boss : MonoBehaviour
         gazeDisplayMethod();
         GameObject player = GameObject.FindGameObjectWithTag("Player");
         script_character_Movement = player.GetComponent<script_character_movement>();
+        thirdpersonAccess = player.GetComponent<script_third_person_controller>();
         particleEffect.SetActive(false);
 
     }
@@ -37,7 +39,7 @@ public class script_lantern_boss : MonoBehaviour
     void Update()
     {
         gazeChecking();
-        gazeDisplayMethod();
+        //gazeDisplayMethod();
         if (gazeCurrent <= 0 && hasGaze)
         {
             Debug.Log("death, reset");
@@ -78,6 +80,8 @@ public class script_lantern_boss : MonoBehaviour
         if (other.tag == "Player" && lanternIsLit == true)
         {
             script_character_Movement.hasLightRounds = true;
+            thirdpersonAccess.bowLit = true;
+            
             hasGaze = false;
             //Debug.Log("has darkness " + hasDarkness);
             isSafe = true;
@@ -146,6 +150,7 @@ public class script_lantern_boss : MonoBehaviour
         {
             //INSERT SOUND CLIP FOR LOSING LIGHT HERE
             script_character_Movement.hasLightRounds = false;
+            thirdpersonAccess.bowLit = false;
             Debug.Log("getting gaze");
             isSafe = false;
             hasGaze = true;

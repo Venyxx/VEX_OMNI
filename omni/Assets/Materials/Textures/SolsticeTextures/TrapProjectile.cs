@@ -16,6 +16,7 @@ namespace Runemark.DeadlyDungeonTraps
         StarterAssets.ThirdPersonController player;
         public float MaxDownTime = 3f;
         public float CurrentDownTime;
+        public bool tagged;
 
         private void OnEnable()
         {
@@ -38,6 +39,8 @@ namespace Runemark.DeadlyDungeonTraps
             if (other.collider.tag == "Player")
             {
                  player = other.gameObject.GetComponent<StarterAssets.ThirdPersonController>();
+                 WaitSpace(player);
+                 tagged = true;
                  
             }
         }
@@ -45,17 +48,23 @@ namespace Runemark.DeadlyDungeonTraps
         {
             CurrentDownTime = MaxDownTime;
 
-            if (CurrentDownTime > 0)
+            if (tagged)
+            {
+                if (CurrentDownTime > 0)
             {
                 CurrentDownTime -= Time.deltaTime;
                 log.MoveSpeed -= 2;
                 log.SprintSpeed -=2;
+                Debug.Log("slowing speed");
                 
             }
             else if (CurrentDownTime < 0)
             {
                 log.MoveSpeed += 2;
                 log.SprintSpeed += 2;
+                Debug.Log("return speed");
+                tagged = false;
+            }
             }
         }
     }

@@ -100,8 +100,7 @@ public class script_third_person_controller : MonoBehaviour
                 swordlitOBJ.SetActive(false);
             }
             
-            bow.SetActive(true);
-            sword.SetActive(false);
+            
             animator.SetLayerWeight(1, Mathf.Lerp(animator.GetLayerWeight(1), 1f, Time.deltaTime * swapWaitVar));
 
             

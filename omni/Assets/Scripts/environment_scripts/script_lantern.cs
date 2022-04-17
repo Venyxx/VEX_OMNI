@@ -12,6 +12,7 @@ public class script_lantern : MonoBehaviour
     public float darknessWaitTime = 3f;
     public script_character_movement script_character_Movement;
     public bool lanternIsLit = false;
+    public script_third_person_controller thirdpersonAccess;
     public bool hasDarkness = false;
     public bool isSafe = true;
     bool lanternTimeRunner = false;
@@ -26,6 +27,7 @@ public class script_lantern : MonoBehaviour
         GameObject player = GameObject.FindGameObjectWithTag("Player");
         script_character_Movement = player.GetComponent<script_character_movement>();
         particleEffect.SetActive(false);
+         thirdpersonAccess = player.GetComponent<script_third_person_controller>();
     }
 
     // Update is called once per frame
@@ -85,6 +87,7 @@ public class script_lantern : MonoBehaviour
         {
             script_character_Movement.hasLightRounds = true;
             hasDarkness = false;
+            thirdpersonAccess.bowLit = true;
             //Debug.Log("has darkness " + hasDarkness);
             isSafe = true;
             //Debug.Log("can shoot light damage" + script_character_Movement.hasLightRounds);
@@ -162,6 +165,7 @@ public class script_lantern : MonoBehaviour
             script_character_Movement.hasLightRounds = false;
             Debug.Log("has light rounds" + script_character_Movement.hasLightRounds);
             isSafe = false;
+            thirdpersonAccess.bowLit = false;
             hasDarkness = true;
         }
     }

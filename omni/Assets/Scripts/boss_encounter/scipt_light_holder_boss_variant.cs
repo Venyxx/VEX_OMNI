@@ -9,6 +9,7 @@ public class scipt_light_holder_boss_variant : MonoBehaviour
     public script_character_movement playerScriptAccess;
     //public script_lantern script_Lantern;
     public script_lantern_boss lanternAccess;
+     script_third_person_controller playerAccess;
     public GameObject[] lanterns;
     //public TextMeshProUGUI lightHolderGUI;
     bool isThereLight;
@@ -24,6 +25,7 @@ public class scipt_light_holder_boss_variant : MonoBehaviour
         GameObject lanternsOBJ = GameObject.Find("first_lantern_DONOTRENAME");
         playerScriptAccess = player.GetComponent<script_character_movement>();
         lanternAccess = lanternsOBJ.GetComponent<script_lantern_boss>();
+        playerAccess = player.GetComponent<script_third_person_controller>();    
         hasLightInHolder = true;
         Debug.Log(hasLightInHolder);
         //lightHolderGUI.text = "Active";
@@ -120,6 +122,8 @@ public class scipt_light_holder_boss_variant : MonoBehaviour
             playerScriptAccess.holdingLight = true;
             Debug.Log("boolHoldingLight in Hands " + playerScriptAccess.holdingLight);
             hasLightInHolder = false;
+            playerAccess.bowLit = true;
+            Debug.Log(playerAccess.bowLit);
         }
     }
     void OnTriggerExit(Collider collision)

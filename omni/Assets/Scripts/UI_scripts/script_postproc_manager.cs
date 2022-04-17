@@ -23,7 +23,7 @@ public class script_postproc_manager : MonoBehaviour
         volume.profile.TryGet<Vignette>(out vignette);
         volume.profile.TryGet<Bloom>(out bloom);
         volume.profile.TryGet<ChromaticAberration>(out chromaticAberration);
-
+        Debug.Log("Active");
 
         internalDarkness = charAccess.weightOfDarkness;
     }
@@ -37,7 +37,7 @@ public class script_postproc_manager : MonoBehaviour
         if (charAccess.weightOfDarkness != internalDarkness)
         {
            // Debug.Log("changing vignette");
-            vignette.intensity.value = Mathf.Lerp(charAccess.weightOfDarkness / 15, internalDarkness, Time.deltaTime / 2);
+            vignette.intensity.value = Mathf.Lerp((charAccess.weightOfDarkness / 15), internalDarkness, Time.deltaTime / 2);
             internalDarkness = charAccess.weightOfDarkness;
         }
 

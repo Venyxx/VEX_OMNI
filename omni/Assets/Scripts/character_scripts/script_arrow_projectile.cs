@@ -34,7 +34,7 @@ public class script_arrow_projectile : MonoBehaviour
         else if (despawn < 0 )
         {
             Destroy(arrowRigidBody);
-            Debug.Log("destroy");
+           //Debug.Log("destroy");
         }
         
     }
