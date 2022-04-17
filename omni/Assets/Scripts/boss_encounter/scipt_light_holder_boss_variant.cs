@@ -9,14 +9,14 @@ public class scipt_light_holder_boss_variant : MonoBehaviour
     public script_character_movement playerScriptAccess;
     //public script_lantern script_Lantern;
     public script_lantern_boss lanternAccess;
-     script_third_person_controller playerAccess;
+    script_third_person_controller playerAccess;
     public GameObject[] lanterns;
     //public TextMeshProUGUI lightHolderGUI;
     bool isThereLight;
     public float waitToCheckLightMax = 5;
     public float waitToCheckLight = 0;
     int numberChecking;
-   
+
     public GameObject pillarItself;
 
     void Start()
@@ -25,11 +25,11 @@ public class scipt_light_holder_boss_variant : MonoBehaviour
         GameObject lanternsOBJ = GameObject.Find("first_lantern_DONOTRENAME");
         playerScriptAccess = player.GetComponent<script_character_movement>();
         lanternAccess = lanternsOBJ.GetComponent<script_lantern_boss>();
-        playerAccess = player.GetComponent<script_third_person_controller>();    
+        playerAccess = player.GetComponent<script_third_person_controller>();
         hasLightInHolder = true;
         Debug.Log(hasLightInHolder);
         //lightHolderGUI.text = "Active";
-        
+
         pillarItself.SetActive(true);
     }
 
@@ -37,7 +37,7 @@ public class scipt_light_holder_boss_variant : MonoBehaviour
     void Update()
     {
         waitSpace();
-        
+
         if (playerScriptAccess.holdingLight == true)
         {
             hasLightInHolder = false;
@@ -50,11 +50,11 @@ public class scipt_light_holder_boss_variant : MonoBehaviour
             holderChecking();
             waitToCheckLight = waitToCheckLightMax;
         }
-        
+
         else if (waitToCheckLight > 0)
         {
             waitToCheckLight -= Time.deltaTime;
-            
+
             //Debug.Log ("waiting " + waitToCheckLight);
         }
     }
@@ -67,47 +67,49 @@ public class scipt_light_holder_boss_variant : MonoBehaviour
         foreach (GameObject lan in lanterns)
         {
             lanternAccess = lan.GetComponent<script_lantern_boss>();
-           
+
             if (lanternAccess.lanternIsLit == true)
             {
-                numberChecking ++;
+                numberChecking++;
             }
-            
+
             if (numberChecking > 0 || playerScriptAccess.holdingLight == true)
             {
                 //somethings is on somewhere
                 isThereLight = true;
-            } 
-            
+            }
+
             else if (numberChecking <= 0 && playerScriptAccess.holdingLight == false)
-            { 
+            {
                 //no light anywhere
                 isThereLight = false;
             }
         }
         numberChecking = 0;
-        
+
         if (isThereLight == false)
         {
-            
+
             pillarItself.SetActive(true);
             hasLightInHolder = true;
             Debug.Log("there is no light remaining, adding back " + hasLightInHolder);
         }
-        
+
         else if (isThereLight == true)
         {
             Debug.Log("there is light");
             hasLightInHolder = false;
         }
-        
+
         if (hasLightInHolder == true)
         {
             //lightHolderGUI.text = "Active";
         }
-        
-        else if (hasLightInHolder == false){}
-            //lightHolderGUI.text = "Inactive";
+
+
+
+        else if (hasLightInHolder == false) { }
+        //lightHolderGUI.text = "Inactive";
     }
 
     void OnTriggerEnter(Collider collider)
@@ -119,6 +121,7 @@ public class scipt_light_holder_boss_variant : MonoBehaviour
         {
             //INSERT SOUND CLIP FOR GETTING LIGHT HERE
             pillarItself.SetActive(false);
+            lanternAccess.hasGaze = true;
             playerScriptAccess.holdingLight = true;
             Debug.Log("boolHoldingLight in Hands " + playerScriptAccess.holdingLight);
             hasLightInHolder = false;
