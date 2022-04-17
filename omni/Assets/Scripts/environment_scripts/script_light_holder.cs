@@ -112,6 +112,8 @@ public class script_light_holder : MonoBehaviour
         //this is if the lantern was previously off--------------
         if (collider.tag == "Player" && hasLightInHolder == true)
         {
+            //INSERT SOUND CLIP FOR GETTING LIGHT
+            
             particleSys.SetActive(false);
             playerScriptAccess.holdingLight = true;
             Debug.Log("boolHoldingLight in Hands " + playerScriptAccess.holdingLight);
@@ -125,5 +127,10 @@ public class script_light_holder : MonoBehaviour
             
             playerScriptAccess.firstPickLight = true;
         }
+    }
+
+    void waitSpaceOther ()
+    {
+
     }
 }

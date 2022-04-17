@@ -13,6 +13,10 @@ namespace Runemark.DeadlyDungeonTraps
         public bool sticky;
         public float force;
         public float distanceLeft;
+        StarterAssets.ThirdPersonController player;
+        public float MaxDownTime = 3f;
+        public float CurrentDownTime;
+        public bool tagged;
 
         private void OnEnable()
         {
@@ -30,42 +34,39 @@ namespace Runemark.DeadlyDungeonTraps
             if (distanceLeft <= 0) gameObject.SetActive(false);
         }
 
-        protected override void ApplyDamage(IDamageable target, DamageResult result)
+        void OnCollisionEnter (Collision other)
         {
-            base.ApplyDamage(target, result);
-
-            if (sticky)
+            if (other.collider.tag == "Player")
             {
-                transform.parent = target.transform;
-                enabled = false;
+                 player = other.gameObject.GetComponent<StarterAssets.ThirdPersonController>();
+                 WaitSpace(player);
+                 tagged = true;
+                 
             }
         }
-
-    }
-
-#if UNITY_EDITOR
-    [CanEditMultipleObjects]
-    [CustomEditor(typeof(TrapProjectile), true)]
-    public class TrapProjectileInspector : DamageSourceInspector
-    {
-        protected override void OnInit()
+        void WaitSpace (StarterAssets.ThirdPersonController log)
         {
-            var mytarget = (DamageSource)target;
-            var collider = mytarget.GetComponent<Collider>();
+            CurrentDownTime = MaxDownTime;
 
-            AddCustomField("modeTest", () =>
+            if (tagged)
             {
-                if (collider == null)
-                    EditorGUILayout.HelpBox("This script required a collider on the same game object!", MessageType.Warning);
-
-                else if (collider.isTrigger)
-                    EditorGUILayout.HelpBox("Uncheck the isTrigger property on the collider!", MessageType.Warning);
-
-            });
-
-            AddProperty("damage", null, 0);
+                if (CurrentDownTime > 0)
+            {
+                CurrentDownTime -= Time.deltaTime;
+                log.MoveSpeed -= 2;
+                log.SprintSpeed -=2;
+                Debug.Log("slowing speed");
+                
+            }
+            else if (CurrentDownTime < 0)
+            {
+                log.MoveSpeed += 2;
+                log.SprintSpeed += 2;
+                Debug.Log("return speed");
+                tagged = false;
+            }
+            }
         }
     }
 
-#endif
 }
