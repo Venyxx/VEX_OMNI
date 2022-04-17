@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Borealis
-  m_Shader: {fileID: -6465566751694194690, guid: d30fe5879198938409d7e080a24f2c0f, type: 3}
+  m_Name: BarrierBoss
+  m_Shader: {fileID: -6465566751694194690, guid: 29cd4e4e4ef2e574e9b8632769e74672, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -19,8 +19,8 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
-    - Texture2D_b1be487bd4d84c31b4420167379a604f:
-        m_Texture: {fileID: 10300, guid: 0000000000000000f000000000000000, type: 0}
+    - Texture2D_345d934d551540b083ef80a37ebc9e84:
+        m_Texture: {fileID: 2800000, guid: 7fa94293b54628b4c83ed0c60e558416, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - unity_Lightmaps:
@@ -36,15 +36,10 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
-    - Vector1_2e982ddc62f7441daa53e5afc7511007: 1
-    - Vector1_3679f8cbe31740b2829602721db35ab2: 0.1
-    - Vector1_518f99bd939f418da07c41b4bc8954c7: 0.1
-    - Vector1_519c999e3c5c4e748bddd09ed20ba784: 30
-    - Vector1_72b19f882f27496e8a8ec27789a81d63: 1
-    - Vector1_f280ddd8c6594974b0feca5f5dcf07c8: 2
-    - Vector1_f5dfa5591ce8469e92feeb5e0c72d7d9: 2
+    - Vector1_06bc8d5b0325428eb56a7cb403a9c998: 0.2
+    - Vector1_3d2c6e4f477249588dbd9e7728ce221a: -0.2
+    - Vector1_dc35e8702ace45268f5fa26bcb8c3efe: 0.5
+    - Vector1_ea32ca791eb446c7b81dfa47be43d5a2: 100
     m_Colors:
-    - Color_5719bc54a6b249afa4418f82d4696a58: {r: 11.631262, g: 13.644364, b: 42.72252, a: 1}
-    - Vector2_453d20a9951347a2bb1f3feb73fe3f53: {r: 7, g: 0.1, b: 0, a: 0}
-    - Vector2_4cd221e8c9174d4cb183efab93159f60: {r: 0, g: -0.025, b: 0, a: 0}
+    - Vector2_f77723a796c7440f94e31ce1698b0022: {r: 1, g: 1, b: 0, a: 0}
   m_BuildTextureStacks: []

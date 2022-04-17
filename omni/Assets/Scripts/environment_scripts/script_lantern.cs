@@ -18,6 +18,9 @@ public class script_lantern : MonoBehaviour
     bool lanternTimeRunner = false;
     public GameObject particleEffect;
     public bool firstLantern;
+     
+    AudioSource audioSource;
+    public AudioClip litClip;
     //public Transform particleSpawn;
 
     // Start is called before the first frame update
@@ -137,12 +140,16 @@ public class script_lantern : MonoBehaviour
         {
             Debug.Log("this lanter was off and now it is turning on");
             particleEffect.SetActive(true);
+            //audioSource.PlayOneShot(litClip, 1.0F);
             //Debug.Log("ran particle");
             script_character_Movement.holdingLight = false;
             // Debug.Log("boolHoldingLightChar in Hands" + script_character_Movement.holdingLight);
             lanternIsLit = true;
             lanternChecking();
+           
             Destroy(collision.gameObject);
+            
+            
         }
 
         if (script_character_Movement.holdingLight && collision.collider.CompareTag("Arrow"))

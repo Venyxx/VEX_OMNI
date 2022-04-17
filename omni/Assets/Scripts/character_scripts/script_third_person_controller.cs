@@ -38,6 +38,10 @@ public class script_third_person_controller : MonoBehaviour
 
     public bool swordLit;
     public bool bowLit;
+    
+    AudioSource audioSource;
+    public AudioClip bowClip;
+    public AudioClip macuaClip;
 
     //public GameObject WinCanvas;
 
@@ -56,6 +60,7 @@ public class script_third_person_controller : MonoBehaviour
         AssignAnimationIDs();
         swordLit = false;
         bowLit = false;
+        audioSource = GetComponent<AudioSource>();
     }
     private void Awake()
 
@@ -143,6 +148,7 @@ public class script_third_person_controller : MonoBehaviour
                 //Debug.Log(animFiring);
                 Invoke ("FiringTheBow", 0.5f);
                 starterAssetsInputs.shoot = false;
+                 audioSource.PlayOneShot(bowClip, 0.1F);
 
                 
             }
@@ -198,6 +204,7 @@ public class script_third_person_controller : MonoBehaviour
                 animator.SetBool(animFiring, true);
                 shootCheck = true;
                 starterAssetsInputs.shoot = false;
+                audioSource.PlayOneShot(macuaClip, 0.5F);
 
                 
                 

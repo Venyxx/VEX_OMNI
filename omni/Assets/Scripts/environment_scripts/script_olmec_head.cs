@@ -7,6 +7,9 @@ public class script_olmec_head : MonoBehaviour
     // Start is called before the first frame update
     public Transform meteorSpawn;
     public GameObject meteor;
+     
+    AudioSource audioSource;
+    public AudioClip olmecNoise;
     
 
     void Start()
@@ -30,6 +33,7 @@ public class script_olmec_head : MonoBehaviour
             
             Debug.Log("noticed player");
             Instantiate(meteor, meteorSpawn.transform);
+            audioSource.PlayOneShot(olmecNoise, 0.5F);
 
         }
     }
