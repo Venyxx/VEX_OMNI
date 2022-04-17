@@ -4327,6 +4327,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1646763066}
     m_Modifications:
+    - target: {fileID: 7959468472038358209, guid: 7f516de2ca3f148f7a4dc914e6967647, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 20c672fd3d3df496ba40678b82004a15, type: 2}
     - target: {fileID: 8463752538606001428, guid: 7f516de2ca3f148f7a4dc914e6967647, type: 3}
       propertyPath: m_Name
       value: boulder_object (1)
@@ -10362,6 +10366,18 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 2213201661652951866, guid: 42cf57320d5cf4b07801a8be7f44c0b4, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: f25b5508f0f252245a27ca9052f721c1, type: 2}
+    - target: {fileID: 2213201661652951866, guid: 42cf57320d5cf4b07801a8be7f44c0b4, type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: f25b5508f0f252245a27ca9052f721c1, type: 2}
+    - target: {fileID: 2213201661652951866, guid: 42cf57320d5cf4b07801a8be7f44c0b4, type: 3}
+      propertyPath: m_Materials.Array.data[2]
+      value: 
+      objectReference: {fileID: 2100000, guid: f25b5508f0f252245a27ca9052f721c1, type: 2}
+    - target: {fileID: 2213201661652951866, guid: 42cf57320d5cf4b07801a8be7f44c0b4, type: 3}
       propertyPath: m_Materials.Array.data[3]
       value: 
       objectReference: {fileID: 2100000, guid: f25b5508f0f252245a27ca9052f721c1, type: 2}
@@ -10694,19 +10710,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 424101442}
     m_Modifications:
-    - target: {fileID: 420185366747755383, guid: b86ff17568169e848a5cca7dc963423c, type: 3}
-      propertyPath: m_text
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 420185366747755383, guid: b86ff17568169e848a5cca7dc963423c, type: 3}
-      propertyPath: m_fontSize
-      value: 72
-      objectReference: {fileID: 0}
-    - target: {fileID: 1647396291724003105, guid: b86ff17568169e848a5cca7dc963423c, type: 3}
-      propertyPath: m_text
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 8630184846342815692, guid: b86ff17568169e848a5cca7dc963423c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1698421561}
+    - target: {fileID: 8630184846380602902, guid: b86ff17568169e848a5cca7dc963423c, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1698421561}
@@ -10872,6 +10880,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1646763066}
     m_Modifications:
+    - target: {fileID: 7959468472038358209, guid: 7f516de2ca3f148f7a4dc914e6967647, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 20c672fd3d3df496ba40678b82004a15, type: 2}
     - target: {fileID: 8463752538606001428, guid: 7f516de2ca3f148f7a4dc914e6967647, type: 3}
       propertyPath: m_Name
       value: boulder_object

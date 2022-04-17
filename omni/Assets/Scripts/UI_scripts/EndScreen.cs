@@ -18,6 +18,13 @@ public class EndScreen : MonoBehaviour
         SceneManager.LoadScene("scene_mainmenu");
     }
 
+    public void LoadHub()
+    {
+        Cursor.lockState = CursorLockMode.None;
+        Debug.Log("Loading Hub...");
+        SceneManager.LoadScene("scene_hub");
+    }
+
     public void QuitGame()
     {
         Debug.Log("Quitting Game...");

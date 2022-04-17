@@ -64,4 +64,9 @@ public class ui_control : MonoBehaviour
     {
         SceneManager.LoadScene("scene_eclipse");
     }
+
+    public void LoadHub()
+    {
+        SceneManager.LoadScene("scene_hub");
+    }
 }
