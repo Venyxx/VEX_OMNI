@@ -22674,6 +22674,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2010651379}
     m_Modifications:
+    - target: {fileID: 420185366747755383, guid: b86ff17568169e848a5cca7dc963423c, type: 3}
+      propertyPath: m_text
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 420185366747755383, guid: b86ff17568169e848a5cca7dc963423c, type: 3}
+      propertyPath: m_fontSize
+      value: 72
+      objectReference: {fileID: 0}
+    - target: {fileID: 1647396291724003105, guid: b86ff17568169e848a5cca7dc963423c, type: 3}
+      propertyPath: m_text
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 8630184847241153120, guid: b86ff17568169e848a5cca7dc963423c, type: 3}
       propertyPath: m_Name
       value: PauseCanvas
