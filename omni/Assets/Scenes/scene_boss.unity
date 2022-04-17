@@ -297,6 +297,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1398801321904730967, guid: 66609e3120e349b4ab4753ae6b905215, type: 3}
   m_PrefabInstance: {fileID: 1658771063}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &188947590 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6746270547330435595, guid: 66609e3120e349b4ab4753ae6b905215, type: 3}
+  m_PrefabInstance: {fileID: 1658771063}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &271870640
 GameObject:
   m_ObjectHideFlags: 0
@@ -484,7 +489,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6977064899227499359, guid: 66609e3120e349b4ab4753ae6b905215, type: 3}
   m_PrefabInstance: {fileID: 1658771063}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 188947590}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a06a38e439ae03543a0d12ee43279377, type: 3}
@@ -2208,6 +2213,17 @@ Transform:
   m_Father: {fileID: 293324681}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1634672664 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4538976951957011571, guid: 795fe2174f7eaeb4ab91cce6926b6c18, type: 3}
+  m_PrefabInstance: {fileID: 838549250}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45e653bab7fb20e499bda25e1b646fea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1646939568 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6292420487185819949, guid: 5491e0e2234ae384297d8740cd11bef3, type: 3}
@@ -2389,6 +2405,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: player_character 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6977064899227499359, guid: 66609e3120e349b4ab4753ae6b905215, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 188947590}
+    - target: {fileID: 6977064900059545115, guid: 66609e3120e349b4ab4753ae6b905215, type: 3}
+      propertyPath: reticle
+      value: 
+      objectReference: {fileID: 303635087}
+    - target: {fileID: 6977064900059545115, guid: 66609e3120e349b4ab4753ae6b905215, type: 3}
+      propertyPath: aimVirtualCamera
+      value: 
+      objectReference: {fileID: 2001639877}
+    - target: {fileID: 6977064900059545115, guid: 66609e3120e349b4ab4753ae6b905215, type: 3}
+      propertyPath: swordVirtualCamera
+      value: 
+      objectReference: {fileID: 1634672664}
+    - target: {fileID: 7003605931906389623, guid: 66609e3120e349b4ab4753ae6b905215, type: 3}
+      propertyPath: reticle
+      value: 
+      objectReference: {fileID: 303635087}
     - target: {fileID: 8851971129120267563, guid: 66609e3120e349b4ab4753ae6b905215, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -2886,6 +2922,17 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1999521195}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &2001639877 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4785062819132847829, guid: 161fb884bee4c204fa9880ab61fdd2ed, type: 3}
+  m_PrefabInstance: {fileID: 1668567366}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45e653bab7fb20e499bda25e1b646fea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &262668516445024409
 PrefabInstance:
   m_ObjectHideFlags: 0
