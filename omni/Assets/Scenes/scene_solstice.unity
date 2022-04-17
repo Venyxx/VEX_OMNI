@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.7239258, g: 0.58318317, b: 0.23433825, a: 1}
+  m_IndirectSpecularColor: {r: 0.723927, g: 0.5831834, b: 0.23433833, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -7801,6 +7801,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1446419739}
     m_Modifications:
+    - target: {fileID: 3440156763747903022, guid: 47e941b00d5c3504a99532431090f73b, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: af1008fc494994b41ba4cc8694e09db8, type: 2}
     - target: {fileID: 8770727992049471348, guid: 47e941b00d5c3504a99532431090f73b, type: 3}
       propertyPath: m_Name
       value: DartTrap(4)
@@ -9650,6 +9654,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1446419739}
     m_Modifications:
+    - target: {fileID: 3440156763747903022, guid: 47e941b00d5c3504a99532431090f73b, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: af1008fc494994b41ba4cc8694e09db8, type: 2}
     - target: {fileID: 8769059807657769465, guid: 47e941b00d5c3504a99532431090f73b, type: 3}
       propertyPath: maxDistance
       value: 30
@@ -17135,6 +17143,10 @@ PrefabInstance:
       propertyPath: projectilePrefabs.Array.data[0]
       value: 
       objectReference: {fileID: 2692429820264756386, guid: e37c8773ac73b1041903a7218376837d, type: 3}
+    - target: {fileID: 6184178765518707379, guid: c6f8a14bda76ec043b5cb249cc239e3d, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: af1008fc494994b41ba4cc8694e09db8, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c6f8a14bda76ec043b5cb249cc239e3d, type: 3}
 --- !u!114 &1588642485 stripped
@@ -23099,6 +23111,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: -0.0405
       objectReference: {fileID: 0}
+    - target: {fileID: 5885397323466936058, guid: a8592f4d052bcda4dae0033a0f5ddafd, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 41ffae27c93393948b70932583178092, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a8592f4d052bcda4dae0033a0f5ddafd, type: 3}
 --- !u!4 &1881313513 stripped
@@ -24938,6 +24954,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1446419739}
     m_Modifications:
+    - target: {fileID: 3440156763747903022, guid: 47e941b00d5c3504a99532431090f73b, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: af1008fc494994b41ba4cc8694e09db8, type: 2}
     - target: {fileID: 8770727992049471348, guid: 47e941b00d5c3504a99532431090f73b, type: 3}
       propertyPath: m_Name
       value: DartTrap (1)
@@ -25532,6 +25552,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1447349854}
     m_Modifications:
+    - target: {fileID: 3440156763747903022, guid: 47e941b00d5c3504a99532431090f73b, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: af1008fc494994b41ba4cc8694e09db8, type: 2}
     - target: {fileID: 8769059807657769465, guid: 47e941b00d5c3504a99532431090f73b, type: 3}
       propertyPath: playMode
       value: 1
