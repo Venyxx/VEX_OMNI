@@ -22,7 +22,9 @@ public class meteor_move : MonoBehaviour
             rb.position += transform.forward * (speed * Time.deltaTime);
 
         }
-        void OnCollisionEnter(Collision collision)
+      
+    }
+      void OnCollisionEnter(Collision collision)
         {
             speed = 0;
 
@@ -58,5 +60,4 @@ public class meteor_move : MonoBehaviour
 
             Destroy(gameObject);
         }
-    }
 }
