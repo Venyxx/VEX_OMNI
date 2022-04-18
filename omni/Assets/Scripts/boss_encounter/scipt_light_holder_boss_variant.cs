@@ -10,6 +10,7 @@ public class scipt_light_holder_boss_variant : MonoBehaviour
     //public script_lantern script_Lantern;
     public script_lantern_boss lanternAccess;
     script_third_person_controller playerAccess;
+    script_gaze_manager gaze_Manager;
     public GameObject[] lanterns;
     //public TextMeshProUGUI lightHolderGUI;
     bool isThereLight;
@@ -23,6 +24,8 @@ public class scipt_light_holder_boss_variant : MonoBehaviour
     {
         GameObject player = GameObject.FindGameObjectWithTag("Player");
         GameObject lanternsOBJ = GameObject.Find("first_lantern_DONOTRENAME");
+        GameObject manager = GameObject.Find("GAZEMANAGER");
+        gaze_Manager = manager.GetComponent<script_gaze_manager>();
         playerScriptAccess = player.GetComponent<script_character_movement>();
         lanternAccess = lanternsOBJ.GetComponent<script_lantern_boss>();
         playerAccess = player.GetComponent<script_third_person_controller>();
@@ -121,7 +124,7 @@ public class scipt_light_holder_boss_variant : MonoBehaviour
         {
             //INSERT SOUND CLIP FOR GETTING LIGHT HERE
             pillarItself.SetActive(false);
-            lanternAccess.hasGaze = true;
+            gaze_Manager.hasGaze = true;
             playerScriptAccess.holdingLight = true;
             Debug.Log("boolHoldingLight in Hands " + playerScriptAccess.holdingLight);
             hasLightInHolder = false;
@@ -133,7 +136,7 @@ public class scipt_light_holder_boss_variant : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            lanternAccess.hasGaze = true;
+            gaze_Manager.hasGaze = true;
             playerScriptAccess.firstPickLight = true;
         }
     }

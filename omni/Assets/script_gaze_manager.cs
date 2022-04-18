@@ -18,12 +18,13 @@ public class script_gaze_manager : MonoBehaviour
     {
         gazeChecking();
         gazeDisplayMethod();
-        
+
         GameObject player = GameObject.FindGameObjectWithTag("Player");
         script_character_Movement = player.GetComponent<script_character_movement>();
 
         hasGaze = true;
         script_character_Movement.hasLightRounds = false;
+        Debug.Log(hasGaze);
 
     }
 
@@ -32,6 +33,7 @@ public class script_gaze_manager : MonoBehaviour
     {
         gazeChecking();
         gazeDisplayMethod();
+        Debug.Log(hasGaze);
     }
     void gazeDisplayMethod()
     {
@@ -59,17 +61,17 @@ public class script_gaze_manager : MonoBehaviour
 
 
     }
-     void gazeChecking()
+    void gazeChecking()
     {
         //Debug.Log("gaze checking");
         if (hasGaze)
         {
             gazeCurrent -= Time.deltaTime;
-                Debug.Log(gazeCurrent);
+            Debug.Log(gazeCurrent);
             Debug.Log("is running");
             if (script_character_Movement.hasLightRounds == false)
             {
-                
+
             }
         }
         else if (hasGaze == false || script_character_Movement.hasLightRounds == true)

@@ -1567,13 +1567,13 @@ PrefabInstance:
       value: Lantern
       objectReference: {fileID: 0}
     - target: {fileID: 7317549042088287510, guid: dbbd0d44c43d55d46917b9d3b3210731, type: 3}
+      propertyPath: Manager
+      value: 
+      objectReference: {fileID: 1898351697}
+    - target: {fileID: 7317549042088287510, guid: dbbd0d44c43d55d46917b9d3b3210731, type: 3}
       propertyPath: gazeGUI
       value: 
       objectReference: {fileID: 1659836940}
-    - target: {fileID: 7317549042088287510, guid: dbbd0d44c43d55d46917b9d3b3210731, type: 3}
-      propertyPath: firstLantern
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 7317549042088287510, guid: dbbd0d44c43d55d46917b9d3b3210731, type: 3}
       propertyPath: thirdpersonAccess
       value: 
@@ -1975,17 +1975,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e80e41b0b51754498a425f697306b91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gazeDisplay: 0
-  gazeGUI: {fileID: 1659836940}
   script_character_Movement: {fileID: 358458278}
   thirdpersonAccess: {fileID: 162518679}
+  Manager: {fileID: 1898351697}
   lanternIsLit: 0
-  hasGaze: 0
   isSafe: 1
   particleEffect: {fileID: 671667429}
   firstLantern: 1
-  gazeMax: 20
-  gazeCurrent: 0
 --- !u!4 &680844024 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5977641765413855260, guid: a1147760334665043a0207d4dd9cdf2d, type: 3}
@@ -2771,6 +2767,10 @@ PrefabInstance:
       value: 0.03
       objectReference: {fileID: 0}
     - target: {fileID: 7317549042088287510, guid: dbbd0d44c43d55d46917b9d3b3210731, type: 3}
+      propertyPath: Manager
+      value: 
+      objectReference: {fileID: 1898351697}
+    - target: {fileID: 7317549042088287510, guid: dbbd0d44c43d55d46917b9d3b3210731, type: 3}
       propertyPath: gazeGUI
       value: 
       objectReference: {fileID: 1659836940}
@@ -3537,6 +3537,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: lantern_object_boss_variant_FOUR
       objectReference: {fileID: 0}
+    - target: {fileID: 7317549042088287510, guid: dbbd0d44c43d55d46917b9d3b3210731, type: 3}
+      propertyPath: Manager
+      value: 
+      objectReference: {fileID: 1898351697}
     - target: {fileID: 7317549042088287510, guid: dbbd0d44c43d55d46917b9d3b3210731, type: 3}
       propertyPath: gazeGUI
       value: 
@@ -4504,6 +4508,10 @@ PrefabInstance:
       value: lantern_object_boss_variant_SEC
       objectReference: {fileID: 0}
     - target: {fileID: 7317549042088287510, guid: dbbd0d44c43d55d46917b9d3b3210731, type: 3}
+      propertyPath: Manager
+      value: 
+      objectReference: {fileID: 1898351697}
+    - target: {fileID: 7317549042088287510, guid: dbbd0d44c43d55d46917b9d3b3210731, type: 3}
       propertyPath: gazeGUI
       value: 
       objectReference: {fileID: 1659836940}
@@ -4776,6 +4784,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 309ce01fdb8920740a2ec3acd7385a5b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gazeMax: 16
+  gazeCurrent: 0
+  hasGaze: 1
+  gazeDisplay: 0
+  gazeGUI: {fileID: 1659836940}
+  script_character_Movement: {fileID: 358458278}
 --- !u!4 &1898351698
 Transform:
   m_ObjectHideFlags: 0

@@ -270,7 +270,7 @@ namespace StarterAssets
 						_animator.SetBool(_animIDJump, true);
 					}
 					_input.jump = false;
-					Debug.Log(_input.jump);
+					//Debug.Log(_input.jump);
 				}
 
 				// jump timeout

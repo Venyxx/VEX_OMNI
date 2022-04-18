@@ -35,7 +35,8 @@ public class script_lantern_boss : MonoBehaviour
         thirdpersonAccess = player.GetComponent<script_third_person_controller>();
         Manager = gazemanager.GetComponent<script_gaze_manager>();
         particleEffect.SetActive(false);
-        Manager.hasGaze = true;
+        //Manager.hasGaze = true;
+        isSafe = false;
         Manager.gazeCurrent = Manager.gazeMax;
         script_character_Movement.hasLightRounds = false;
 

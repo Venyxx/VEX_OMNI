@@ -74,17 +74,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e80e41b0b51754498a425f697306b91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gazeDisplay: 0
-  gazeGUI: {fileID: 0}
   script_character_Movement: {fileID: 0}
   thirdpersonAccess: {fileID: 0}
+  Manager: {fileID: 0}
   lanternIsLit: 0
-  hasGaze: 0
   isSafe: 1
   particleEffect: {fileID: 880651689157609611}
   firstLantern: 1
-  gazeMax: 20
-  gazeCurrent: 0
 --- !u!1001 &2152300679373620024
 PrefabInstance:
   m_ObjectHideFlags: 0

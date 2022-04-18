@@ -52,6 +52,7 @@ public class script_olmec_head_boss_variant : MonoBehaviour
         thirdAccess.swordLit = true;
         //script_Brilliance.hasSol = false;
         manager.hasGaze = false;
+        Debug.Log("gaze in olmec" + manager.hasGaze);
         GameObject player = collision.GetComponent<GameObject>();
         script_character_Movement.hasLightRounds = true;
         
