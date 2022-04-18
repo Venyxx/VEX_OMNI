@@ -9926,8 +9926,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7515165490852621814}
-  m_LocalRotation: {x: -0.16521968, y: 0, z: 0, w: 0.9862568}
-  m_LocalPosition: {x: -22.354267, y: 4.466218, z: 6.8303037}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.68586, y: 0.68586, z: 0.68586}
   m_Children:
   - {fileID: 7515165490910489282}
@@ -9937,7 +9937,7 @@ Transform:
   - {fileID: 2203173984390629930}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: -19.02, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &7515165490852621819
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9950,7 +9950,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a9a85f91d0c246042b7ca0a0aae1d25c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 20
+  speed: 8
   impactPrefab: {fileID: 8803673883043053556, guid: 2f73415bd982d0c40a730c0b844b6104, type: 3}
   trails:
   - {fileID: 7515165490910489281}
@@ -9964,7 +9964,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7515165490852621814}
   serializedVersion: 2
-  m_Mass: 1
+  m_Mass: 50
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 0
@@ -14801,11 +14801,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e77e6db32c02f24390759a55ac80655, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hasSol: 0
-  solCurrent: 0
-  solMax: 6
-  solDisplay: 0
-  solGUI: {fileID: 3688747859293161924}
 --- !u!1001 &8384040642516311805
 PrefabInstance:
   m_ObjectHideFlags: 0
