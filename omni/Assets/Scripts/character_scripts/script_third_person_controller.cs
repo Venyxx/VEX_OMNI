@@ -276,5 +276,9 @@ public class script_third_person_controller : MonoBehaviour
         {
             SceneManager.LoadScene("scene_boss");
         }
+        if (collider.tag == "Jaguar")
+        {
+            SceneManager.LoadScene("WinGame");
+        }
     }
 }
