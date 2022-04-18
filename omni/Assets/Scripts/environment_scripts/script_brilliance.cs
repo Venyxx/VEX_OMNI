@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 public class script_brilliance : MonoBehaviour
 {
     // Start is called before the first frame update
@@ -17,6 +18,8 @@ public class script_brilliance : MonoBehaviour
         
          GameObject player = GameObject.FindGameObjectWithTag("Player");
         script_character_Movement = player.GetComponent<script_character_movement>();
+        solCurrent = solMax;
+        hasSol = true;
     }
 
     // Update is called once per frame
@@ -24,6 +27,11 @@ public class script_brilliance : MonoBehaviour
     {
         solChecking();
         gazeDisplayMethod();
+
+        if (solCurrent <= 0)
+        {
+SceneManager.LoadScene("GameOver");
+        }
     }
     void solChecking()
     {
