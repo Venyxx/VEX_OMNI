@@ -2,47 +2,53 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
-
+using UnityEngine.SceneManagement;
 public class script_lantern_boss : MonoBehaviour
 {
-    public int gazeDisplay;
-    public TextMeshProUGUI gazeGUI;
+    //public int gazeDisplay;
+    //public TextMeshProUGUI gazeGUI;
     //public float waitTime = 1.0f;
     //public float lanternWaitTime = 10f;
     //public float darknessWaitTime = 3f;
     public script_character_movement script_character_Movement;
     public script_third_person_controller thirdpersonAccess;
+    public script_gaze_manager Manager;
     public bool lanternIsLit = false;
-    public bool hasGaze = false;
+    // public bool hasGaze = false;
     public bool isSafe = true;
     //bool lanternTimeRunner = false;
     public GameObject particleEffect;
     public bool firstLantern;
-    public float gazeMax = 16f;
-    public float gazeCurrent;
+    //public float gazeMax = 16f;
+    //public float gazeCurrent;
 
-    
+
     //public Transform particleSpawn;
 
     // Start is called before the first frame update
     void Start()
     {
-        gazeDisplayMethod();
+        
         GameObject player = GameObject.FindGameObjectWithTag("Player");
+        GameObject gazemanager = GameObject.Find("GAZEMANAGER");
         script_character_Movement = player.GetComponent<script_character_movement>();
         thirdpersonAccess = player.GetComponent<script_third_person_controller>();
+        Manager = gazemanager.GetComponent<script_gaze_manager>();
         particleEffect.SetActive(false);
+        Manager.hasGaze = true;
+        Manager.gazeCurrent = Manager.gazeMax;
+        script_character_Movement.hasLightRounds = false;
 
     }
 
     // Update is called once per frame
     void Update()
-    {
-        gazeChecking();
-        gazeDisplayMethod();
-        if (gazeCurrent <= 0 && hasGaze)
+    {    
+        if (Manager.gazeCurrent <= 0 && Manager.hasGaze)
         {
             Debug.Log("death, reset");
+            SceneManager.LoadScene("GameOver");
+
         }
 
         if (isSafe == false)
@@ -53,7 +59,7 @@ public class script_lantern_boss : MonoBehaviour
 
         else if (isSafe == true)
         {
-            hasGaze = false;
+            Manager.hasGaze = false;
         }
 
 
@@ -70,7 +76,7 @@ public class script_lantern_boss : MonoBehaviour
         {
             //INSERT SOUND CLIP FOR GETTING LIGHT HERE
             script_character_Movement.firstPickLight = false;
-            hasGaze = false;
+            Manager.hasGaze = false;
             isSafe = true;
         }
     }
@@ -81,44 +87,15 @@ public class script_lantern_boss : MonoBehaviour
         {
             script_character_Movement.hasLightRounds = true;
             thirdpersonAccess.bowLit = true;
-            
-            hasGaze = false;
+
+            Manager.hasGaze = false;
             //Debug.Log("has darkness " + hasDarkness);
             isSafe = true;
-            //Debug.Log("can shoot light damage" + script_character_Movement.hasLightRounds);
-
-            //neeeds to start counting down----
-
         }
         else if (other.tag == "Player" && lanternIsLit == false)
             script_character_Movement.hasLightRounds = false;
     }
-    void gazeDisplayMethod()
-    {
 
-
-        if (hasGaze)
-        {
-            Debug.Log("noticed has gaze");
-            gazeDisplay = (int)gazeCurrent;
-
-            if (gazeCurrent <= 0)
-            {
-                gazeGUI.text = "";
-            }
-            gazeGUI.text = "God's Gaze 0:" + gazeDisplay.ToString();
-
-
-        }
-
-
-
-        if (script_character_Movement.hasLightRounds == true)
-            gazeGUI.text = "";
-
-
-
-    }
 
     void OnCollisionEnter(Collision collision)
     {
@@ -127,8 +104,8 @@ public class script_lantern_boss : MonoBehaviour
         //this is if the lantern was previously off--------------
         if (script_character_Movement.hasLightRounds && lanternIsLit == false && collision.collider.CompareTag("Arrow"))
         {
-            Debug.Log("this lanter was off and now it is turning on");
-            particleEffect.SetActive(true);  
+            Debug.Log("this lantern was off and now it is turning on");
+            particleEffect.SetActive(true);
             script_character_Movement.holdingLight = false;
             // Debug.Log("boolHoldingLightChar in Hands" + script_character_Movement.holdingLight);
             lanternIsLit = true;
@@ -154,34 +131,9 @@ public class script_lantern_boss : MonoBehaviour
             thirdpersonAccess.bowLit = false;
             Debug.Log("getting gaze");
             isSafe = false;
-            hasGaze = true;
-            gazeCurrent = gazeMax;
+            Manager.hasGaze = true;
+            Manager.gazeCurrent = Manager.gazeMax;
         }
     }
-
-
-
-    void gazeChecking()
-    {
-        if (hasGaze)
-        {
-            //Debug.Log("is runnung");
-            if (script_character_Movement.hasLightRounds == false && firstLantern)
-            {
-                gazeCurrent -= Time.deltaTime;
-                Debug.Log(gazeCurrent);
-            }
-        }
-        else if (hasGaze == false || script_character_Movement.hasLightRounds == true)
-        {
-            gazeCurrent = gazeMax;
-        }
-
-        if (script_character_Movement.hasLightRounds == true)
-        {
-            gazeCurrent = gazeMax;
-        }
-    }
-
 
 }

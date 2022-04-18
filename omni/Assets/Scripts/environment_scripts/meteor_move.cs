@@ -17,45 +17,46 @@ public class meteor_move : MonoBehaviour
 
     void FixedUpdate()
     {
-        if(speed != 0 && rb != null)
+        if (speed != 0 && rb != null)
         {
             rb.position += transform.forward * (speed * Time.deltaTime);
+
         }
-    }
-    private void OnCollisionEnter(Collision collision)
-    {
-        speed = 0; 
-
-        ContactPoint contact = collision.contacts[0];
-        Quaternion rot = Quaternion.FromToRotation(Vector3.up, contact.normal);
-        Vector3 pos = contact.point; 
-
-
-
-        if(impactPrefab != null)
+        void OnCollisionEnter(Collision collision)
         {
-            var impactVFX = Instantiate(impactPrefab, pos, rot) as GameObject;
-            Destroy(impactVFX, 5);
-        }
-        if(trails.Count > 0)
-        {
-            for(int i = 0; i< trails.Count; i++)
+            speed = 0;
+
+            ContactPoint contact = collision.contacts[0];
+            Quaternion rot = Quaternion.FromToRotation(Vector3.up, contact.normal);
+            Vector3 pos = contact.point;
+
+
+
+            if (impactPrefab != null)
             {
-                trails[i].transform.parent = null;
-                var ps = trails[i].GetComponent<ParticleSystem>();
-                if(ps != null)
+                var impactVFX = Instantiate(impactPrefab, pos, rot) as GameObject;
+                Destroy(impactVFX, 5);
+            }
+            if (trails.Count > 0)
+            {
+                for (int i = 0; i < trails.Count; i++)
                 {
-                   
-                    Destroy(ps.gameObject, ps.main.duration + ps.main.startLifetime.constantMax);
+                    trails[i].transform.parent = null;
+                    var ps = trails[i].GetComponent<ParticleSystem>();
+                    if (ps != null)
+                    {
+
+                        Destroy(ps.gameObject, ps.main.duration + ps.main.startLifetime.constantMax);
+                    }
                 }
             }
-        }
 
-        if( collision.collider.CompareTag("Player"))
-        {
-            SceneManager.LoadScene("GameOver");
-        }
+            if (collision.collider.CompareTag("Player"))
+            {
+                SceneManager.LoadScene("GameOver");
+            }
 
-        Destroy(gameObject);
+            Destroy(gameObject);
+        }
     }
 }

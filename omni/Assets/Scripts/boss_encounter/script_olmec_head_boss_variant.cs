@@ -13,16 +13,24 @@ public class script_olmec_head_boss_variant : MonoBehaviour
     script_third_person_controller thirdAccess;
     private StarterAssetsInputs starterAssetsInputs;
     private script_character_movement script_character_Movement;
+    private script_lantern_boss  lanternAccses;
+    private script_gaze_manager manager;
      //private script_brilliance script_Brilliance;
     
 
 
     void Start()
     {
+        GameObject lantern = GameObject.Find("first_lantern_DONOTRENAME");
+        GameObject gazemanager = GameObject.Find("GAZEMANAGER");
         GameObject player = GameObject.FindGameObjectWithTag("Player");
+        manager = gazemanager.GetComponent<script_gaze_manager>();
          script_character_Movement = player.GetComponent<script_character_movement>();
         thirdAccess = player.GetComponent<script_third_person_controller>();
         starterAssetsInputs = player.GetComponent<StarterAssetsInputs>();
+        lanternAccses = lantern.GetComponent<script_lantern_boss>();
+
+
         //GameObject brill = GameObject.FindGameObjectWithTag("BRILLHOLD");
          //script_Brilliance = brill.GetComponent<script_brilliance>();
     }
@@ -43,8 +51,10 @@ public class script_olmec_head_boss_variant : MonoBehaviour
         //Debug.Log("noticed player presence");
         thirdAccess.swordLit = true;
         //script_Brilliance.hasSol = false;
+        manager.hasGaze = false;
         GameObject player = collision.GetComponent<GameObject>();
         script_character_Movement.hasLightRounds = true;
+        
         //Debug.Log("noticed col");
         //this will change eventually, but for now it will just be on player collision
 
@@ -66,8 +76,12 @@ public class script_olmec_head_boss_variant : MonoBehaviour
        {
            thirdAccess.swordLit = false;
            script_character_Movement.hasLightRounds = false;
+           manager.hasGaze = true;
+           Debug.Log("ran ref olmec");
            //script_Brilliance.hasSol = true;
 
        }
     }
+
+   
 }
