@@ -22,6 +22,7 @@ public class scipt_boss_control : MonoBehaviour
     {
         RenderSettings.skybox = skybox_light;
         LDTimerCurrent = LDTimerMax;
+        postProcLight.SetActive(true);
         favorsLight = true;
         favorsGUI.text = "";
     }

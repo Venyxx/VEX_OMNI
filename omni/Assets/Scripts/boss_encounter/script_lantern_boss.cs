@@ -39,7 +39,7 @@ public class script_lantern_boss : MonoBehaviour
     void Update()
     {
         gazeChecking();
-        //gazeDisplayMethod();
+        gazeDisplayMethod();
         if (gazeCurrent <= 0 && hasGaze)
         {
             Debug.Log("death, reset");
@@ -99,6 +99,7 @@ public class script_lantern_boss : MonoBehaviour
 
         if (hasGaze)
         {
+            Debug.Log("noticed has gaze");
             gazeDisplay = (int)gazeCurrent;
 
             if (gazeCurrent <= 0)
@@ -164,9 +165,11 @@ public class script_lantern_boss : MonoBehaviour
     {
         if (hasGaze)
         {
+            //Debug.Log("is runnung");
             if (script_character_Movement.hasLightRounds == false && firstLantern)
             {
                 gazeCurrent -= Time.deltaTime;
+                Debug.Log(gazeCurrent);
             }
         }
         else if (hasGaze == false || script_character_Movement.hasLightRounds == true)
