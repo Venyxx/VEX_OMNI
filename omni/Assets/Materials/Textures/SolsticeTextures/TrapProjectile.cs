@@ -7,7 +7,7 @@ namespace Runemark.DeadlyDungeonTraps
     using UnityEditorInternal;
 #endif
 
-    
+
     public class TrapProjectile : DamageSource
     {
         public bool sticky;
@@ -34,37 +34,41 @@ namespace Runemark.DeadlyDungeonTraps
             if (distanceLeft <= 0) gameObject.SetActive(false);
         }
 
-        void OnCollisionEnter (Collision other)
+        void OnCollisionEnter(Collision other)
         {
+            Debug.Log("dart coll");
             if (other.collider.tag == "Player")
             {
-                 player = other.gameObject.GetComponent<StarterAssets.ThirdPersonController>();
-                 WaitSpace(player);
-                 tagged = true;
-                 
+                Debug.Log("dart coll");
+                player = other.gameObject.GetComponent<StarterAssets.ThirdPersonController>();
+                tagged = true;
+                WaitSpace(player);
+                
+
             }
         }
-        void WaitSpace (StarterAssets.ThirdPersonController log)
+        void WaitSpace(StarterAssets.ThirdPersonController log)
         {
             CurrentDownTime = MaxDownTime;
+            Debug.Log("waitspace");
 
             if (tagged)
             {
                 if (CurrentDownTime > 0)
-            {
-                CurrentDownTime -= Time.deltaTime;
-                log.MoveSpeed -= 2;
-                log.SprintSpeed -=2;
-                Debug.Log("slowing speed");
-                
-            }
-            else if (CurrentDownTime < 0)
-            {
-                log.MoveSpeed += 2;
-                log.SprintSpeed += 2;
-                Debug.Log("return speed");
-                tagged = false;
-            }
+                {
+                    CurrentDownTime -= Time.deltaTime;
+                    log.MoveSpeed -= 2;
+                    log.SprintSpeed -= 2;
+                    Debug.Log("slowing speed");
+
+                }
+                else if (CurrentDownTime < 0)
+                {
+                    log.MoveSpeed += 2;
+                    log.SprintSpeed += 2;
+                    Debug.Log("return speed");
+                    tagged = false;
+                }
             }
         }
     }

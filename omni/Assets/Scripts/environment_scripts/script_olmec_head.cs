@@ -15,6 +15,10 @@ public class script_olmec_head : MonoBehaviour
     private StarterAssetsInputs starterAssetsInputs;
     private script_character_movement script_character_Movement;
      private script_brilliance script_Brilliance;
+     public GameObject door1OBJ;
+      public GameObject door2OBJ;
+       public GameObject door3OBJ;
+        public GameObject door4OBJ;
     
 
 
@@ -32,6 +36,26 @@ public class script_olmec_head : MonoBehaviour
     void Update()
     {
 
+    }
+
+    void OnTriggerEnter(Collider collider)
+    {
+        if (door1OBJ != null && gameObject.tag == "door1" && collider.tag == "Player")
+        {
+            door1OBJ.SetActive(false);
+        }
+        if (door2OBJ != null &&gameObject.tag == "door2" && collider.tag == "Player")
+        {
+            door2OBJ.SetActive(false);
+        }
+        if (door3OBJ != null &&gameObject.tag == "door3" && collider.tag == "Player")
+        {
+            door3OBJ.SetActive(false);
+        }
+        if (door4OBJ != null &&gameObject.tag == "door4" && collider.tag == "Player")
+        {
+            door4OBJ.SetActive(true);
+        }
     }
 
     void OnTriggerStay(Collider collision)

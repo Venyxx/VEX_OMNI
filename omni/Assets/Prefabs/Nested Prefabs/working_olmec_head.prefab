@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 2545335833525917996}
   m_Layer: 0
   m_Name: working_olmec_head
-  m_TagString: Untagged
+  m_TagString: door1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -28,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 4626416946851182922}
   m_LocalRotation: {x: 0, y: 0.9238796, z: -0, w: -0.38268325}
   m_LocalPosition: {x: -67.9, y: 1.1, z: -10.8}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4176728296618722904}
   - {fileID: 4626416948422341200}
@@ -63,6 +63,10 @@ MonoBehaviour:
   meteorSpawn: {fileID: 4626416948422341200}
   meteor: {fileID: 4452532492927252290, guid: beb7af170efe24342b72b4e8f901db47, type: 3}
   olmecNoise: {fileID: 8300000, guid: ca1963a7a4acfc649ab0cc493ad0f3ab, type: 3}
+  door1OBJ: {fileID: 0}
+  door2OBJ: {fileID: 0}
+  door3OBJ: {fileID: 0}
+  door4OBJ: {fileID: 0}
 --- !u!65 &2545335833525917996
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -100,7 +104,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4626416948422341199}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.7, y: 34.4, z: 1.8}
+  m_LocalPosition: {x: -6.5, y: 30, z: 5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4626416946851182925}
