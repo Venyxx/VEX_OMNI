@@ -204,7 +204,7 @@ public class script_third_person_controller : MonoBehaviour
                 animator.SetBool(animFiring, true);
                 shootCheck = true;
                 starterAssetsInputs.shoot = false;
-                audioSource.PlayOneShot(macuaClip, 0.5F);
+                //audioSource.PlayOneShot(macuaClip, 0.5F);
 
                 
                 

@@ -165,7 +165,7 @@ public class script_lantern_boss : MonoBehaviour
     {
         if (hasGaze)
         {
-            Debug.Log("is runnung");
+            //Debug.Log("is runnung");
             if (script_character_Movement.hasLightRounds == false && firstLantern)
             {
                 gazeCurrent -= Time.deltaTime;
