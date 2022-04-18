@@ -40,7 +40,7 @@ public class scipt_boss_control : MonoBehaviour
             postProcLight.SetActive(false);
             favorsLight = false;
             favorsDark = true;
-            favorsGUI.text = "___ regains favor of the Dark";
+            favorsGUI.text = "The Astral Destroyer regains favor of the Dark";
             Debug.Log("Switching to dark");
             Invoke ("guiWaitSpace", 3f);
         }
@@ -53,7 +53,7 @@ public class scipt_boss_control : MonoBehaviour
             postProcLight.SetActive(true);
             favorsDark = false;
             favorsLight = true;
-            favorsGUI.text = "____regains favor of the Light";
+            favorsGUI.text = "The Astral Destroyer regains favor of the Light";
             Debug.Log("Switching to light");
             Invoke ("guiWaitSpace", 3f);
         }
