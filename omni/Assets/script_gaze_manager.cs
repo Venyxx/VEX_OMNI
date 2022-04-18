@@ -24,7 +24,7 @@ public class script_gaze_manager : MonoBehaviour
 
         hasGaze = true;
         script_character_Movement.hasLightRounds = false;
-        Debug.Log(hasGaze);
+        //Debug.Log(hasGaze);
 
     }
 
@@ -33,7 +33,7 @@ public class script_gaze_manager : MonoBehaviour
     {
         gazeChecking();
         gazeDisplayMethod();
-        Debug.Log(hasGaze);
+       // Debug.Log(hasGaze);
     }
     void gazeDisplayMethod()
     {
@@ -41,7 +41,7 @@ public class script_gaze_manager : MonoBehaviour
         //Debug.Log("gazedisplay");
         if (hasGaze)
         {
-            Debug.Log("noticed has gaze");
+            //Debug.Log("noticed has gaze");
             gazeDisplay = (int)gazeCurrent;
 
             if (gazeCurrent <= 0)
@@ -67,8 +67,8 @@ public class script_gaze_manager : MonoBehaviour
         if (hasGaze)
         {
             gazeCurrent -= Time.deltaTime;
-            Debug.Log(gazeCurrent);
-            Debug.Log("is running");
+            //Debug.Log(gazeCurrent);
+            //Debug.Log("is running");
             if (script_character_Movement.hasLightRounds == false)
             {
 

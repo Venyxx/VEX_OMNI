@@ -54,7 +54,7 @@ public class script_third_person_controller : MonoBehaviour
 
     private void Start()
     {
-        Debug.Log(starterAssetsInputs.escape);
+        //Debug.Log(starterAssetsInputs.escape);
         
                 //Debug.Log(UI_Control.PauseGame);
         AssignAnimationIDs();

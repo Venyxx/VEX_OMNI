@@ -30,7 +30,7 @@ public class scipt_light_holder_boss_variant : MonoBehaviour
         lanternAccess = lanternsOBJ.GetComponent<script_lantern_boss>();
         playerAccess = player.GetComponent<script_third_person_controller>();
         hasLightInHolder = true;
-        Debug.Log(hasLightInHolder);
+        //Debug.Log(hasLightInHolder);
         //lightHolderGUI.text = "Active";
 
         pillarItself.SetActive(true);

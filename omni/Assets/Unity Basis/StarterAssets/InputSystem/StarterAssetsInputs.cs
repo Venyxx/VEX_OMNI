@@ -59,29 +59,29 @@ namespace StarterAssets
 
 		public void OnAim(InputValue value)
 		{
-			Debug.Log("noticed aim");
+			//Debug.Log("noticed aim");
 			AimInput(value.isPressed);
 		}
 
 		public void OnShoot(InputValue value)
 		{
-			Debug.Log("noticed shooot");
+			//Debug.Log("noticed shooot");
 			ShootInput(value.isPressed);
 		}
 
 		public void OnBow(InputValue value)
 		{
-			Debug.Log("noticed bow press 1");
+			//Debug.Log("noticed bow press 1");
 			BowInput(value.isPressed);
 		}
 		public void OnSword(InputValue value)
 		{
-			Debug.Log("noticed sword press 2");
+			//Debug.Log("noticed sword press 2");
 			OnSwordInput(value.isPressed);
 		}
 		public void OnEscape(InputValue value)
 		{
-			Debug.Log("noticed esc");
+			//Debug.Log("noticed esc");
 			EscapeInput(value.isPressed);
 		}
 #else
