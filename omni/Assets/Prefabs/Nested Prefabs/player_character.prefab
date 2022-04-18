@@ -1231,6 +1231,7 @@ MonoBehaviour:
   bow: 0
   sword: 0
   escape: 0
+  reticle: {fileID: 0}
   analogMovement: 0
   cursorLocked: 1
   cursorInputForLook: 1
@@ -1350,12 +1351,21 @@ MonoBehaviour:
   aimSensitivity: 0.5
   pfArrowProjectile: {fileID: 4983641342447879440, guid: c1e067edb6b16b3439cc0e3ad1ddd866, type: 3}
   arrowSpawn: {fileID: 48148966073325411}
-  uI_Control: {fileID: 0}
   darknessCount: 0
   aimColliderLayerMask:
     serializedVersion: 2
     m_Bits: 577
   animator: {fileID: 0}
+  reticle: {fileID: 0}
+  sword: {fileID: 0}
+  bow: {fileID: 0}
+  swordlitOBJ: {fileID: 0}
+  bowlitOBJ: {fileID: 0}
+  postprocessing: {fileID: 0}
+  swordLit: 0
+  bowLit: 0
+  bowClip: {fileID: 0}
+  macuaClip: {fileID: 0}
 --- !u!114 &48148966798091098
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1370,7 +1380,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   holdingLight: 0
   hasLightRounds: 0
+  firstPickLight: 0
   lightRoundDisplay: {fileID: 0}
+  player: {fileID: 0}
   weightOfDarkness: 0
 --- !u!1 &4498643513968649810
 GameObject:
