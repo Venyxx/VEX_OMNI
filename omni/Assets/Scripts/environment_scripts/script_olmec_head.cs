@@ -14,7 +14,7 @@ public class script_olmec_head : MonoBehaviour
     script_third_person_controller thirdAccess;
     private StarterAssetsInputs starterAssetsInputs;
     private script_character_movement script_character_Movement;
-     private script_brilliance script_Brilliance;
+     //private script_brilliance script_Brilliance;
      public GameObject door1OBJ;
       public GameObject door2OBJ;
        public GameObject door3OBJ;
@@ -28,8 +28,8 @@ public class script_olmec_head : MonoBehaviour
          script_character_Movement = player.GetComponent<script_character_movement>();
         thirdAccess = player.GetComponent<script_third_person_controller>();
         starterAssetsInputs = player.GetComponent<StarterAssetsInputs>();
-        GameObject brill = GameObject.FindGameObjectWithTag("BRILLHOLD");
-         script_Brilliance = brill.GetComponent<script_brilliance>();
+        //GameObject brill = GameObject.FindGameObjectWithTag("BRILLHOLD");
+         //script_Brilliance = brill.GetComponent<script_brilliance>();
     }
 
     // Update is called once per frame
@@ -62,9 +62,9 @@ public class script_olmec_head : MonoBehaviour
     {
         //Debug.Log("noticed player presence");
         thirdAccess.swordLit = true;
-        script_Brilliance.hasSol = false;
+        //script_Brilliance.hasSol = false;
         GameObject player = collision.GetComponent<GameObject>();
-        script_character_Movement.hasLightRounds = true;
+        //script_character_Movement.hasLightRounds = true;
         //Debug.Log("noticed col");
         //this will change eventually, but for now it will just be on player collision
 
@@ -85,8 +85,8 @@ public class script_olmec_head : MonoBehaviour
        if (collider.tag == "Player")
        {
            thirdAccess.swordLit = false;
-           script_character_Movement.hasLightRounds = false;
-           script_Brilliance.hasSol = true;
+           //script_character_Movement.hasLightRounds = false;
+           //script_Brilliance.hasSol = true;
 
        }
     }
