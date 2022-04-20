@@ -143,19 +143,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c2421ea9bd4eb2c48b4bc0326f471a2b, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.720801
+      value: 0.66947955
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c2421ea9bd4eb2c48b4bc0326f471a2b, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.24503507
+      value: 0.22758995
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c2421ea9bd4eb2c48b4bc0326f471a2b, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.6138835
+      value: 0.66947955
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c2421ea9bd4eb2c48b4bc0326f471a2b, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.20868857
+      value: -0.22758995
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c2421ea9bd4eb2c48b4bc0326f471a2b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -163,7 +163,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c2421ea9bd4eb2c48b4bc0326f471a2b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 80.84
+      value: 90
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c2421ea9bd4eb2c48b4bc0326f471a2b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -173,9 +173,13 @@ PrefabInstance:
       propertyPath: m_ReceiveGI
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: c2421ea9bd4eb2c48b4bc0326f471a2b, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: b4455ae93f74a45d78547b393782bc29, type: 2}
     - target: {fileID: 919132149155446097, guid: c2421ea9bd4eb2c48b4bc0326f471a2b, type: 3}
       propertyPath: m_Name
-      value: Torch
+      value: Torch Variant
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: c2421ea9bd4eb2c48b4bc0326f471a2b, type: 3}
       propertyPath: m_StaticEditorFlags
