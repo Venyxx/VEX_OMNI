@@ -11,6 +11,7 @@ public class script_lantern : MonoBehaviour
     public float lanternWaitTime = 10f;
     public float darknessWaitTime = 3f;
     public script_character_movement script_character_Movement;
+    public script_ui_movement uiMoveAccess;
     public bool lanternIsLit = false;
     public script_third_person_controller thirdpersonAccess;
     public bool hasDarkness = false;
@@ -28,7 +29,9 @@ public class script_lantern : MonoBehaviour
     {
         darknessDisplayMethod();
         GameObject player = GameObject.FindGameObjectWithTag("Player");
+        GameObject uimove = GameObject.Find("UIController");
         script_character_Movement = player.GetComponent<script_character_movement>();
+        uiMoveAccess = uimove.GetComponent<script_ui_movement>();
         particleEffect.SetActive(false);
          thirdpersonAccess = player.GetComponent<script_third_person_controller>();
     }
@@ -107,6 +110,7 @@ public class script_lantern : MonoBehaviour
                 if (waitTime <= 0)
                 {
                     script_character_Movement.weightOfDarkness -= 1;
+                    uiMoveAccess.changeDown = true;
                     waitTime = 1.0f;
                 }
             }
@@ -196,6 +200,7 @@ public class script_lantern : MonoBehaviour
            if (firstLantern)
            {
                script_character_Movement.weightOfDarkness++;
+               uiMoveAccess.changeUp = true;
            }
             
             darknessWaitTime = 4f;

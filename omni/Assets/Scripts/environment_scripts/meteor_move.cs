@@ -58,6 +58,11 @@ public class meteor_move : MonoBehaviour
                 SceneManager.LoadScene("GameOver");
             }
 
+            if(collision.collider.CompareTag("Olmec"))
+            {
+                collision.gameObject.SetActive(false);
+            }
+
             Destroy(gameObject);
         }
 }
