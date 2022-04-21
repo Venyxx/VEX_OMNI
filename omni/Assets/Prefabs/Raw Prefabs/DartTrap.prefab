@@ -24,13 +24,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8769978579306173274}
-  m_LocalRotation: {x: 0.042177297, y: -0.009732664, z: 0.001355892, w: 0.9990618}
-  m_LocalPosition: {x: 0.0011999235, y: 0.057900038, z: 0.05249985}
+  m_LocalRotation: {x: -0.025749829, y: 0.037399884, z: -0.0035843267, w: 0.99896216}
+  m_LocalPosition: {x: 0.0011998973, y: 0.05790006, z: 0.05249957}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 8772799420395915918}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 4.836, y: -1.112, z: 0.109}
+  m_LocalEulerAnglesHint: {x: -2.934, y: 4.302, z: -0.521}
 --- !u!114 &8769059807657769465
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -47,8 +47,8 @@ MonoBehaviour:
   Cooldown: 0.5
   ResetOnFinish: 1
   Effects: []
-  force: 20
-  maxDistance: 25
+  force: 30
+  maxDistance: 30
   ammunition: 40
   randomProjectile: 0
   projectileStickOnCollision: 0
@@ -80,9 +80,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8770727992049471348}
-  m_LocalRotation: {x: -0, y: 0.7060295, z: -0, w: 0.7081825}
+  m_LocalRotation: {x: 0, y: 0.70603234, z: 0, w: 0.70817965}
   m_LocalPosition: {x: 150.89, y: 32.48, z: 108.07}
-  m_LocalScale: {x: 42.09049, y: 15.979684, z: 15.979684}
+  m_LocalScale: {x: 42.090492, y: 15.979684, z: 15.979683}
   m_Children:
   - {fileID: 8772742330595479116}
   - {fileID: 4609091743269657921}
@@ -117,8 +117,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 0.049864095, y: 0.08998124, z: 0.042866293}
+  m_Center: {x: 0.0010051727, y: 0.030678323, z: 0.004829827}
 --- !u!1001 &63612932213384718
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -126,6 +126,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8772799420395915918}
     m_Modifications:
+    - target: {fileID: 3412633156491853856, guid: bba075d95e2ed6a409f43bd03db0fe86, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: af1008fc494994b41ba4cc8694e09db8, type: 2}
     - target: {fileID: 3773145358172250613, guid: bba075d95e2ed6a409f43bd03db0fe86, type: 3}
       propertyPath: m_Name
       value: Rock (1)
