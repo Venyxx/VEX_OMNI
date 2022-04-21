@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using StarterAssets;
 using UnityEngine.SceneManagement;
 
 public class ui_control : MonoBehaviour
@@ -11,12 +12,19 @@ public class ui_control : MonoBehaviour
 
     public GameObject pauseUI;
     public GameObject reticle;
+    public StarterAssetsInputs starterAssetsInputs;
+    void Start ()
+    {
+        //starterAssetsInputs = GetComponent<StarterAssetsInputs>();
+    }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.Escape) || Input.GetKeyDown(KeyCode.JoystickButton7))
         {
+            
+            
             if (PauseGame)
             {
                 Resume();
