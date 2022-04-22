@@ -113,6 +113,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4721908856942958174}
     m_Modifications:
+    - target: {fileID: 7604821851391658924, guid: 00010c7c99b019f4ba08202fd06ef4e7, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7604821851391658924, guid: 00010c7c99b019f4ba08202fd06ef4e7, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 80d4adbb1860d8244b84b9c664f48629, type: 2}
     - target: {fileID: 8253195269273528953, guid: 00010c7c99b019f4ba08202fd06ef4e7, type: 3}
       propertyPath: m_Name
       value: Olmec_Head
