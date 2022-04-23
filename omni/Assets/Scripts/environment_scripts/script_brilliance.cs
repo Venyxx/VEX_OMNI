@@ -30,7 +30,7 @@ public class script_brilliance : MonoBehaviour
 
         if (solCurrent <= 0)
         {
-SceneManager.LoadScene("GameOver");
+SceneManager.LoadScene("GameOverSolstice");
         }
     }
     void solChecking()

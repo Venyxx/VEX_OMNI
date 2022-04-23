@@ -8697,6 +8697,50 @@ PrefabInstance:
       propertyPath: m_text
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 3380816349371003603, guid: b86ff17568169e848a5cca7dc963423c, type: 3}
+      propertyPath: m_fontSize
+      value: 70
+      objectReference: {fileID: 0}
+    - target: {fileID: 3380816349371003603, guid: b86ff17568169e848a5cca7dc963423c, type: 3}
+      propertyPath: m_fontStyle
+      value: 33
+      objectReference: {fileID: 0}
+    - target: {fileID: 3380816349371003603, guid: b86ff17568169e848a5cca7dc963423c, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 70
+      objectReference: {fileID: 0}
+    - target: {fileID: 3380816349371003603, guid: b86ff17568169e848a5cca7dc963423c, type: 3}
+      propertyPath: m_enableAutoSizing
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3380816349371003605, guid: b86ff17568169e848a5cca7dc963423c, type: 3}
+      propertyPath: m_Pivot.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3380816349371003605, guid: b86ff17568169e848a5cca7dc963423c, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3380816349371003605, guid: b86ff17568169e848a5cca7dc963423c, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3380816349371003605, guid: b86ff17568169e848a5cca7dc963423c, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3380816349371003605, guid: b86ff17568169e848a5cca7dc963423c, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 400
+      objectReference: {fileID: 0}
+    - target: {fileID: 3380816349371003605, guid: b86ff17568169e848a5cca7dc963423c, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 3380816349371003605, guid: b86ff17568169e848a5cca7dc963423c, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -47.5
+      objectReference: {fileID: 0}
     - target: {fileID: 8630184846338804204, guid: b86ff17568169e848a5cca7dc963423c, type: 3}
       propertyPath: m_text
       value: Hub
