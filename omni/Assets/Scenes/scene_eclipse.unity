@@ -8489,10 +8489,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 418690367}
     m_Modifications:
-    - target: {fileID: -7511558181221131132, guid: 66862c4fa40dba341a921b4cb36e557c, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 14dabd8ca08026b4cad33a6c724d1d5b, type: 2}
     - target: {fileID: 607424937626561396, guid: 66862c4fa40dba341a921b4cb36e557c, type: 3}
       propertyPath: m_Name
       value: skull_1
@@ -8500,18 +8496,6 @@ PrefabInstance:
     - target: {fileID: 8804266369574158648, guid: 66862c4fa40dba341a921b4cb36e557c, type: 3}
       propertyPath: m_RootOrder
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8804266369574158648, guid: 66862c4fa40dba341a921b4cb36e557c, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.21928
-      objectReference: {fileID: 0}
-    - target: {fileID: 8804266369574158648, guid: 66862c4fa40dba341a921b4cb36e557c, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.21928002
-      objectReference: {fileID: 0}
-    - target: {fileID: 8804266369574158648, guid: 66862c4fa40dba341a921b4cb36e557c, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.21928
       objectReference: {fileID: 0}
     - target: {fileID: 8804266369574158648, guid: 66862c4fa40dba341a921b4cb36e557c, type: 3}
       propertyPath: m_LocalPosition.x
