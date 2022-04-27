@@ -19,6 +19,8 @@ public class script_olmec_head : MonoBehaviour
       public GameObject door2OBJ;
        public GameObject door3OBJ;
         public GameObject door4OBJ;
+        public GameObject cam1;
+        
     
 
 
@@ -42,6 +44,7 @@ public class script_olmec_head : MonoBehaviour
     {
         if (door1OBJ != null && gameObject.tag == "door1" && collider.tag == "Player")
         {
+            //cam1.SetActive(true);
             door1OBJ.SetActive(false);
         }
         if (door2OBJ != null &&gameObject.tag == "door2" && collider.tag == "Player")
