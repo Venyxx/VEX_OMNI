@@ -21,7 +21,8 @@ public class script_lantern_boss : MonoBehaviour
     public bool firstLantern;
     //public float gazeMax = 16f;
     //public float gazeCurrent;
-
+    AudioSource audioSource;
+    public AudioClip litClip;
 
     //public Transform particleSpawn;
 
@@ -39,7 +40,7 @@ public class script_lantern_boss : MonoBehaviour
         isSafe = false;
         Manager.gazeCurrent = Manager.gazeMax;
         script_character_Movement.hasLightRounds = false;
-
+        
     }
 
     // Update is called once per frame
@@ -49,12 +50,10 @@ public class script_lantern_boss : MonoBehaviour
         {
             Debug.Log("death, reset");
             SceneManager.LoadScene("GameOver");
-
         }
 
         if (isSafe == false)
         {
-
             //Debug.Log(isSafe);
         }
 
@@ -62,8 +61,6 @@ public class script_lantern_boss : MonoBehaviour
         {
             Manager.hasGaze = false;
         }
-
-
         //DISPLAY FOR ITS ON OR NO DEV BUILD----------------------------
     }
 
@@ -107,6 +104,7 @@ public class script_lantern_boss : MonoBehaviour
         {
             Debug.Log("this lantern was off and now it is turning on");
             particleEffect.SetActive(true);
+            audioSource.PlayOneShot(litClip, 1.0F);
             script_character_Movement.holdingLight = false;
             // Debug.Log("boolHoldingLightChar in Hands" + script_character_Movement.holdingLight);
             lanternIsLit = true;

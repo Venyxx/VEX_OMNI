@@ -6739,6 +6739,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1659836940}
     - target: {fileID: 7317549042088287510, guid: dbbd0d44c43d55d46917b9d3b3210731, type: 3}
+      propertyPath: litClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 85df1337d842adc42924795128b6294a, type: 3}
+    - target: {fileID: 7317549042088287510, guid: dbbd0d44c43d55d46917b9d3b3210731, type: 3}
       propertyPath: thirdpersonAccess
       value: 
       objectReference: {fileID: 162518679}
@@ -8110,6 +8114,7 @@ MonoBehaviour:
   isSafe: 1
   particleEffect: {fileID: 671667429}
   firstLantern: 1
+  litClip: {fileID: 0}
 --- !u!1 &676196736
 GameObject:
   m_ObjectHideFlags: 0
