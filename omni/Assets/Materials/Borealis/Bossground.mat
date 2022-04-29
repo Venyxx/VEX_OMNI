@@ -1,0 +1,50 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Bossground
+  m_Shader: {fileID: -6465566751694194690, guid: d30fe5879198938409d7e080a24f2c0f, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - Texture2D_b1be487bd4d84c31b4420167379a604f:
+        m_Texture: {fileID: 10300, guid: 0000000000000000f000000000000000, type: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_Lightmaps:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_LightmapsInd:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_ShadowMasks:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - Vector1_2e982ddc62f7441daa53e5afc7511007: 2222
+    - Vector1_3679f8cbe31740b2829602721db35ab2: 0
+    - Vector1_518f99bd939f418da07c41b4bc8954c7: 2
+    - Vector1_519c999e3c5c4e748bddd09ed20ba784: 40
+    - Vector1_72b19f882f27496e8a8ec27789a81d63: 0
+    - Vector1_f280ddd8c6594974b0feca5f5dcf07c8: 1
+    - Vector1_f5dfa5591ce8469e92feeb5e0c72d7d9: 0
+    m_Colors:
+    - Color_5719bc54a6b249afa4418f82d4696a58: {r: 1.1058824, g: 1.1921569, b: 1.9137255, a: 1}
+    - Vector2_453d20a9951347a2bb1f3feb73fe3f53: {r: 4.28, g: 0.1, b: 0, a: 0}
+    - Vector2_4cd221e8c9174d4cb183efab93159f60: {r: 0.03, g: 0.12, b: 0, a: 0}
+  m_BuildTextureStacks: []
