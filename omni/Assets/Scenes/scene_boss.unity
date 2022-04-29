@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 2100000, guid: fa1f67d9dd11fb24cad269986027dadd, type: 2}
+  m_SkyboxMaterial: {fileID: 2100000, guid: 1653f40c1d72b0d4d952f45dfb7a7f1e, type: 2}
   m_HaloStrength: 0.285
   m_FlareStrength: 1
   m_FlareFadeSpeed: 1
@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.0024908592, g: 0.011192097, b: 0.032131914, a: 1}
+  m_IndirectSpecularColor: {r: 0.15852195, g: 0.008332143, b: 0.00000016342791, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -17830,7 +17830,7 @@ MonoBehaviour:
   favorsDark: 0
   favorsLight: 0
   LDTimerMax: 10
-  skybox_light: {fileID: 2100000, guid: 6cc977ae97559a447a1f23baca708780, type: 2}
+  skybox_light: {fileID: 2100000, guid: 1653f40c1d72b0d4d952f45dfb7a7f1e, type: 2}
   skybox_dark: {fileID: 2100000, guid: 2306916182131444aa6fe8ab558f92af, type: 2}
   favorsGUI: {fileID: 1647396291724003105}
   postProcLight: {fileID: 1646939568}
