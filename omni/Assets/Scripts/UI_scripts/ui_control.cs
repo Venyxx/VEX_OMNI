@@ -68,9 +68,19 @@ public class ui_control : MonoBehaviour
         Application.Quit();
     }
 
-    public void RestartGame()
+    public void RestartEclipse()
     {
         SceneManager.LoadScene("scene_eclipse");
+    }
+
+    public void RestartSolstice()
+    {
+        SceneManager.LoadScene("scene_solstice");
+    }
+
+    public void RestartBoss()
+    {
+        SceneManager.LoadScene("scene_boss");
     }
 
     public void LoadHub()

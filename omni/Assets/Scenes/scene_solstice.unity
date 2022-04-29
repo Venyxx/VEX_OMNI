@@ -16726,6 +16726,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -47.5
       objectReference: {fileID: 0}
+    - target: {fileID: 8630184846332608284, guid: b86ff17568169e848a5cca7dc963423c, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8630184846338804204, guid: b86ff17568169e848a5cca7dc963423c, type: 3}
       propertyPath: m_text
       value: Hub
@@ -16752,7 +16756,7 @@ PrefabInstance:
       objectReference: {fileID: 325986044}
     - target: {fileID: 8630184847108385533, guid: b86ff17568169e848a5cca7dc963423c, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: RestartGame
+      value: RestartSolstice
       objectReference: {fileID: 0}
     - target: {fileID: 8630184847241153120, guid: b86ff17568169e848a5cca7dc963423c, type: 3}
       propertyPath: m_Name
