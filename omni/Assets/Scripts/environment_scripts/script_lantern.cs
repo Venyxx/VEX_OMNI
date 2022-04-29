@@ -19,7 +19,6 @@ public class script_lantern : MonoBehaviour
     bool lanternTimeRunner = false;
     public GameObject particleEffect;
     public bool firstLantern;
-     
     AudioSource audioSource;
     public AudioClip litClip;
     //public Transform particleSpawn;
@@ -33,7 +32,7 @@ public class script_lantern : MonoBehaviour
         script_character_Movement = player.GetComponent<script_character_movement>();
         uiMoveAccess = uimove.GetComponent<script_ui_movement>();
         particleEffect.SetActive(false);
-         thirdpersonAccess = player.GetComponent<script_third_person_controller>();
+        thirdpersonAccess = player.GetComponent<script_third_person_controller>();
     }
 
     // Update is called once per frame
@@ -144,16 +143,13 @@ public class script_lantern : MonoBehaviour
         {
             Debug.Log("this lanter was off and now it is turning on");
             particleEffect.SetActive(true);
-            //audioSource.PlayOneShot(litClip, 1.0F);
+            audioSource.PlayOneShot(litClip, 1.0F);
             //Debug.Log("ran particle");
             script_character_Movement.holdingLight = false;
             // Debug.Log("boolHoldingLightChar in Hands" + script_character_Movement.holdingLight);
             lanternIsLit = true;
             lanternChecking();
-           
             Destroy(collision.gameObject);
-            
-            
         }
 
         if (script_character_Movement.holdingLight && collision.collider.CompareTag("Arrow"))
