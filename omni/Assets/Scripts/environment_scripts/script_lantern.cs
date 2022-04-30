@@ -71,7 +71,7 @@ public class script_lantern : MonoBehaviour
         //DISPLAY FOR ITS ON OR NO DEV BUILD----------------------------
     }
 
-    void OntriggerEnter(Collider other)
+    void OnTriggerEnter(Collider other)
     {
         /*Debug.Log("lantern light detecting");
         Debug.Log("light rounds" + script_character_Movement.hasLightRounds);
@@ -129,8 +129,8 @@ public class script_lantern : MonoBehaviour
                 darknessGUI.text = "";
             }
 
-            else
-                darknessGUI.text = "SOMBRE x" + darknessDisplay.ToString();
+            //else
+                //darknessGUI.text = "SOMBRE x" + darknessDisplay.ToString();
         }
     }
 
@@ -143,7 +143,7 @@ public class script_lantern : MonoBehaviour
         {
             Debug.Log("this lanter was off and now it is turning on");
             particleEffect.SetActive(true);
-            audioSource.PlayOneShot(litClip, 1.0F);
+            //audioSource.PlayOneShot(litClip, 1.0F);
             //Debug.Log("ran particle");
             script_character_Movement.holdingLight = false;
             // Debug.Log("boolHoldingLightChar in Hands" + script_character_Movement.holdingLight);
