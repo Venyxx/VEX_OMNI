@@ -21,10 +21,10 @@ public class ui_control : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
         if (Input.GetKeyDown(KeyCode.Escape) || Input.GetKeyDown(KeyCode.JoystickButton7))
         {
-            
-            
+
             if (PauseGame)
             {
                 Resume();
@@ -34,11 +34,25 @@ public class ui_control : MonoBehaviour
                 Pause();
             }
         }
+
+        /* main thing to keep the cursor visible/not visible,
+            this doesn't interfere with buttons */
+        if(PauseGame == true)
+        {
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
+        }
+        else
+        {
+            Cursor.lockState = CursorLockMode.Locked;
+            Cursor.visible = false;
+        }
     }
     public void Resume()
     {
         Debug.Log("called resume");
         Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
         //time scale was 0? -v
         pauseUI.SetActive(false);
         reticle.SetActive(true);
@@ -49,6 +63,7 @@ public class ui_control : MonoBehaviour
     void Pause()
     {
         Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
         reticle.SetActive(false);
         pauseUI.SetActive(true);
         Time.timeScale = 0f;
@@ -81,6 +96,8 @@ public class ui_control : MonoBehaviour
     public void RestartBoss()
     {
         SceneManager.LoadScene("scene_boss");
+        /* SceneManager.UnloadSceneAsync("scene_boss");
+        SceneManager.LoadSceneAsync("scene_boss"); */
     }
 
     public void LoadHub()

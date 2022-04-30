@@ -49,7 +49,7 @@ public class script_lantern_boss : MonoBehaviour
         if (Manager.gazeCurrent <= 0 && Manager.hasGaze)
         {
             Debug.Log("death, reset");
-            SceneManager.LoadScene("GameOver");
+            SceneManager.LoadScene("GameOverBoss");
         }
 
         if (isSafe == false)
