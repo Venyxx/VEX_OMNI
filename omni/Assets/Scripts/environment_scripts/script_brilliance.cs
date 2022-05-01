@@ -8,15 +8,15 @@ public class script_brilliance : MonoBehaviour
     // Start is called before the first frame update
     public bool hasSol;
     private script_character_movement script_character_Movement;
-    
+
     public float solCurrent;
     public float solMax = 6f;
-     public int solDisplay;
+    public int solDisplay;
     public TextMeshProUGUI solGUI;
     void Start()
     {
-        
-         GameObject player = GameObject.FindGameObjectWithTag("Player");
+
+        GameObject player = GameObject.FindGameObjectWithTag("Player");
         script_character_Movement = player.GetComponent<script_character_movement>();
         solCurrent = solMax;
         hasSol = true;
@@ -30,7 +30,7 @@ public class script_brilliance : MonoBehaviour
 
         if (solCurrent <= 0)
         {
-SceneManager.LoadScene("GameOverSolstice");
+            SceneManager.LoadScene("GameOverSolstice");
         }
     }
     void solChecking()
@@ -54,7 +54,7 @@ SceneManager.LoadScene("GameOverSolstice");
             solCurrent = solMax;
         }
     }
-     void gazeDisplayMethod()
+    void gazeDisplayMethod()
     {
 
 

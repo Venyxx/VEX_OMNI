@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Rendering;
 using UnityEngine.Rendering.Universal;
+using UnityEngine.SceneManagement;
 public class script_postproc_manager : MonoBehaviour
 {
     // Start is called before the first frame update
@@ -29,8 +30,11 @@ public class script_postproc_manager : MonoBehaviour
     }
 
     // Update is called once per frame
-    void FixedUpdate()
+    void Update()
     {
+        
+        
+        
         //Debug.Log(bloom.intensity.value);
         //vignette.intensity.value = Mathf.Sin(Time.deltaTime);
         //Debug.Log("infixedupdate");
