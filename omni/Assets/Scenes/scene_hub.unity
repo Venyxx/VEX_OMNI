@@ -2064,7 +2064,7 @@ PrefabInstance:
     - target: {fileID: 2763825675067367881, guid: b5a5402fd77a03744938d427a2c6196a, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 5a78ef84ccc9eae428298cf0d360268d, type: 2}
+      objectReference: {fileID: 2100000, guid: 22df87798332e6443a7c0285e842f9df, type: 2}
     - target: {fileID: 6318734307331962657, guid: b5a5402fd77a03744938d427a2c6196a, type: 3}
       propertyPath: m_Name
       value: Death_Symbol
@@ -10165,6 +10165,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -6.828
       objectReference: {fileID: 0}
+    - target: {fileID: 3700238420344938298, guid: e358bd142a6004d42aa495fbb358c88e, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e23f909b3190d5d45b1d7b495411e583, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e358bd142a6004d42aa495fbb358c88e, type: 3}
 --- !u!1001 &1618348395

@@ -39,27 +39,27 @@ public class script_ui_movement : MonoBehaviour
 
         if (changeUp)
         {
-            leftPos.transform.position = Vector2.Lerp(leftPos.transform.position, leftPos.transform.position + updating, 20f * Time.deltaTime);
-            rightPos.transform.position = Vector2.Lerp(rightPos.transform.position, rightPos.transform.position - updating, 20f * Time.deltaTime);
-            changeUp = false;
+           Increase ();
         }
 
         if (changeDown)
         {
-            leftPos.transform.position = Vector2.Lerp(leftPos.transform.position, leftPos.transform.position - updating, 20f);
-            rightPos.transform.position = Vector2.Lerp(rightPos.transform.position, rightPos.transform.position + updating, 20f);
-            changeDown = false;
+           Decrease ();
         }
 
     }
 
     void Increase()
     {
-
+         leftPos.transform.position = Vector2.Lerp(leftPos.transform.position, leftPos.transform.position + updating, 20f );
+            rightPos.transform.position = Vector2.Lerp(rightPos.transform.position, rightPos.transform.position - updating, 20f );
+            changeUp = false;
     }
 
     void Decrease()
     {
-
+         leftPos.transform.position = Vector2.Lerp(leftPos.transform.position, leftPos.transform.position - updating, 20f);
+            rightPos.transform.position = Vector2.Lerp(rightPos.transform.position, rightPos.transform.position + updating, 20f);
+            changeDown = false;
     }
 }
