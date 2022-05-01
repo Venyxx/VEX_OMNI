@@ -15,7 +15,7 @@ public class MainMenuControl : MonoBehaviour
 
     public void GameStart ()
    {
-    SceneManager.LoadScene("scene_hub");
+    SceneManager.LoadScene("scene_hub_CUTSCENE");
    }
     
 public void ExitGame ()
