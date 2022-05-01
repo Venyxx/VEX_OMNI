@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class script_play_lines : MonoBehaviour
 {
@@ -21,9 +22,15 @@ public class script_play_lines : MonoBehaviour
     {
         if (other.tag == "Player" && playing == false)
         {
-            cam1.SetActive(true);
-            dolly2.SetActive(true);
-            brilltimer.SetActive(false);
+            var currentScene = SceneManager.GetActiveScene();
+            var currentSceneName = currentScene.name;
+            if (currentSceneName == "scene_solstice")
+            {
+                cam1.SetActive(true);
+                dolly2.SetActive(true);
+                brilltimer.SetActive(false);
+            }
+
             playing = true;
             audioSource.PlayOneShot(audioClip, 10f);
             Invoke("waitSpace", lengthOfClip);
@@ -33,9 +40,15 @@ public class script_play_lines : MonoBehaviour
 
     void waitSpace()
     {
-        cam1.SetActive(false);
-        dolly2.SetActive(false);
-        brilltimer.SetActive(true);
+        var currentScene = SceneManager.GetActiveScene();
+        var currentSceneName = currentScene.name;
+        if (currentSceneName == "scene_solstice")
+        {
+            cam1.SetActive(false);
+            dolly2.SetActive(false);
+            brilltimer.SetActive(true);
+        }
+
         Destroy(gameObject);
     }
 }
