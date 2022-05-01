@@ -16,6 +16,9 @@ public class scipt_boss_control : MonoBehaviour
     public TextMeshProUGUI favorsGUI;
     public GameObject postProcLight;
     public GameObject postProcDark;
+    public GameObject eclipsedeco;
+    //public GameObject soldeco;
+
     
 
     void Start()
@@ -38,6 +41,9 @@ public class scipt_boss_control : MonoBehaviour
             LDTimerCurrent = LDTimerMax;
             postProcDark.SetActive(true);
             postProcLight.SetActive(false);
+            //soldeco.SetActive(false);
+            eclipsedeco.SetActive(true);
+            
             favorsLight = false;
             favorsDark = true;
             favorsGUI.text = "The Astral Destroyer regains favor of the Dark";
@@ -51,6 +57,8 @@ public class scipt_boss_control : MonoBehaviour
             LDTimerCurrent = LDTimerMax;
             postProcDark.SetActive(false);
             postProcLight.SetActive(true);
+            eclipsedeco.SetActive(false);
+            //soldeco.SetActive(true);
             favorsDark = false;
             favorsLight = true;
             favorsGUI.text = "The Astral Destroyer regains favor of the Light";

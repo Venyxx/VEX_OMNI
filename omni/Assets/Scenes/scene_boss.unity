@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.0024908592, g: 0.011192097, b: 0.032131914, a: 1}
+  m_IndirectSpecularColor: {r: 0.0024298108, g: 0.011199062, b: 0.03215464, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -19336,6 +19336,7 @@ MonoBehaviour:
   favorsGUI: {fileID: 1647396291724003105}
   postProcLight: {fileID: 1646939568}
   postProcDark: {fileID: 1001769721}
+  eclipsedeco: {fileID: 1388176201}
 --- !u!4 &1454284694
 Transform:
   m_ObjectHideFlags: 0
