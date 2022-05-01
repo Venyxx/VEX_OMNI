@@ -104,4 +104,10 @@ public class ui_control : MonoBehaviour
     {
         SceneManager.LoadScene("scene_hub");
     }
+
+    public void LoadHubPortal()
+    {
+        SceneManager.LoadScene("scene_hub_PORTAL");
+    }
+
 }

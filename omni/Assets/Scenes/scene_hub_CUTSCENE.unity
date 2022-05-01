@@ -946,7 +946,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &317726913
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1603,7 +1603,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!82 &557096542
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2449,7 +2449,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &770292731
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10769,7 +10769,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!320 &1638878587
 PlayableDirector:
   m_ObjectHideFlags: 0
@@ -14283,10 +14283,6 @@ PrefabInstance:
     - target: {fileID: 4611026826733578819, guid: bb15bc473a32c2c4ca48ea7b58025b8b, type: 3}
       propertyPath: m_Name
       value: That_boy_with_eyes
-      objectReference: {fileID: 0}
-    - target: {fileID: 4611026826733578819, guid: bb15bc473a32c2c4ca48ea7b58025b8b, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bb15bc473a32c2c4ca48ea7b58025b8b, type: 3}

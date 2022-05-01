@@ -270,7 +270,7 @@ public class script_third_person_controller : MonoBehaviour
 
         if (collider.tag == "Win")
         {
-            SceneManager.LoadScene("scene_hub");
+            SceneManager.LoadScene("scene_hub_PORTAL");
         }
         if (collider.tag == "Equinox")
         {

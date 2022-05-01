@@ -3319,13 +3319,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 595447784}
-  m_LocalRotation: {x: -0, y: -0.59362566, z: -0, w: 0.8047414}
-  m_LocalPosition: {x: -65.82, y: 0.109, z: 59.32}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -80.86, y: 0.109, z: 59.213}
   m_LocalScale: {x: 0.13024087, y: 0.13024087, z: 0.13024087}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 18
-  m_LocalEulerAnglesHint: {x: 0, y: -72.829, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &615754127
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5193,6 +5193,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6973277216340307203, guid: ea65851da086e854699bc5d4e8ae3063, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6973277216340307203, guid: ea65851da086e854699bc5d4e8ae3063, type: 3}
       propertyPath: m_LocalPosition.x
       value: 13.1
       objectReference: {fileID: 0}
@@ -6172,7 +6176,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8628470248135378406, guid: 2f5cabfd67f86e54a82ae08bd3e75e39, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -65.619
+      value: -79.74
       objectReference: {fileID: 0}
     - target: {fileID: 8628470248135378406, guid: 2f5cabfd67f86e54a82ae08bd3e75e39, type: 3}
       propertyPath: m_LocalPosition.y
@@ -6180,23 +6184,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8628470248135378406, guid: 2f5cabfd67f86e54a82ae08bd3e75e39, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 60.52
+      value: 59.2
       objectReference: {fileID: 0}
     - target: {fileID: 8628470248135378406, guid: 2f5cabfd67f86e54a82ae08bd3e75e39, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.17927235
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 8628470248135378406, guid: 2f5cabfd67f86e54a82ae08bd3e75e39, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8628470248135378406, guid: 2f5cabfd67f86e54a82ae08bd3e75e39, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.9837995
+      value: -0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 8628470248135378406, guid: 2f5cabfd67f86e54a82ae08bd3e75e39, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8628470248135378406, guid: 2f5cabfd67f86e54a82ae08bd3e75e39, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -6204,7 +6208,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8628470248135378406, guid: 2f5cabfd67f86e54a82ae08bd3e75e39, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: -159.345
+      value: -90
       objectReference: {fileID: 0}
     - target: {fileID: 8628470248135378406, guid: 2f5cabfd67f86e54a82ae08bd3e75e39, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -10432,8 +10436,16 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6973277216340307203, guid: ea65851da086e854699bc5d4e8ae3063, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6973277216340307203, guid: ea65851da086e854699bc5d4e8ae3063, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6973277216340307203, guid: ea65851da086e854699bc5d4e8ae3063, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -69.89798
+      value: -71.16
       objectReference: {fileID: 0}
     - target: {fileID: 6973277216340307203, guid: ea65851da086e854699bc5d4e8ae3063, type: 3}
       propertyPath: m_LocalPosition.y
@@ -12142,6 +12154,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1698421561}
+    - target: {fileID: 8630184847108385533, guid: b86ff17568169e848a5cca7dc963423c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: RestartEclipse
+      objectReference: {fileID: 0}
     - target: {fileID: 8630184847241153120, guid: b86ff17568169e848a5cca7dc963423c, type: 3}
       propertyPath: m_Name
       value: PauseCanvas
