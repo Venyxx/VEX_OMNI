@@ -1665,13 +1665,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 440627191}
-  m_LocalRotation: {x: 0.409422, y: 0.22471514, z: -0.10478647, w: 0.8780072}
+  m_LocalRotation: {x: 0.2855167, y: 0.66820025, z: -0.31158686, w: 0.61229265}
   m_LocalPosition: {x: 152.45764, y: 155.56361, z: -182.95934}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 41
-  m_LocalEulerAnglesHint: {x: 50, y: 28.712, z: 0}
+  m_LocalEulerAnglesHint: {x: 50, y: 95, z: 0}
 --- !u!1001 &441469513
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1682,7 +1682,7 @@ PrefabInstance:
     - target: {fileID: 3736158759751953981, guid: 2426ccf15b5d94d42b4589f5ef5e81ec, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: f8d67aca2ce4c5742adfa4895b1f8a28, type: 2}
+      objectReference: {fileID: 2100000, guid: 5ebec01433f5547bfad00c04ca8f3928, type: 2}
     - target: {fileID: 5171436409898242660, guid: 2426ccf15b5d94d42b4589f5ef5e81ec, type: 3}
       propertyPath: m_CapsuleColliders.Array.size
       value: 1
@@ -3389,7 +3389,7 @@ PrefabInstance:
     - target: {fileID: 3736158759751953981, guid: 2426ccf15b5d94d42b4589f5ef5e81ec, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: f8d67aca2ce4c5742adfa4895b1f8a28, type: 2}
+      objectReference: {fileID: 2100000, guid: 5ebec01433f5547bfad00c04ca8f3928, type: 2}
     - target: {fileID: 5171436409898242660, guid: 2426ccf15b5d94d42b4589f5ef5e81ec, type: 3}
       propertyPath: m_CapsuleColliders.Array.size
       value: 1
@@ -12770,7 +12770,7 @@ PrefabInstance:
     - target: {fileID: 3736158759751953981, guid: 2426ccf15b5d94d42b4589f5ef5e81ec, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: f8d67aca2ce4c5742adfa4895b1f8a28, type: 2}
+      objectReference: {fileID: 2100000, guid: 5ebec01433f5547bfad00c04ca8f3928, type: 2}
     - target: {fileID: 5171436409898242660, guid: 2426ccf15b5d94d42b4589f5ef5e81ec, type: 3}
       propertyPath: m_CapsuleColliders.Array.size
       value: 1
@@ -13586,7 +13586,7 @@ PrefabInstance:
     - target: {fileID: 2572580399646155797, guid: 82cee0612dccc48ebaf2929eabc139e2, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: f8d67aca2ce4c5742adfa4895b1f8a28, type: 2}
+      objectReference: {fileID: 2100000, guid: 5ebec01433f5547bfad00c04ca8f3928, type: 2}
     - target: {fileID: 6318135372369991756, guid: 82cee0612dccc48ebaf2929eabc139e2, type: 3}
       propertyPath: m_CapsuleColliders.Array.data[0]
       value: 
