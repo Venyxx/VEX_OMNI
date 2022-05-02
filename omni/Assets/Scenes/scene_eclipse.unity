@@ -7565,6 +7565,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: AudioPlayerENd
       objectReference: {fileID: 0}
+    - target: {fileID: 4685092776379321798, guid: 19c3c5ada00bf8c438133ea5e2374eb9, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4725191902113613809, guid: 19c3c5ada00bf8c438133ea5e2374eb9, type: 3}
       propertyPath: m_RootOrder
       value: 15
@@ -9516,7 +9520,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5572128403013945697, guid: 587664025f734e74a9f2cfb9c7f4d6ee, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 15.98
+      value: 15.23
       objectReference: {fileID: 0}
     - target: {fileID: 5572128403013945697, guid: 587664025f734e74a9f2cfb9c7f4d6ee, type: 3}
       propertyPath: m_LocalPosition.z
@@ -9567,12 +9571,36 @@ PrefabInstance:
       value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 8627142723802093328, guid: 587664025f734e74a9f2cfb9c7f4d6ee, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.28328326
+      objectReference: {fileID: 0}
+    - target: {fileID: 8627142723802093328, guid: 587664025f734e74a9f2cfb9c7f4d6ee, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.6149998
+      objectReference: {fileID: 0}
+    - target: {fileID: 8627142723802093328, guid: 587664025f734e74a9f2cfb9c7f4d6ee, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.062568694
+      objectReference: {fileID: 0}
+    - target: {fileID: 8627142723802093328, guid: 587664025f734e74a9f2cfb9c7f4d6ee, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.79761815
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 8627142723802093328, guid: 587664025f734e74a9f2cfb9c7f4d6ee, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8627142723802093328, guid: 587664025f734e74a9f2cfb9c7f4d6ee, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.6031627
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 8627142723802093328, guid: 587664025f734e74a9f2cfb9c7f4d6ee, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8627142723802093328, guid: 587664025f734e74a9f2cfb9c7f4d6ee, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90
       objectReference: {fileID: 0}
     - target: {fileID: 9003280826630245802, guid: 587664025f734e74a9f2cfb9c7f4d6ee, type: 3}
       propertyPath: m_StaticEditorFlags
