@@ -11067,7 +11067,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: 788581728294b4a4d80bdd5e95f943b9, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 9ce54006098c0014fab071b16e14ccdd, type: 2}
+      objectReference: {fileID: 2100000, guid: 7f6ca9f4de554244dbcd9b9ad3c70ef2, type: 2}
     - target: {fileID: 919132149155446097, guid: 788581728294b4a4d80bdd5e95f943b9, type: 3}
       propertyPath: m_Name
       value: omni_table (1)
@@ -11556,6 +11556,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7782154132745855206, guid: 8d8c1aa514050d7469393b3463e988c0, type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: cb4c473235f90d445b28641bff8f2250, type: 2}
     - target: {fileID: 8142296485514969395, guid: 8d8c1aa514050d7469393b3463e988c0, type: 3}
       propertyPath: m_Name
       value: grass_clump

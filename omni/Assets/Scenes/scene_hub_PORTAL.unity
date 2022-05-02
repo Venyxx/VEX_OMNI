@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.0024908592, g: 0.011192097, b: 0.032131914, a: 1}
+  m_IndirectSpecularColor: {r: 0.0024298108, g: 0.011199062, b: 0.03215464, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -12960,6 +12960,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7782154132745855206, guid: 8d8c1aa514050d7469393b3463e988c0, type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: cb4c473235f90d445b28641bff8f2250, type: 2}
     - target: {fileID: 8142296485514969395, guid: 8d8c1aa514050d7469393b3463e988c0, type: 3}
       propertyPath: m_Name
       value: grass_clump
@@ -14840,5 +14844,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: omni_table_fix
       objectReference: {fileID: 0}
+    - target: {fileID: 5772904433114768640, guid: 15e255710fa6e4823a9a790682dce56e, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 7f6ca9f4de554244dbcd9b9ad3c70ef2, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 15e255710fa6e4823a9a790682dce56e, type: 3}
