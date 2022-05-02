@@ -48,7 +48,7 @@ public class script_gaze_manager : MonoBehaviour
             {
                 gazeGUI.text = "";
             }
-            gazeGUI.text = "God's Gaze 0:" + gazeDisplay.ToString();
+            gazeGUI.text = "0:" + gazeDisplay.ToString();
 
 
         }
