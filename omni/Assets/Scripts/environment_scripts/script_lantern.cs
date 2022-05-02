@@ -19,8 +19,8 @@ public class script_lantern : MonoBehaviour
     bool lanternTimeRunner = false;
     public GameObject particleEffect;
     public bool firstLantern;
-    AudioSource audioSource;
-    public AudioClip litClip;
+    //AudioSource audioSource;
+    //public AudioClip litClip;
     //public Transform particleSpawn;
 
     // Start is called before the first frame update
