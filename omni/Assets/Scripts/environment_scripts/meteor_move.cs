@@ -55,7 +55,7 @@ public class meteor_move : MonoBehaviour
 
             if (collision.collider.CompareTag("Player"))
             {
-                SceneManager.LoadScene("GameOver");
+                SceneManager.LoadScene("GameOverSolstice");
             }
 
             if(collision.collider.CompareTag("Olmec"))
